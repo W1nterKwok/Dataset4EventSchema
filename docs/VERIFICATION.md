@@ -30,3 +30,7 @@ python scripts/datasets.py fetch proscript
 ```
 
 自动验证覆盖目录一致性、示例来源标识、中文注释、真实模式引用、问答配对、示例字符跨度、随附数据哈希。下载器拒绝HTML错误页和Git LFS指针，并为实际下载记录时间和SHA-256。
+
+## ElizBench补充核验
+
+两个子集及info表均从固定作者提交读取并保留原始字节。实测Eliz-EV²为1,331条/46类，Eliz-MAVEN为4,374条/39类。类别计数和每类不同触发词统计均核对一致；真实示例与首条CSV记录逐字段比较。详见[整理说明](ELIZBENCH.md)。

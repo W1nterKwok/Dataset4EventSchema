@@ -8,3 +8,5 @@
 - 其余真实数据由用户从作者入口取得；不明确许可的内容仅记录下载入口。`illustrative_template` 均为本项目新写的演示。
 
 上游URL、固定提交及文件SHA-256可在 `catalog.json` 中查询。原始下载及日志默认不提交。
+
+- `datasets/eliz-ev2/data/`、`datasets/eliz-maven/data/`及对应真实样例来自michiru-39/ElizBench_SSR-EG，分别保留MIT完整许可证。原始EV²/MAVEN及新闻文本的权利仍归各自权利人。

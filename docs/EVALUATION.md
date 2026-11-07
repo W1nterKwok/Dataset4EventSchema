@@ -5,6 +5,7 @@
 | 关系抽取 | Precision、Recall、Micro-F1 | 事件对、关系方向、匹配单位、文档划分 |
 | 模式归纳 | Event F1、Temporal/Hierarchical Relation F1 | 语义匹配编码器、节点匹配规则、场景留出 |
 | 图事件预测 | MRR、Hit@k | 候选集、负例、官方划分、图构建版本 |
+| ElizBench | 按样本支持数加权P/R/F1及每类指标 | 固定公开版本、候选类别、金标触发词是否暴露 |
 | EV² | CEC/CRR Accuracy | S/I四任务分项、关系类型 |
 | 关系集合预测 | 按查询Macro P/R/F1 | 预测截点、新闻时间过滤、CAMEO标签映射 |
 | 具体时间预测 | RMSE、MAE | 单位、预测跨度、观察窗口 |

@@ -1,8 +1,8 @@
 # Dataset4EventSchema
 
-事件模式归纳、事件关系抽取、事件预测与危机场景推理的数据集索引、带中文注释的示例及获取工具。共整理 **28 个独立资源目录**，包含 RESPONSE。
+事件模式归纳、事件关系抽取、事件预测与危机场景推理的数据集索引、带中文注释的示例及获取工具。共整理 **30 个独立资源目录**，包含 RESPONSE 和 ElizBench 的两个子集。
 
-这个仓库整合数据入口、版本说明及示例；**不是28个全量数据集的镜像**。ODIN和OpenEP的公开小规模资源已随仓库提供；其余数据依获取状态下载、申请或核实。每个示例都显式区分作者真实记录与自编格式示例。
+这个仓库整合数据入口、版本说明及示例；ODIN、OpenEP和ElizBench的两个公开子集已随仓库提供；其余数据依获取状态下载、申请或核实。每个示例都显式区分作者真实记录与自编格式示例。
 
 ## 快速使用
 
@@ -14,6 +14,7 @@ python scripts/datasets.py show response
 python scripts/datasets.py validate
 python scripts/datasets.py fetch ev2
 python scripts/datasets.py inspect ev2
+python datasets/eliz-maven/example.py
 ```
 
 `fetch`只下载已登记的文件，固定作者提交，保存哈希及时间。`inspect`读取本地原始JSON/JSONL/CSV并展示首条记录。没有已核实自动下载地址的资源会返回明确状态，不会生成假数据。Windows可用 `py -3` 代替 `python`。
@@ -50,6 +51,8 @@ python scripts/datasets.py inspect ev2
 | [HiEve（文本事件层级）](datasets/hieve/) | relation_extraction | `source_verification_required` | 自编格式示例 |
 | [EventStoryLine / ESC](datasets/eventstoryline/) | relation_extraction | `downloadable_license_unverified` | 自编格式示例 |
 | [RESPONSE](datasets/response/) | crisis_reasoning | `download_blocked_403` | 自编格式示例 |
+| [Eliz-EV²](datasets/eliz-ev2/) | event_generalization | `bundled` | 作者真实记录 |
+| [Eliz-MAVEN](datasets/eliz-maven/) | event_generalization | `bundled` | 作者真实记录 |
 
 ## 目录约定
 
@@ -73,5 +76,7 @@ scripts/datasets.py            # 目录查询、下载、原始样本查看与�
 - 论文10的MIRAI及GDELT-500设置需额外核对；原始MIRAI入口不代表同一查询版本。
 - RESPONSE固定 DOI v1，数据站在整理环境返回HTTP 403，当前保留入口和自编示例，未声称已下载。
 - HiEve指文本事件层级资源，不是同名视频资源；原始来源尚待进一步核实。
+
+ElizBench新增两个目录，含完整成品CSV、info统计表、真实样例和可运行的中文注释示例，详见[ElizBench说明](docs/ELIZBENCH.md)。
 
 详见[示例格式](docs/FORMAT.md)、[评测约定](docs/EVALUATION.md)、[许可说明](LICENSE-NOTICE.md)和[核验记录](docs/VERIFICATION.md)。整理日期：2026-11-07。

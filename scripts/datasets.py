@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """数据集目录查询、固定版本下载和文件校验。仅使用Python标准库。"""
 import argparse
+from collections import Counter
 import csv
 import datetime as dt
 import hashlib
@@ -170,6 +171,31 @@ def validate():
                             errors.append(f'odin: 悬空节点引用 {target}')
             if row['id']=='openepbench' and record['question_record']['id'] != record['answer_record']['id']:
                 errors.append('openepbench: 问答样例ID不匹配')
+            if row['category']=='event_generalization':
+                # 同时核验完整CSV、info表和真实样例，防止版本统计及样例漂移。
+                samples=list(records(safe_path(row['assets'][0]['path'])))
+                info=list(records(safe_path(row['assets'][1]['path'])))
+                stats=row['statistics']
+                counts=Counter(item['abstract_event'] for item in samples)
+                if len(samples)!=stats['records'] or len(counts)!=stats['classes']:
+                    errors.append(f'{row["id"]}: 样本数或类别数与登记不一致')
+                if list(samples[0])!=stats['fields'] or record!=samples[0]:
+                    errors.append(f'{row["id"]}: CSV字段或真实样例不一致')
+                if len(info)!=len(counts) or {i['abstract_event'] for i in info}!=set(counts):
+                    errors.append(f'{row["id"]}: info候选类别与样本类别不一致')
+                for item in info:
+                    label=item['abstract_event']
+                    if counts[label]!=int(item[stats['info_count_column']]):
+                        errors.append(f'{row["id"]}: {label}的样本计数错误')
+                    if 'trigger_count' in item:
+                        distinct={r['trigger'] for r in samples if r['abstract_event']==label}
+                        if len(distinct)!=int(item['trigger_count']):
+                            errors.append(f'{row["id"]}: {label}的触发词计数错误')
+                if 'trigger_offset' in stats['fields']:
+                    for item in samples:
+                        offset=json.loads(item['trigger_offset'])
+                        if not (isinstance(offset,list) and len(offset)==2 and all(type(x) is int for x in offset) and 0<=offset[0]<offset[1]):
+                            errors.append(f'{row["id"]}: 非法的触发词token跨度')
             # 检查自编抽取样例中提及和字符跨度确实一致。
             if row['example_kind']=='illustrative_template' and 'text' in record:
                 for event in record.get('events',[]):

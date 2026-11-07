@@ -1,7 +1,7 @@
 {
   "catalog_version": 1,
   "curated_on": "2026-11-07",
-  "source_note": "按本地《本项目可用的数据集与评价指标.md》逐项拆分，加入正文四种关系抽取数据及用户补充的RESPONSE；保留拟自建资源为planned。",
+  "source_note": "按本地《本项目可用的数据集与评价指标.md》逐项拆分，加入正文四种关系抽取数据及用户补充的RESPONSE；保留拟自建资源为planned。；另加入用户指定ElizBench的Eliz-EV²和Eliz-MAVEN两个公开子集。",
   "datasets": [
     {
       "id": "resin-11",
@@ -768,6 +768,114 @@
         "annotated_instances": 1789,
         "question_sets": 6037,
         "note": "论文摘要报告，尚未从下载数据重新统计"
+      }
+    },
+    {
+      "id": "eliz-ev2",
+      "name": "Eliz-EV²",
+      "category": "event_generalization",
+      "description": "ElizBench的具体事件到抽象事件类别映射基准，源于EV²事件推理数据。",
+      "project_use": "评估事件实例向抽象事件类型的泛化，作为模式节点抽象与实例—模式对齐的补充。",
+      "sources": [
+        "https://github.com/michiru-39/ElizBench_SSR-EG",
+        "https://github.com/michiru-39/ElizBench_SSR-EG/tree/fab7749d89a44328624e4477f8cb2cf0b81ca7c6/ElizBench-dataset"
+      ],
+      "paper": "https://doi.org/10.1016/j.ipm.2026.104851",
+      "version": "作者公开成品CSV @ fab7749d89a44328624e4477f8cb2cf0b81ca7c6",
+      "cautions": "公开文件为1,331条/46类；与论文描述的1,383条不同，不得混作同一版本；这是事件类别泛化，不是原始EV²的CEC/CRR任务。",
+      "access_status": "bundled",
+      "data_license": "MIT（作者仓库，保留原始许可证）；派生EV²/MAVEN及新闻文本的上游权利不由此重新授权。",
+      "example_kind": "upstream_record",
+      "example_provenance": {
+        "repository": "michiru-39/ElizBench_SSR-EG",
+        "commit": "fab7749d89a44328624e4477f8cb2cf0b81ca7c6",
+        "file": "ElizBench-dataset/Eliz-EV2.csv",
+        "selection": "首条数据记录（不含CSV表头）；所有字段值原样保留",
+        "license_file": "LICENSE.upstream"
+      },
+      "example_path": "datasets/eliz-ev2/example.json",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/michiru-39/ElizBench_SSR-EG/fab7749d89a44328624e4477f8cb2cf0b81ca7c6/ElizBench-dataset/Eliz-EV2.csv",
+          "path": "datasets/eliz-ev2/data/Eliz-EV2.csv",
+          "sha256": "9c45c04837c21b1b3eae57d94a551f9b0ee05d606cd4b8b23467f7e4dcef3d26",
+          "bundled": true,
+          "upstream_commit": "fab7749d89a44328624e4477f8cb2cf0b81ca7c6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/michiru-39/ElizBench_SSR-EG/fab7749d89a44328624e4477f8cb2cf0b81ca7c6/ElizBench-dataset/Eliz-EV2_info.csv",
+          "path": "datasets/eliz-ev2/data/Eliz-EV2_info.csv",
+          "sha256": "8c544f93387ef30e0c9d2b117699e3a4689a60fba21d53c7a1f016fc2692c622",
+          "bundled": true,
+          "upstream_commit": "fab7749d89a44328624e4477f8cb2cf0b81ca7c6"
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "statistics": {
+        "records": 1331,
+        "classes": 46,
+        "fields": [
+          "specific_event",
+          "abstract_event"
+        ],
+        "info_count_column": "specific_event_count",
+        "class_counts_match_info": true,
+        "has_official_split_column": false
+      }
+    },
+    {
+      "id": "eliz-maven",
+      "name": "Eliz-MAVEN",
+      "category": "event_generalization",
+      "description": "ElizBench的具体事件到抽象事件类别映射基准，源于MAVEN事件检测语料。",
+      "project_use": "评估事件实例向抽象事件类型的泛化，作为模式节点抽象与实例—模式对齐的补充。",
+      "sources": [
+        "https://github.com/michiru-39/ElizBench_SSR-EG",
+        "https://github.com/michiru-39/ElizBench_SSR-EG/tree/fab7749d89a44328624e4477f8cb2cf0b81ca7c6/ElizBench-dataset"
+      ],
+      "paper": "https://doi.org/10.1016/j.ipm.2026.104851",
+      "version": "作者公开成品CSV @ fab7749d89a44328624e4477f8cb2cf0b81ca7c6",
+      "cautions": "公开文件为4,374条/39类；这是派生事件泛化集，不是MAVEN全量集，也不是MAVEN-ERE或MAVEN-CGEP。真值触发词不可混入默认输入。",
+      "access_status": "bundled",
+      "data_license": "MIT（作者仓库，保留原始许可证）；派生EV²/MAVEN及新闻文本的上游权利不由此重新授权。",
+      "example_kind": "upstream_record",
+      "example_provenance": {
+        "repository": "michiru-39/ElizBench_SSR-EG",
+        "commit": "fab7749d89a44328624e4477f8cb2cf0b81ca7c6",
+        "file": "ElizBench-dataset/Eliz-MAVEN.csv",
+        "selection": "首条数据记录（不含CSV表头）；所有字段值原样保留",
+        "license_file": "LICENSE.upstream"
+      },
+      "example_path": "datasets/eliz-maven/example.json",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/michiru-39/ElizBench_SSR-EG/fab7749d89a44328624e4477f8cb2cf0b81ca7c6/ElizBench-dataset/Eliz-MAVEN.csv",
+          "path": "datasets/eliz-maven/data/Eliz-MAVEN.csv",
+          "sha256": "cabd266e44d75f7c1c5faa55eccee33c562d5744de1625090dcfd2e99f1de72b",
+          "bundled": true,
+          "upstream_commit": "fab7749d89a44328624e4477f8cb2cf0b81ca7c6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/michiru-39/ElizBench_SSR-EG/fab7749d89a44328624e4477f8cb2cf0b81ca7c6/ElizBench-dataset/Eliz-MAVEN_info.csv",
+          "path": "datasets/eliz-maven/data/Eliz-MAVEN_info.csv",
+          "sha256": "0f397dc1e6908b234e7ba625620a2ddb9320dbb67d1c48d2a0051dfb9a7d8033",
+          "bundled": true,
+          "upstream_commit": "fab7749d89a44328624e4477f8cb2cf0b81ca7c6"
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "statistics": {
+        "records": 4374,
+        "classes": 39,
+        "fields": [
+          "specific_event",
+          "abstract_event",
+          "trigger",
+          "trigger_offset"
+        ],
+        "info_count_column": "instance_count",
+        "class_counts_match_info": true,
+        "has_official_split_column": false
       }
     }
   ]

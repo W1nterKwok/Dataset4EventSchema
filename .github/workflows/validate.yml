@@ -8,4 +8,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-      - run: python scripts/datasets.py validate
+      - run: |
+          python scripts/datasets.py validate
+          python datasets/eliz-ev2/example.py
+          python datasets/eliz-maven/example.py

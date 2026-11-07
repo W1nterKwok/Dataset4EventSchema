@@ -1,0 +1,23 @@
+{
+  "_说明": {
+    "dataset": "Eliz-EV2",
+    "kind": "upstream_record",
+    "is_official_sample": true,
+    "note": "作者发布CSV的真实记录；外层注释为本项目新增。",
+    "provenance": {
+      "repository": "michiru-39/ElizBench_SSR-EG",
+      "commit": "fab7749d89a44328624e4477f8cb2cf0b81ca7c6",
+      "file": "ElizBench-dataset/Eliz-EV2.csv",
+      "selection": "首条数据记录（不含CSV表头）；所有字段值原样保留",
+      "license_file": "LICENSE.upstream"
+    },
+    "字段注释": {
+      "specific_event": "需要分类的具体事件描述，作为模型输入。",
+      "abstract_event": "作者提供的抽象事件类别金标，只用于评测，不可作为默认模型输入。"
+    }
+  },
+  "record": {
+    "specific_event": "Tom participated  in every class and diligently completing his homework.",
+    "abstract_event": "learn"
+  }
+}
