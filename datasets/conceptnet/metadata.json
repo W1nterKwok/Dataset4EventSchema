@@ -1,0 +1,20 @@
+{
+  "id": "conceptnet",
+  "name": "ConceptNet",
+  "category": "commonsense_knowledge",
+  "description": "概念级常识关系知识资源。",
+  "project_use": "本体先验与关系候选。",
+  "sources": [
+    "https://conceptnet.io/",
+    "https://github.com/commonsense/conceptnet5"
+  ],
+  "paper": null,
+  "version": "ConceptNet 5；采用具体发布版本时需固定",
+  "cautions": "代码许可与数据许可不同；知识边不是特定新闻事件的真值。",
+  "access_status": "manual_acquisition",
+  "data_license": "数据通常为 CC-BY-SA-4.0，须以所下载发布说明为准",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/conceptnet/example.json"
+}

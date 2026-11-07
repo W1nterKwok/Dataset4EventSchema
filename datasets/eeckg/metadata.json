@@ -1,0 +1,19 @@
+{
+  "id": "eeckg",
+  "name": "EECKG",
+  "category": "commonsense_knowledge",
+  "description": "EV²构建所用事件演化常识知识资源。",
+  "project_use": "事件类型与关系的先验知识。",
+  "sources": [
+    "https://arxiv.org/abs/2404.17513"
+  ],
+  "paper": null,
+  "version": "EV²所引 EECKG；独立原始资源地址待核实",
+  "cautions": "EV²是评测基准，不等于EECKG全量知识图谱；不把两者作为同一数据集。",
+  "access_status": "source_verification_required",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/eeckg/example.json"
+}

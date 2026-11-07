@@ -1,0 +1,20 @@
+{
+  "id": "esc-cgep",
+  "name": "ESC-CGEP",
+  "category": "causal_prediction",
+  "description": "ESC因果图中的后继事件选择任务。",
+  "project_use": "检验抽象规则是否改善因果图预测。",
+  "sources": [
+    "https://anonymous.4open.science/r/AECR-AFAF/",
+    "https://arxiv.org/abs/2608.05205"
+  ],
+  "paper": "https://arxiv.org/abs/2608.05205",
+  "version": "ESC-CGEP（AECR论文采用版本）",
+  "cautions": "保留官方候选集及划分；MAVEN 为512候选，ESC 为256候选，不使用本文件的两候选示例计算论文结果。",
+  "access_status": "author_artifact_available",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/esc-cgep/example.json"
+}

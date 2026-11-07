@@ -1,0 +1,35 @@
+{
+  "_说明": {
+    "dataset": "GDELT-500（论文10改造版）",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "history": "预测截点之前的可见事件。",
+      "prediction_cutoff": "严格限制模型可检索的证据时间。",
+      "query": "待预测的时间、主体和客体。",
+      "target_relations": "独立保存真实标签，推理时不可放进提示词。"
+    }
+  },
+  "record": {
+    "history": [
+      {
+        "subject": "Country_A",
+        "relation": "consult",
+        "object": "Country_B",
+        "date": "2022-01-01"
+      }
+    ],
+    "prediction_cutoff": "2022-01-01",
+    "query": {
+      "subject": "Country_A",
+      "object": "Country_B",
+      "date": "2022-01-02",
+      "relation": "?"
+    },
+    "target_relations": [
+      "consult"
+    ]
+  }
+}

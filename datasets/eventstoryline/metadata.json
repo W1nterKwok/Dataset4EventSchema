@@ -1,0 +1,19 @@
+{
+  "id": "eventstoryline",
+  "name": "EventStoryLine / ESC",
+  "category": "relation_extraction",
+  "description": "新闻故事线的事件时间及因果标注。",
+  "project_use": "原始新闻事件关系抽取。",
+  "sources": [
+    "https://github.com/tommasoc80/EventStoryLine"
+  ],
+  "paper": null,
+  "version": "作者公开版本；正式使用固定具体提交和语料版本",
+  "cautions": "不同发布版和共指扩展预处理可能改变因果边数；ESC-CGEP是派生任务，不应混用。",
+  "access_status": "downloadable_license_unverified",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/eventstoryline/example.json"
+}

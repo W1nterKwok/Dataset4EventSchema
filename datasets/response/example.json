@@ -1,0 +1,43 @@
+{
+  "_说明": {
+    "dataset": "RESPONSE",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "scenario": "虚构灾害及地点；不是原始图片/文本。",
+      "problem/missing_resource": "问题描述及缺失资源。",
+      "qa[].timeframe": "本项目模板用immediate/week/month；论文对应立即、一周后、一月后，原始字段待下载核实。",
+      "qa[].answer/explanation": "参考答案和解释独立保存；此处均为自编文本，不是作者标签。"
+    }
+  },
+  "record": {
+    "scenario": {
+      "incident": "flood",
+      "location": "fictional village"
+    },
+    "problem": "Roads are inaccessible.",
+    "missing_resource": "transport",
+    "qa": [
+      {
+        "timeframe": "immediate",
+        "question": "Which immediate transport need should be assessed?",
+        "answer": "Identify who requires assistance.",
+        "explanation": "Resource needs depend on the affected people."
+      },
+      {
+        "timeframe": "week",
+        "question": "Which transport resources require review after a week?",
+        "answer": "Review the availability of transport services.",
+        "explanation": "Needs and access may have changed."
+      },
+      {
+        "timeframe": "month",
+        "question": "Which transport recovery needs remain after a month?",
+        "answer": "Review outstanding access and recovery needs.",
+        "explanation": "Long-term constraints differ from immediate needs."
+      }
+    ]
+  }
+}

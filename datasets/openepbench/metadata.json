@@ -1,0 +1,49 @@
+{
+  "id": "openepbench",
+  "name": "OpenEPBench",
+  "category": "open_ended_prediction",
+  "description": "中英文自由文本未来事件预测。",
+  "project_use": "开放式和中文预测验证。",
+  "sources": [
+    "https://github.com/ncepu-eai/OpenEP"
+  ],
+  "paper": "https://github.com/ncepu-eai/OpenEP",
+  "version": "作者公开 data/data/cn_valid_data.json 与 en_valid_data.json",
+  "cautions": "以每个问题形成时间作为截点；新闻截断不能清除模型参数记忆。",
+  "access_status": "bundled",
+  "data_license": "MIT（作者仓库许可；新闻原文的权利仍归原权利人）",
+  "example_kind": "upstream_record",
+  "assets": [
+    {
+      "url": "https://raw.githubusercontent.com/ncepu-eai/OpenEP/6357dc55dd28881f0877b8fd7fc55a5374cc2abf/data/question_samples.json",
+      "path": "datasets/openepbench/data/question_samples.json",
+      "sha256": "f8454abda4fc539be3c66ff6e52b11f8da06f1317c4f2fd325b66f8b6726d94f",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ncepu-eai/OpenEP/6357dc55dd28881f0877b8fd7fc55a5374cc2abf/data/answer_samples.json",
+      "path": "datasets/openepbench/data/answer_samples.json",
+      "sha256": "30c369c265e93464060b417b7c0046ce56d166458df23b81321004717a3a47f9",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ncepu-eai/OpenEP/6357dc55dd28881f0877b8fd7fc55a5374cc2abf/data/data/cn_valid_data.json",
+      "path": "datasets/openepbench/data/cn_valid_data.json",
+      "sha256": "33848189ebf2732836908dd21ee32a7e6cf96d9de7cd9c778fc584f4d3644b22",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/ncepu-eai/OpenEP/6357dc55dd28881f0877b8fd7fc55a5374cc2abf/data/data/en_valid_data.json",
+      "path": "datasets/openepbench/data/en_valid_data.json",
+      "sha256": "43851345a0622468348ec8d9a184deb73a6a5ead8e05f9526904a241fd602cf0",
+      "bundled": true
+    }
+  ],
+  "verified_on": "2026-11-07",
+  "example_provenance": {
+    "repository": "ncepu-eai/OpenEP",
+    "commit": "6357dc55dd28881f0877b8fd7fc55a5374cc2abf",
+    "selection": "question_samples.json与answer_samples.json中id=0的配对样本"
+  },
+  "example_path": "datasets/openepbench/example.json"
+}

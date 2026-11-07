@@ -1,0 +1,40 @@
+{
+  "_说明": {
+    "dataset": "proScript",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "steps": "部分有序步骤；s1 与 s2 之间未必存在先后。",
+      "before": "先后约束，不是因果边。"
+    }
+  },
+  "record": {
+    "scenario": "make tea",
+    "steps": [
+      {
+        "id": "s1",
+        "text": "Boil water."
+      },
+      {
+        "id": "s2",
+        "text": "Put tea in a cup."
+      },
+      {
+        "id": "s3",
+        "text": "Pour water into the cup."
+      }
+    ],
+    "before": [
+      [
+        "s1",
+        "s3"
+      ],
+      [
+        "s2",
+        "s3"
+      ]
+    ]
+  }
+}

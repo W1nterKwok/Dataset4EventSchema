@@ -1,0 +1,20 @@
+{
+  "id": "ldc2020e25",
+  "name": "LDC2020E25",
+  "category": "instance_graph",
+  "description": "LDC模式学习语料及论文派生复杂事件图。",
+  "project_use": "复杂图结构、补全及预测。",
+  "sources": [
+    "https://www.ldc.upenn.edu/",
+    "https://github.com/snowfalling77/ReST-Pre"
+  ],
+  "paper": null,
+  "version": "LDC2020E25；派生8/12节点图另列版本",
+  "cautions": "先确认 LDC 访问资格和授权；派生样本数不是原始文档数。",
+  "access_status": "restricted_access",
+  "data_license": "LDC 授权条款，未获取原始数据",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/ldc2020e25/example.json"
+}

@@ -1,0 +1,38 @@
+{
+  "_说明": {
+    "dataset": "自建网络暴力事件语料（待建设）",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "case_id": "完整案例标识，划分时按案例和时间隔离。",
+      "evidence": "预测截点前可见证据，保留发布时间。",
+      "future_outcome": "截点后结果，单独存放以避免泄露。"
+    }
+  },
+  "record": {
+    "case_id": "fictional-case-001",
+    "prediction_cutoff": "2025-01-01T12:00:00+08:00",
+    "evidence": [
+      {
+        "id": "n1",
+        "published_at": "2025-01-01T11:00:00+08:00",
+        "text": "虚构案例：匿名主体发布未经核实的指责。"
+      }
+    ],
+    "events": [
+      {
+        "id": "e1",
+        "type": "unverified_claim",
+        "evidence_ids": [
+          "n1"
+        ]
+      }
+    ],
+    "future_outcome": {
+      "observed_at": "2025-01-02T12:00:00+08:00",
+      "text": "虚构案例：后续出现澄清。"
+    }
+  }
+}

@@ -1,0 +1,48 @@
+{
+  "_说明": {
+    "dataset": "SchemaAug / Mass Shooting",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "document_id": "完整文档标识，用于防止同一文档跨数据划分。",
+      "text": "本文件中的虚构文本，仅演示接口。",
+      "events[].character_span": "本项目示例约定：Python 字符索引，左闭右开；不是原始语料的 token 索引。",
+      "relations": "事件间有向关系；原始标签需单独映射。",
+      "scenario": "子集标识；示例文本仅用于展示字段，不代表该场景原始报道。",
+      "augmentation_split": "生成数据只可加入训练集。"
+    }
+  },
+  "record": {
+    "document_id": "demo-001",
+    "text": "Heavy rain caused flooding.",
+    "events": [
+      {
+        "id": "e1",
+        "mention": "rain",
+        "character_span": [
+          6,
+          10
+        ]
+      },
+      {
+        "id": "e2",
+        "mention": "flooding",
+        "character_span": [
+          18,
+          26
+        ]
+      }
+    ],
+    "relations": [
+      {
+        "source": "e1",
+        "target": "e2",
+        "type": "causes"
+      }
+    ],
+    "scenario": "mass shooting",
+    "augmentation_split": "train_only"
+  }
+}

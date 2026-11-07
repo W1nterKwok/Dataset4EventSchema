@@ -1,0 +1,20 @@
+{
+  "id": "esc-aecr",
+  "name": "ESC-AECR",
+  "category": "abstract_rules",
+  "description": "具体因果事件对和抽象因果规则的配对资源。",
+  "project_use": "规则归纳、质量评估与规则检索。",
+  "sources": [
+    "https://anonymous.4open.science/r/AECR-AFAF/",
+    "https://arxiv.org/abs/2608.05205"
+  ],
+  "paper": "https://arxiv.org/abs/2608.05205",
+  "version": "ESC-AECR（分别733/180条规则，文献报告）",
+  "cautions": "规则库构建文档和下游测试文档的重叠需核查；规则检索划分不等于 CGEP 划分。",
+  "access_status": "author_artifact_available",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/esc-aecr/example.json"
+}

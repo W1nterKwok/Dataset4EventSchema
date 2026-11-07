@@ -1,0 +1,20 @@
+{
+  "id": "ied",
+  "name": "IED 新闻实例图",
+  "category": "instance_graph",
+  "description": "IED主题的事件与实体实例图。",
+  "project_use": "实例图到模式图的归纳及预测。",
+  "sources": [
+    "https://github.com/limanling/temporal-graph-schema",
+    "https://github.com/snowfalling77/ReST-Pre"
+  ],
+  "paper": null,
+  "version": "论文2清洗版与 ReST-Pre 派生版必须分别固定",
+  "cautions": "ReST-Pre README 的目录树列出数据，不代表其 Git 树实际包含该数据；不得混用两版图数。",
+  "access_status": "version_verification_required",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/ied/example.json"
+}

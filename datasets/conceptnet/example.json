@@ -1,0 +1,20 @@
+{
+  "_说明": {
+    "dataset": "ConceptNet",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "start/end": "示例概念URI；此记录为自行编写，未声称存在对应官方边。",
+      "relation": "ConceptNet风格关系URI。",
+      "weight": "模板数值，不是作者置信度。"
+    }
+  },
+  "record": {
+    "start": "/c/en/rain",
+    "relation": "/r/Causes",
+    "end": "/c/en/wet_ground",
+    "weight": 1.0
+  }
+}

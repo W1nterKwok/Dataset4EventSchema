@@ -1,0 +1,25 @@
+{
+  "_说明": {
+    "dataset": "MAVEN-AECR",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "concrete_pair": "具体语境中的有向因果事件对。",
+      "abstract_rule": "对事件对共同抽象，仍须保留原因果条件。",
+      "rule_id": "本示例自编标识，不是作者规则编号。"
+    }
+  },
+  "record": {
+    "concrete_pair": {
+      "cause": "Heavy rain falls in the town.",
+      "effect": "Streets are flooded."
+    },
+    "abstract_rule": {
+      "cause": "Intense precipitation",
+      "effect": "Surface flooding"
+    },
+    "rule_id": "illustrative-rule-001"
+  }
+}

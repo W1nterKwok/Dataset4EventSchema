@@ -1,0 +1,9 @@
+**/raw/
+/data/
+__pycache__/
+*.pyc
+.env
+.env.*
+*.pkl
+*.pt
+*.bin

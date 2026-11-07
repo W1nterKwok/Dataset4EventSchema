@@ -1,0 +1,47 @@
+{
+  "_说明": {
+    "dataset": "EV² / EV2",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "task": "S为模式层，I为实例层；CEC选择事件，CRR选择关系。",
+      "context": "这里是本项目教学结构，不是官方JSONL格式。",
+      "answer_index": "模板为0起始；读取作者格式时检查原始答案编码。"
+    }
+  },
+  "record": {
+    "task": "S_CRR",
+    "context": {
+      "scenario": "flood response",
+      "events": [
+        {
+          "id": "e1",
+          "text": "Heavy rain occurs."
+        },
+        {
+          "id": "e2",
+          "text": "Residents evacuate."
+        }
+      ],
+      "relations": [
+        {
+          "source": "e1",
+          "target": "e2",
+          "type": "before"
+        }
+      ]
+    },
+    "query_events": [
+      "e1",
+      "e2"
+    ],
+    "choices": [
+      "before",
+      "after",
+      "has_subevent"
+    ],
+    "answer_index": 0
+  }
+}

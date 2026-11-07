@@ -1,0 +1,25 @@
+{
+  "_说明": {
+    "dataset": "HiEve（文本事件层级）",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "parent/child": "本项目教学结构，自编事件层级示例。",
+      "relation": "父事件指向子事件；和官方标签另行映射。"
+    }
+  },
+  "record": {
+    "document_id": "demo-001",
+    "parent": {
+      "id": "e1",
+      "text": "emergency response"
+    },
+    "child": {
+      "id": "e2",
+      "text": "residents evacuate"
+    },
+    "relation": "has_subevent"
+  }
+}

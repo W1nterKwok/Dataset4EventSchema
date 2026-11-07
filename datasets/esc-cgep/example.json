@@ -1,0 +1,43 @@
+{
+  "_说明": {
+    "dataset": "ESC-CGEP",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "events": "模式事件节点；原始资源的节点字段请以作者文件为准。",
+      "relations": "显式区分 before、causes、has_subevent；不得把时序直接当因果。",
+      "scenario": "场景名；建议以完整场景留出评测。",
+      "anchor_event_id": "预测锚点。",
+      "candidate_events": "接口演示的两项候选，不是论文候选集合。",
+      "target_index": "本项目模板采用0起始索引。"
+    }
+  },
+  "record": {
+    "scenario": "flood response",
+    "events": [
+      {
+        "id": "e1",
+        "text": "Heavy rain occurs."
+      },
+      {
+        "id": "e2",
+        "text": "Residents evacuate."
+      }
+    ],
+    "relations": [
+      {
+        "source": "e1",
+        "target": "e2",
+        "type": "before"
+      }
+    ],
+    "anchor_event_id": "e1",
+    "candidate_events": [
+      "Residents evacuate.",
+      "A concert begins."
+    ],
+    "target_index": 0
+  }
+}

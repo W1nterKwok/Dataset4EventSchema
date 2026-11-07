@@ -1,0 +1,18 @@
+{
+  "_说明": {
+    "dataset": "EECKG",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "head/tail": "事件描述；自行编写示例。",
+      "relation": "带方向的事件关系。"
+    }
+  },
+  "record": {
+    "head": "rain heavily",
+    "relation": "Causes",
+    "tail": "ground becomes wet"
+  }
+}

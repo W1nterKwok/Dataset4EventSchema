@@ -1,0 +1,19 @@
+{
+  "id": "schemaaug-wcep",
+  "name": "SchemaAug / WCEP",
+  "category": "extraction_augmentation",
+  "description": "SchemaAug低资源新闻抽取场景子集。",
+  "project_use": "模式引导的数据增强和上游事件抽取。",
+  "sources": [
+    "https://aclanthology.org/2024.lrec-main.1253/"
+  ],
+  "paper": "https://aclanthology.org/2024.lrec-main.1253/",
+  "version": "论文2/SchemaAug中的international conflict子集",
+  "cautions": "原始新闻及标注的发布和权限待核实；增强样本仅进入训练集，不能当作未来事件预测金标准。",
+  "access_status": "manual_acquisition",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/schemaaug-wcep/example.json"
+}

@@ -1,0 +1,19 @@
+{
+  "id": "hieve",
+  "name": "HiEve（文本事件层级）",
+  "category": "relation_extraction",
+  "description": "新闻中的事件层级及子事件关系语料。",
+  "project_use": "层级关系抽取。",
+  "sources": [
+    "https://aclanthology.org/L14-1020/"
+  ],
+  "paper": "https://aclanthology.org/L14-1020/",
+  "version": "文本事件层级语料；原始地址需进一步核查",
+  "cautions": "已核实 HiEve 文本事件层级论文；原始数据下载地址尚待核实。注意区分同名 Human-in-Events 视频数据集。",
+  "access_status": "source_verification_required",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/hieve/example.json"
+}

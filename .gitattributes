@@ -1,0 +1,8 @@
+* text=auto
+*.py text eol=lf
+*.json text eol=lf
+*.jsonl text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+# Preserve upstream data bytes and their recorded checksums across operating systems.
+datasets/*/data/* -text -whitespace

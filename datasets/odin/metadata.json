@@ -1,0 +1,134 @@
+{
+  "id": "odin",
+  "name": "ODIN",
+  "category": "schema_induction",
+  "description": "18类开放域场景的人工修订事件模式。",
+  "project_use": "开放场景及跨场景模式归纳。",
+  "sources": [
+    "https://github.com/raspberryice/inc-schema"
+  ],
+  "paper": "https://aclanthology.org/2023.acl-long.312/",
+  "version": "odin_curated @ 2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248",
+  "cautions": "作者方法生成后人工修订；与 RESIN-11 交叉验证。",
+  "access_status": "bundled",
+  "data_license": "GPL-3.0（上游仓库许可；保留完整许可证）",
+  "example_kind": "upstream_record",
+  "assets": [
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/chemical_spill.json",
+      "path": "datasets/odin/data/chemical_spill.json",
+      "sha256": "c22997670210d8cdd401de04700edb1c8c37d4b06db2ae76d384ac12f5e5432f",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/chemical_warfare.json",
+      "path": "datasets/odin/data/chemical_warfare.json",
+      "sha256": "85d01e2ac11a2c939fe94038af7a12d26a04278209d93b3860ce829bda49ccab",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/coup.json",
+      "path": "datasets/odin/data/coup.json",
+      "sha256": "c58f80e3a016cc4dd7690cd3f20aebd7af28006ff327e3bac016080f849e0951",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/cyber_attack.json",
+      "path": "datasets/odin/data/cyber_attack.json",
+      "sha256": "5c46d37b9a8d9447d067abb917a690dc9fc28fc79e6ec5ed408fc13e8875d2dc",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/health_care.json",
+      "path": "datasets/odin/data/health_care.json",
+      "sha256": "32d1fef1d441845cd61a444b0ef1415ae1639ad5d955169fb024cbf8e3f2003e",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/infrastructure_disaster.json",
+      "path": "datasets/odin/data/infrastructure_disaster.json",
+      "sha256": "295478559492c3066c507cd6492b946b431ceeb1b09b082fe4307f7358db2ae1",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/international_aggression.json",
+      "path": "datasets/odin/data/international_aggression.json",
+      "sha256": "285ebe9dc8eff0c27fa7f5d2d5cbfce847873393e3186e4449dcc5895d0a1bea",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/investment.json",
+      "path": "datasets/odin/data/investment.json",
+      "sha256": "911f358b4388fd0697a5eed04a6502228d2db96f9e1864da26ac7d1622c47b20",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/medical_procedure.json",
+      "path": "datasets/odin/data/medical_procedure.json",
+      "sha256": "686e3b4e91a88ec35059e4fc9ec1e3a6a1bd273ad7631dba342b09e153241dec",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/medical_research.json",
+      "path": "datasets/odin/data/medical_research.json",
+      "sha256": "72e32adda04663f8e98b9a572dbbb0c4492105d1286077944225f77a0bf773d4",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/nuclear_attack.json",
+      "path": "datasets/odin/data/nuclear_attack.json",
+      "sha256": "0d4373c4320d6933f145c5bfb2ee19502bae83b082c2326890c6e2004627b2eb",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/political_corruption.json",
+      "path": "datasets/odin/data/political_corruption.json",
+      "sha256": "f36a6ed3c078d457b39316ba146d2e39968902ee4cd4d639bb8b87cbed03483f",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/recession.json",
+      "path": "datasets/odin/data/recession.json",
+      "sha256": "8f8fe6e58ec4688453ecf7e890cf044eca0d36f8d2d40e3f30f3b61001d9cbe0",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/refugee_crisis.json",
+      "path": "datasets/odin/data/refugee_crisis.json",
+      "sha256": "e2ad70ff99d78400f8eb1e1ffeefbb3e28fdca0098126cc99dc075f18b780f23",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/trading.json",
+      "path": "datasets/odin/data/trading.json",
+      "sha256": "6f25636618a208f1b84b7939b79c126ac7bea673e2cba2c841820039e95eb7fc",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/transport_accident.json",
+      "path": "datasets/odin/data/transport_accident.json",
+      "sha256": "68448af2d80440b6c93eb81de46f5cfc193753c2c3b64701afd4a0c7f5e10fed",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/violent_crime.json",
+      "path": "datasets/odin/data/violent_crime.json",
+      "sha256": "1c31fc0fc603502da8a9ee6b896836872babc4a8e5f7f50bdc666c425462e349",
+      "bundled": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/warfare.json",
+      "path": "datasets/odin/data/warfare.json",
+      "sha256": "23076a3bfe03605308efd3feff7a2ce93eb2cad07b7adc263ec5b5c988c99bf9",
+      "bundled": true
+    }
+  ],
+  "verified_on": "2026-11-07",
+  "example_provenance": {
+    "file": "odin_curated/chemical_spill.json",
+    "repository": "raspberryice/inc-schema",
+    "commit": "2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248",
+    "selection": "完整模式，未删去被引用的节点"
+  },
+  "example_path": "datasets/odin/example.json"
+}

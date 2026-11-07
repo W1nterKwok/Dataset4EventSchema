@@ -1,0 +1,29 @@
+{
+  "id": "resin-11",
+  "name": "RESIN-11",
+  "category": "schema_induction",
+  "description": "11类新闻场景的时序及层级模式参考库。",
+  "project_use": "模式节点与时序、层级边归纳评测。",
+  "sources": [
+    "https://github.com/limanling/temporal-graph-schema",
+    "https://github.com/raspberryice/inc-schema"
+  ],
+  "paper": "https://aclanthology.org/2023.acl-long.312/",
+  "version": "文献中的 RESIN-11 评测版本",
+  "cautions": "inc-schema 的 phase2a 是章节提示，不是 RESIN-11 金标准；ReST-Pre 的 resin-schemalib.json 也不可直接认定为同一评测版本。",
+  "access_status": "version_verification_required",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [
+    {
+      "url": "https://raw.githubusercontent.com/snowfalling77/ReST-Pre/a2275da410243a052addffa3d5898fa0c7ce6ac8/data/origin/RESIN_schema/resin-schemalib.json",
+      "path": "datasets/resin-11/raw/resin-schemalib.json",
+      "bundled": false,
+      "sha256": null,
+      "upstream_commit": "a2275da410243a052addffa3d5898fa0c7ce6ac8",
+      "role": "reference_candidate_not_verified_resin11_gold"
+    }
+  ],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/resin-11/example.json"
+}

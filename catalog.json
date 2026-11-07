@@ -1,0 +1,774 @@
+{
+  "catalog_version": 1,
+  "curated_on": "2026-11-07",
+  "source_note": "按本地《本项目可用的数据集与评价指标.md》逐项拆分，加入正文四种关系抽取数据及用户补充的RESPONSE；保留拟自建资源为planned。",
+  "datasets": [
+    {
+      "id": "resin-11",
+      "name": "RESIN-11",
+      "category": "schema_induction",
+      "description": "11类新闻场景的时序及层级模式参考库。",
+      "project_use": "模式节点与时序、层级边归纳评测。",
+      "sources": [
+        "https://github.com/limanling/temporal-graph-schema",
+        "https://github.com/raspberryice/inc-schema"
+      ],
+      "paper": "https://aclanthology.org/2023.acl-long.312/",
+      "version": "文献中的 RESIN-11 评测版本",
+      "cautions": "inc-schema 的 phase2a 是章节提示，不是 RESIN-11 金标准；ReST-Pre 的 resin-schemalib.json 也不可直接认定为同一评测版本。",
+      "access_status": "version_verification_required",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/snowfalling77/ReST-Pre/a2275da410243a052addffa3d5898fa0c7ce6ac8/data/origin/RESIN_schema/resin-schemalib.json",
+          "path": "datasets/resin-11/raw/resin-schemalib.json",
+          "bundled": false,
+          "sha256": null,
+          "upstream_commit": "a2275da410243a052addffa3d5898fa0c7ce6ac8",
+          "role": "reference_candidate_not_verified_resin11_gold"
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/resin-11/example.json"
+    },
+    {
+      "id": "odin",
+      "name": "ODIN",
+      "category": "schema_induction",
+      "description": "18类开放域场景的人工修订事件模式。",
+      "project_use": "开放场景及跨场景模式归纳。",
+      "sources": [
+        "https://github.com/raspberryice/inc-schema"
+      ],
+      "paper": "https://aclanthology.org/2023.acl-long.312/",
+      "version": "odin_curated @ 2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248",
+      "cautions": "作者方法生成后人工修订；与 RESIN-11 交叉验证。",
+      "access_status": "bundled",
+      "data_license": "GPL-3.0（上游仓库许可；保留完整许可证）",
+      "example_kind": "upstream_record",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/chemical_spill.json",
+          "path": "datasets/odin/data/chemical_spill.json",
+          "sha256": "c22997670210d8cdd401de04700edb1c8c37d4b06db2ae76d384ac12f5e5432f",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/chemical_warfare.json",
+          "path": "datasets/odin/data/chemical_warfare.json",
+          "sha256": "85d01e2ac11a2c939fe94038af7a12d26a04278209d93b3860ce829bda49ccab",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/coup.json",
+          "path": "datasets/odin/data/coup.json",
+          "sha256": "c58f80e3a016cc4dd7690cd3f20aebd7af28006ff327e3bac016080f849e0951",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/cyber_attack.json",
+          "path": "datasets/odin/data/cyber_attack.json",
+          "sha256": "5c46d37b9a8d9447d067abb917a690dc9fc28fc79e6ec5ed408fc13e8875d2dc",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/health_care.json",
+          "path": "datasets/odin/data/health_care.json",
+          "sha256": "32d1fef1d441845cd61a444b0ef1415ae1639ad5d955169fb024cbf8e3f2003e",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/infrastructure_disaster.json",
+          "path": "datasets/odin/data/infrastructure_disaster.json",
+          "sha256": "295478559492c3066c507cd6492b946b431ceeb1b09b082fe4307f7358db2ae1",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/international_aggression.json",
+          "path": "datasets/odin/data/international_aggression.json",
+          "sha256": "285ebe9dc8eff0c27fa7f5d2d5cbfce847873393e3186e4449dcc5895d0a1bea",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/investment.json",
+          "path": "datasets/odin/data/investment.json",
+          "sha256": "911f358b4388fd0697a5eed04a6502228d2db96f9e1864da26ac7d1622c47b20",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/medical_procedure.json",
+          "path": "datasets/odin/data/medical_procedure.json",
+          "sha256": "686e3b4e91a88ec35059e4fc9ec1e3a6a1bd273ad7631dba342b09e153241dec",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/medical_research.json",
+          "path": "datasets/odin/data/medical_research.json",
+          "sha256": "72e32adda04663f8e98b9a572dbbb0c4492105d1286077944225f77a0bf773d4",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/nuclear_attack.json",
+          "path": "datasets/odin/data/nuclear_attack.json",
+          "sha256": "0d4373c4320d6933f145c5bfb2ee19502bae83b082c2326890c6e2004627b2eb",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/political_corruption.json",
+          "path": "datasets/odin/data/political_corruption.json",
+          "sha256": "f36a6ed3c078d457b39316ba146d2e39968902ee4cd4d639bb8b87cbed03483f",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/recession.json",
+          "path": "datasets/odin/data/recession.json",
+          "sha256": "8f8fe6e58ec4688453ecf7e890cf044eca0d36f8d2d40e3f30f3b61001d9cbe0",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/refugee_crisis.json",
+          "path": "datasets/odin/data/refugee_crisis.json",
+          "sha256": "e2ad70ff99d78400f8eb1e1ffeefbb3e28fdca0098126cc99dc075f18b780f23",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/trading.json",
+          "path": "datasets/odin/data/trading.json",
+          "sha256": "6f25636618a208f1b84b7939b79c126ac7bea673e2cba2c841820039e95eb7fc",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/transport_accident.json",
+          "path": "datasets/odin/data/transport_accident.json",
+          "sha256": "68448af2d80440b6c93eb81de46f5cfc193753c2c3b64701afd4a0c7f5e10fed",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/violent_crime.json",
+          "path": "datasets/odin/data/violent_crime.json",
+          "sha256": "1c31fc0fc603502da8a9ee6b896836872babc4a8e5f7f50bdc666c425462e349",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/raspberryice/inc-schema/2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248/odin_curated/warfare.json",
+          "path": "datasets/odin/data/warfare.json",
+          "sha256": "23076a3bfe03605308efd3feff7a2ce93eb2cad07b7adc263ec5b5c988c99bf9",
+          "bundled": true
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "example_provenance": {
+        "file": "odin_curated/chemical_spill.json",
+        "repository": "raspberryice/inc-schema",
+        "commit": "2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248",
+        "selection": "完整模式，未删去被引用的节点"
+      },
+      "example_path": "datasets/odin/example.json"
+    },
+    {
+      "id": "proscript",
+      "name": "proScript",
+      "category": "schema_induction",
+      "description": "日常活动的部分有序脚本。",
+      "project_use": "简单时序结构和跨领域泛化。",
+      "sources": [
+        "https://keisuke-sakaguchi.github.io/proscript/",
+        "https://keisuke-sakaguchi.github.io/proscript/proscript_v1a.zip"
+      ],
+      "paper": "https://aclanthology.org/2021.findings-emnlp.184/",
+      "version": "论文1使用的2,077场景子集需另行核对",
+      "cautions": "原始 proScript 全集与论文1评测子集规模不同；不提供层级关系评测。",
+      "access_status": "downloadable_license_unverified",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [
+        {
+          "url": "https://keisuke-sakaguchi.github.io/proscript/proscript_v1a.zip",
+          "path": "datasets/proscript/raw/proscript_v1a.zip",
+          "sha256": "aefe0a3f8c5e4bf70bbe5cfcfbea136b82731c29c462af016466c126a1b37cf9",
+          "bundled": false
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/proscript/example.json"
+    },
+    {
+      "id": "ied",
+      "name": "IED 新闻实例图",
+      "category": "instance_graph",
+      "description": "IED主题的事件与实体实例图。",
+      "project_use": "实例图到模式图的归纳及预测。",
+      "sources": [
+        "https://github.com/limanling/temporal-graph-schema",
+        "https://github.com/snowfalling77/ReST-Pre"
+      ],
+      "paper": null,
+      "version": "论文2清洗版与 ReST-Pre 派生版必须分别固定",
+      "cautions": "ReST-Pre README 的目录树列出数据，不代表其 Git 树实际包含该数据；不得混用两版图数。",
+      "access_status": "version_verification_required",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/ied/example.json"
+    },
+    {
+      "id": "ldc2020e25",
+      "name": "LDC2020E25",
+      "category": "instance_graph",
+      "description": "LDC模式学习语料及论文派生复杂事件图。",
+      "project_use": "复杂图结构、补全及预测。",
+      "sources": [
+        "https://www.ldc.upenn.edu/",
+        "https://github.com/snowfalling77/ReST-Pre"
+      ],
+      "paper": null,
+      "version": "LDC2020E25；派生8/12节点图另列版本",
+      "cautions": "先确认 LDC 访问资格和授权；派生样本数不是原始文档数。",
+      "access_status": "restricted_access",
+      "data_license": "LDC 授权条款，未获取原始数据",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/ldc2020e25/example.json"
+    },
+    {
+      "id": "maven-cgep",
+      "name": "MAVEN-CGEP",
+      "category": "causal_prediction",
+      "description": "MAVEN因果图中的后继事件选择任务。",
+      "project_use": "检验抽象规则是否改善因果图预测。",
+      "sources": [
+        "https://anonymous.4open.science/r/AECR-AFAF/",
+        "https://arxiv.org/abs/2608.05205"
+      ],
+      "paper": "https://arxiv.org/abs/2608.05205",
+      "version": "MAVEN-CGEP（AECR论文采用版本）",
+      "cautions": "保留官方候选集及划分；MAVEN 为512候选，ESC 为256候选，不使用本文件的两候选示例计算论文结果。",
+      "access_status": "author_artifact_available",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/maven-cgep/example.json"
+    },
+    {
+      "id": "esc-cgep",
+      "name": "ESC-CGEP",
+      "category": "causal_prediction",
+      "description": "ESC因果图中的后继事件选择任务。",
+      "project_use": "检验抽象规则是否改善因果图预测。",
+      "sources": [
+        "https://anonymous.4open.science/r/AECR-AFAF/",
+        "https://arxiv.org/abs/2608.05205"
+      ],
+      "paper": "https://arxiv.org/abs/2608.05205",
+      "version": "ESC-CGEP（AECR论文采用版本）",
+      "cautions": "保留官方候选集及划分；MAVEN 为512候选，ESC 为256候选，不使用本文件的两候选示例计算论文结果。",
+      "access_status": "author_artifact_available",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/esc-cgep/example.json"
+    },
+    {
+      "id": "maven-aecr",
+      "name": "MAVEN-AECR",
+      "category": "abstract_rules",
+      "description": "具体因果事件对和抽象因果规则的配对资源。",
+      "project_use": "规则归纳、质量评估与规则检索。",
+      "sources": [
+        "https://anonymous.4open.science/r/AECR-AFAF/",
+        "https://arxiv.org/abs/2608.05205"
+      ],
+      "paper": "https://arxiv.org/abs/2608.05205",
+      "version": "MAVEN-AECR（分别733/180条规则，文献报告）",
+      "cautions": "规则库构建文档和下游测试文档的重叠需核查；规则检索划分不等于 CGEP 划分。",
+      "access_status": "author_artifact_available",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/maven-aecr/example.json"
+    },
+    {
+      "id": "esc-aecr",
+      "name": "ESC-AECR",
+      "category": "abstract_rules",
+      "description": "具体因果事件对和抽象因果规则的配对资源。",
+      "project_use": "规则归纳、质量评估与规则检索。",
+      "sources": [
+        "https://anonymous.4open.science/r/AECR-AFAF/",
+        "https://arxiv.org/abs/2608.05205"
+      ],
+      "paper": "https://arxiv.org/abs/2608.05205",
+      "version": "ESC-AECR（分别733/180条规则，文献报告）",
+      "cautions": "规则库构建文档和下游测试文档的重叠需核查；规则检索划分不等于 CGEP 划分。",
+      "access_status": "author_artifact_available",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/esc-aecr/example.json"
+    },
+    {
+      "id": "ev2",
+      "name": "EV² / EV2",
+      "category": "event_reasoning",
+      "description": "模式层、实例层的CEC与CRR多关系推理基准。",
+      "project_use": "分别评价模式知识和实例关系推理。",
+      "sources": [
+        "https://github.com/TZWwww/EV2"
+      ],
+      "paper": "https://arxiv.org/abs/2404.17513",
+      "version": "四个官方 JSONL 文件 @ 41dc03061fa2658ac57f75664e484e1a8e625f35",
+      "cautions": "S_CEC、I_CEC、S_CRR、I_CRR 分项报告；下载不等于获得再分发许可。",
+      "access_status": "downloadable_license_unverified",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/TZWwww/EV2/41dc03061fa2658ac57f75664e484e1a8e625f35/data/I_CEC.jsonl",
+          "path": "datasets/ev2/raw/I_CEC.jsonl",
+          "bundled": false,
+          "sha256": "e5e88aec21d3d42bcdd8b36a4482a0cc8894045b7520dfe6f3090fafa472c3c0",
+          "upstream_commit": "41dc03061fa2658ac57f75664e484e1a8e625f35"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TZWwww/EV2/41dc03061fa2658ac57f75664e484e1a8e625f35/data/I_CRR.jsonl",
+          "path": "datasets/ev2/raw/I_CRR.jsonl",
+          "bundled": false,
+          "sha256": "de4e8b7c9920a37c6467a2373e1cd6974a69a721b9172f0b688a7e9e39df5297",
+          "upstream_commit": "41dc03061fa2658ac57f75664e484e1a8e625f35"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TZWwww/EV2/41dc03061fa2658ac57f75664e484e1a8e625f35/data/S_CEC.jsonl",
+          "path": "datasets/ev2/raw/S_CEC.jsonl",
+          "bundled": false,
+          "sha256": "a14fce9e8398bec7a7fae0f2240fc346b9e243bb0a48a83bc26b21d05d8e1a29",
+          "upstream_commit": "41dc03061fa2658ac57f75664e484e1a8e625f35"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/TZWwww/EV2/41dc03061fa2658ac57f75664e484e1a8e625f35/data/S_CRR.jsonl",
+          "path": "datasets/ev2/raw/S_CRR.jsonl",
+          "bundled": false,
+          "sha256": "cdb7f8c411dc30da72e4a5eb69c867281a169e55101d7df7ba5dac4a2e65ccfa",
+          "upstream_commit": "41dc03061fa2658ac57f75664e484e1a8e625f35"
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/ev2/example.json"
+    },
+    {
+      "id": "gdelt-lamp",
+      "name": "GDELT（LAMP版本）",
+      "category": "structured_prediction",
+      "description": "LAMP论文预处理的结构化政治事件序列。",
+      "project_use": "事件属性排序；ICEWS还用于发生时间预测。",
+      "sources": [
+        "https://github.com/iLampard/lamp",
+        "https://drive.google.com/file/d/1XbPiPTNVprKaQwMvk9McaY2USJrEkUj6/view"
+      ],
+      "paper": "https://arxiv.org/abs/2305.16646",
+      "version": "GDELT: 2022-01至07；ICEWS: 2022-10-11至2023-02-28",
+      "cautions": "不得用 ICEWS14/ICEWS18 或其他 GDELT 版本替换；本示例的国家和事件均为虚构。",
+      "access_status": "manual_acquisition",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/gdelt-lamp/example.json"
+    },
+    {
+      "id": "icews-lamp",
+      "name": "ICEWS（LAMP版本）",
+      "category": "structured_prediction",
+      "description": "LAMP论文预处理的结构化政治事件序列。",
+      "project_use": "事件属性排序；ICEWS还用于发生时间预测。",
+      "sources": [
+        "https://github.com/iLampard/lamp",
+        "https://drive.google.com/file/d/1XbPiPTNVprKaQwMvk9McaY2USJrEkUj6/view"
+      ],
+      "paper": "https://arxiv.org/abs/2305.16646",
+      "version": "GDELT: 2022-01至07；ICEWS: 2022-10-11至2023-02-28",
+      "cautions": "不得用 ICEWS14/ICEWS18 或其他 GDELT 版本替换；本示例的国家和事件均为虚构。",
+      "access_status": "manual_acquisition",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/icews-lamp/example.json"
+    },
+    {
+      "id": "mirai",
+      "name": "MIRAI（论文10设置）",
+      "category": "text_prediction",
+      "description": "结构化历史事件与新闻文本结合的关系集合预测。",
+      "project_use": "新闻证据驱动的事件预测。",
+      "sources": [
+        "https://github.com/yecchen/MIRAI",
+        "https://doi.org/10.1145/3774904.3792306"
+      ],
+      "paper": null,
+      "version": "Thinking Bidirectionally 使用的查询/筛选版本",
+      "cautions": "MIRAI 原始仓库是资源起点；未核实其与论文10所用705查询版本完全一致，不将原版统计直接套用到论文10。",
+      "access_status": "version_verification_required",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/mirai/example.json"
+    },
+    {
+      "id": "gdelt-500",
+      "name": "GDELT-500（论文10改造版）",
+      "category": "text_prediction",
+      "description": "补充历史新闻并筛选查询的GDELT派生资源。",
+      "project_use": "历史时期与文本条件变化的稳健性。",
+      "sources": [
+        "https://doi.org/10.1145/3774904.3792306"
+      ],
+      "paper": null,
+      "version": "Thinking Bidirectionally: 420查询、189,743新闻、119,388历史事件（文献报告）",
+      "cautions": "仅登记这一改造版本；尚未核实其独立发布地址，不以同名资源代替。",
+      "access_status": "version_verification_required",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/gdelt-500/example.json"
+    },
+    {
+      "id": "openepbench",
+      "name": "OpenEPBench",
+      "category": "open_ended_prediction",
+      "description": "中英文自由文本未来事件预测。",
+      "project_use": "开放式和中文预测验证。",
+      "sources": [
+        "https://github.com/ncepu-eai/OpenEP"
+      ],
+      "paper": "https://github.com/ncepu-eai/OpenEP",
+      "version": "作者公开 data/data/cn_valid_data.json 与 en_valid_data.json",
+      "cautions": "以每个问题形成时间作为截点；新闻截断不能清除模型参数记忆。",
+      "access_status": "bundled",
+      "data_license": "MIT（作者仓库许可；新闻原文的权利仍归原权利人）",
+      "example_kind": "upstream_record",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/ncepu-eai/OpenEP/6357dc55dd28881f0877b8fd7fc55a5374cc2abf/data/question_samples.json",
+          "path": "datasets/openepbench/data/question_samples.json",
+          "sha256": "f8454abda4fc539be3c66ff6e52b11f8da06f1317c4f2fd325b66f8b6726d94f",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ncepu-eai/OpenEP/6357dc55dd28881f0877b8fd7fc55a5374cc2abf/data/answer_samples.json",
+          "path": "datasets/openepbench/data/answer_samples.json",
+          "sha256": "30c369c265e93464060b417b7c0046ce56d166458df23b81321004717a3a47f9",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ncepu-eai/OpenEP/6357dc55dd28881f0877b8fd7fc55a5374cc2abf/data/data/cn_valid_data.json",
+          "path": "datasets/openepbench/data/cn_valid_data.json",
+          "sha256": "33848189ebf2732836908dd21ee32a7e6cf96d9de7cd9c778fc584f4d3644b22",
+          "bundled": true
+        },
+        {
+          "url": "https://raw.githubusercontent.com/ncepu-eai/OpenEP/6357dc55dd28881f0877b8fd7fc55a5374cc2abf/data/data/en_valid_data.json",
+          "path": "datasets/openepbench/data/en_valid_data.json",
+          "sha256": "43851345a0622468348ec8d9a184deb73a6a5ead8e05f9526904a241fd602cf0",
+          "bundled": true
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "example_provenance": {
+        "repository": "ncepu-eai/OpenEP",
+        "commit": "6357dc55dd28881f0877b8fd7fc55a5374cc2abf",
+        "selection": "question_samples.json与answer_samples.json中id=0的配对样本"
+      },
+      "example_path": "datasets/openepbench/example.json"
+    },
+    {
+      "id": "schemaaug-kidnapping",
+      "name": "SchemaAug / Kidnapping",
+      "category": "extraction_augmentation",
+      "description": "SchemaAug低资源新闻抽取场景子集。",
+      "project_use": "模式引导的数据增强和上游事件抽取。",
+      "sources": [
+        "https://aclanthology.org/2024.lrec-main.1253/"
+      ],
+      "paper": "https://aclanthology.org/2024.lrec-main.1253/",
+      "version": "论文2/SchemaAug中的kidnapping子集",
+      "cautions": "原始新闻及标注的发布和权限待核实；增强样本仅进入训练集，不能当作未来事件预测金标准。",
+      "access_status": "manual_acquisition",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/schemaaug-kidnapping/example.json"
+    },
+    {
+      "id": "schemaaug-ukraine-crisis",
+      "name": "SchemaAug / Ukraine Crisis",
+      "category": "extraction_augmentation",
+      "description": "SchemaAug低资源新闻抽取场景子集。",
+      "project_use": "模式引导的数据增强和上游事件抽取。",
+      "sources": [
+        "https://aclanthology.org/2024.lrec-main.1253/"
+      ],
+      "paper": "https://aclanthology.org/2024.lrec-main.1253/",
+      "version": "论文2/SchemaAug中的Ukraine crisis子集",
+      "cautions": "原始新闻及标注的发布和权限待核实；增强样本仅进入训练集，不能当作未来事件预测金标准。",
+      "access_status": "manual_acquisition",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/schemaaug-ukraine-crisis/example.json"
+    },
+    {
+      "id": "schemaaug-mass-shooting",
+      "name": "SchemaAug / Mass Shooting",
+      "category": "extraction_augmentation",
+      "description": "SchemaAug低资源新闻抽取场景子集。",
+      "project_use": "模式引导的数据增强和上游事件抽取。",
+      "sources": [
+        "https://aclanthology.org/2024.lrec-main.1253/"
+      ],
+      "paper": "https://aclanthology.org/2024.lrec-main.1253/",
+      "version": "论文2/SchemaAug中的mass shooting子集",
+      "cautions": "原始新闻及标注的发布和权限待核实；增强样本仅进入训练集，不能当作未来事件预测金标准。",
+      "access_status": "manual_acquisition",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/schemaaug-mass-shooting/example.json"
+    },
+    {
+      "id": "schemaaug-disease-outbreak",
+      "name": "SchemaAug / Disease Outbreak",
+      "category": "extraction_augmentation",
+      "description": "SchemaAug低资源新闻抽取场景子集。",
+      "project_use": "模式引导的数据增强和上游事件抽取。",
+      "sources": [
+        "https://aclanthology.org/2024.lrec-main.1253/"
+      ],
+      "paper": "https://aclanthology.org/2024.lrec-main.1253/",
+      "version": "论文2/SchemaAug中的disease outbreak子集",
+      "cautions": "原始新闻及标注的发布和权限待核实；增强样本仅进入训练集，不能当作未来事件预测金标准。",
+      "access_status": "manual_acquisition",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/schemaaug-disease-outbreak/example.json"
+    },
+    {
+      "id": "schemaaug-wcep",
+      "name": "SchemaAug / WCEP",
+      "category": "extraction_augmentation",
+      "description": "SchemaAug低资源新闻抽取场景子集。",
+      "project_use": "模式引导的数据增强和上游事件抽取。",
+      "sources": [
+        "https://aclanthology.org/2024.lrec-main.1253/"
+      ],
+      "paper": "https://aclanthology.org/2024.lrec-main.1253/",
+      "version": "论文2/SchemaAug中的international conflict子集",
+      "cautions": "原始新闻及标注的发布和权限待核实；增强样本仅进入训练集，不能当作未来事件预测金标准。",
+      "access_status": "manual_acquisition",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/schemaaug-wcep/example.json"
+    },
+    {
+      "id": "conceptnet",
+      "name": "ConceptNet",
+      "category": "commonsense_knowledge",
+      "description": "概念级常识关系知识资源。",
+      "project_use": "本体先验与关系候选。",
+      "sources": [
+        "https://conceptnet.io/",
+        "https://github.com/commonsense/conceptnet5"
+      ],
+      "paper": null,
+      "version": "ConceptNet 5；采用具体发布版本时需固定",
+      "cautions": "代码许可与数据许可不同；知识边不是特定新闻事件的真值。",
+      "access_status": "manual_acquisition",
+      "data_license": "数据通常为 CC-BY-SA-4.0，须以所下载发布说明为准",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/conceptnet/example.json"
+    },
+    {
+      "id": "eeckg",
+      "name": "EECKG",
+      "category": "commonsense_knowledge",
+      "description": "EV²构建所用事件演化常识知识资源。",
+      "project_use": "事件类型与关系的先验知识。",
+      "sources": [
+        "https://arxiv.org/abs/2404.17513"
+      ],
+      "paper": null,
+      "version": "EV²所引 EECKG；独立原始资源地址待核实",
+      "cautions": "EV²是评测基准，不等于EECKG全量知识图谱；不把两者作为同一数据集。",
+      "access_status": "source_verification_required",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/eeckg/example.json"
+    },
+    {
+      "id": "cyberbullying-local",
+      "name": "自建网络暴力事件语料（待建设）",
+      "category": "custom_corpus",
+      "description": "项目拟建设的事件、关系和模式知识库。",
+      "project_use": "目标场景的最终验证。",
+      "sources": [],
+      "paper": null,
+      "version": "拟建模板，无真实语料",
+      "cautions": "不表示已经采集或标注完成；本示例不包含真实人物与平台账号。",
+      "access_status": "planned",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/cyberbullying-local/example.json"
+    },
+    {
+      "id": "maven-ere",
+      "name": "MAVEN-ERE",
+      "category": "relation_extraction",
+      "description": "多种事件关系的文档级标注语料。",
+      "project_use": "原始文本中的事件关系抽取评测。",
+      "sources": [
+        "https://github.com/THU-KEG/MAVEN-ERE"
+      ],
+      "paper": "https://arxiv.org/abs/2211.07342",
+      "version": "原始MAVEN-ERE；固定作者划分",
+      "cautions": "与 MAVEN-CGEP 和 MAVEN-AECR 分开管理；原始关系标签和token索引需按作者格式解析。",
+      "access_status": "manual_acquisition",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/maven-ere/example.json"
+    },
+    {
+      "id": "matres",
+      "name": "MATRES",
+      "category": "relation_extraction",
+      "description": "面向事件时间关系的人工标注。",
+      "project_use": "时序关系抽取。",
+      "sources": [
+        "https://github.com/qiangning/MATRES"
+      ],
+      "paper": null,
+      "version": "作者发布的关系标注；需配套原文",
+      "cautions": "标注文件中的 BEFORE/AFTER/EQUAL/VAGUE 不能直接当因果；原文的获取条件独立确认。",
+      "access_status": "downloadable_license_unverified",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [
+        {
+          "url": "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/aquaint.txt",
+          "path": "datasets/matres/raw/aquaint.txt",
+          "sha256": "eb42b25d873809dfa0494ee0564da30f153942a2af663f5a74660928210a340b",
+          "bundled": false,
+          "upstream_commit": "ccac302b546401a1e55f2bd6097913083b5cd8d6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/platinum.txt",
+          "path": "datasets/matres/raw/platinum.txt",
+          "sha256": "346be061630c01e8ac2624e16ed46b24506bf152334b0dee275ada7943d70daa",
+          "bundled": false,
+          "upstream_commit": "ccac302b546401a1e55f2bd6097913083b5cd8d6"
+        },
+        {
+          "url": "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/timebank.txt",
+          "path": "datasets/matres/raw/timebank.txt",
+          "sha256": "217c7a5b51c7fa5fe5feed36dd10c6feed5e3dfa4dd736d45ccb37bea21bcb09",
+          "bundled": false,
+          "upstream_commit": "ccac302b546401a1e55f2bd6097913083b5cd8d6"
+        }
+      ],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/matres/example.json"
+    },
+    {
+      "id": "hieve",
+      "name": "HiEve（文本事件层级）",
+      "category": "relation_extraction",
+      "description": "新闻中的事件层级及子事件关系语料。",
+      "project_use": "层级关系抽取。",
+      "sources": [
+        "https://aclanthology.org/L14-1020/"
+      ],
+      "paper": "https://aclanthology.org/L14-1020/",
+      "version": "文本事件层级语料；原始地址需进一步核查",
+      "cautions": "已核实 HiEve 文本事件层级论文；原始数据下载地址尚待核实。注意区分同名 Human-in-Events 视频数据集。",
+      "access_status": "source_verification_required",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/hieve/example.json"
+    },
+    {
+      "id": "eventstoryline",
+      "name": "EventStoryLine / ESC",
+      "category": "relation_extraction",
+      "description": "新闻故事线的事件时间及因果标注。",
+      "project_use": "原始新闻事件关系抽取。",
+      "sources": [
+        "https://github.com/tommasoc80/EventStoryLine"
+      ],
+      "paper": null,
+      "version": "作者公开版本；正式使用固定具体提交和语料版本",
+      "cautions": "不同发布版和共指扩展预处理可能改变因果边数；ESC-CGEP是派生任务，不应混用。",
+      "access_status": "downloadable_license_unverified",
+      "data_license": "未核实数据许可",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/eventstoryline/example.json"
+    },
+    {
+      "id": "response",
+      "name": "RESPONSE",
+      "category": "crisis_reasoning",
+      "description": "灾害场景下结合资源缺失、时间窗口和解释的常识问答。",
+      "project_use": "危机场景中的时限推理与解释评测。",
+      "sources": [
+        "https://doi.org/10.5522/04/26010064.v1",
+        "https://arxiv.org/abs/2503.11348",
+        "https://discovery.ucl.ac.uk/id/eprint/10213506/"
+      ],
+      "paper": "https://arxiv.org/abs/2503.11348",
+      "version": "数据 DOI v1；论文 ECAI 2025，DOI 10.3233/FAIA250904",
+      "cautions": "官方数据站及文件下载在本环境返回403；以下为项目自编接口演示，非官方原始样本。回答仅用于研究评测，不是现实应急指引。",
+      "access_status": "download_blocked_403",
+      "data_license": "CC-BY-NC-SA-4.0（DataCite DOI元数据已核实）",
+      "example_kind": "illustrative_template",
+      "assets": [],
+      "verified_on": "2026-11-07",
+      "example_path": "datasets/response/example.json",
+      "publication": {
+        "venue": "ECAI 2025",
+        "paper_doi": "10.3233/FAIA250904",
+        "pages": "967-974",
+        "verified_source": "https://discovery.ucl.ac.uk/id/eprint/10213506/"
+      },
+      "reported_statistics": {
+        "annotated_instances": 1789,
+        "question_sets": 6037,
+        "note": "论文摘要报告，尚未从下载数据重新统计"
+      }
+    }
+  ]
+}

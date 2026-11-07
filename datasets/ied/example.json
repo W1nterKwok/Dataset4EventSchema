@@ -1,0 +1,34 @@
+{
+  "_说明": {
+    "dataset": "IED 新闻实例图",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "events": "模式事件节点；原始资源的节点字段请以作者文件为准。",
+      "relations": "显式区分 before、causes、has_subevent；不得把时序直接当因果。",
+      "scenario": "场景名；建议以完整场景留出评测。"
+    }
+  },
+  "record": {
+    "scenario": "IED news graph",
+    "events": [
+      {
+        "id": "e1",
+        "text": "Heavy rain occurs."
+      },
+      {
+        "id": "e2",
+        "text": "Residents evacuate."
+      }
+    ],
+    "relations": [
+      {
+        "source": "e1",
+        "target": "e2",
+        "type": "before"
+      }
+    ]
+  }
+}

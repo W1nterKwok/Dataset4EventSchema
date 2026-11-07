@@ -1,0 +1,48 @@
+{
+  "id": "ev2",
+  "name": "EV² / EV2",
+  "category": "event_reasoning",
+  "description": "模式层、实例层的CEC与CRR多关系推理基准。",
+  "project_use": "分别评价模式知识和实例关系推理。",
+  "sources": [
+    "https://github.com/TZWwww/EV2"
+  ],
+  "paper": "https://arxiv.org/abs/2404.17513",
+  "version": "四个官方 JSONL 文件 @ 41dc03061fa2658ac57f75664e484e1a8e625f35",
+  "cautions": "S_CEC、I_CEC、S_CRR、I_CRR 分项报告；下载不等于获得再分发许可。",
+  "access_status": "downloadable_license_unverified",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [
+    {
+      "url": "https://raw.githubusercontent.com/TZWwww/EV2/41dc03061fa2658ac57f75664e484e1a8e625f35/data/I_CEC.jsonl",
+      "path": "datasets/ev2/raw/I_CEC.jsonl",
+      "bundled": false,
+      "sha256": "e5e88aec21d3d42bcdd8b36a4482a0cc8894045b7520dfe6f3090fafa472c3c0",
+      "upstream_commit": "41dc03061fa2658ac57f75664e484e1a8e625f35"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/TZWwww/EV2/41dc03061fa2658ac57f75664e484e1a8e625f35/data/I_CRR.jsonl",
+      "path": "datasets/ev2/raw/I_CRR.jsonl",
+      "bundled": false,
+      "sha256": "de4e8b7c9920a37c6467a2373e1cd6974a69a721b9172f0b688a7e9e39df5297",
+      "upstream_commit": "41dc03061fa2658ac57f75664e484e1a8e625f35"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/TZWwww/EV2/41dc03061fa2658ac57f75664e484e1a8e625f35/data/S_CEC.jsonl",
+      "path": "datasets/ev2/raw/S_CEC.jsonl",
+      "bundled": false,
+      "sha256": "a14fce9e8398bec7a7fae0f2240fc346b9e243bb0a48a83bc26b21d05d8e1a29",
+      "upstream_commit": "41dc03061fa2658ac57f75664e484e1a8e625f35"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/TZWwww/EV2/41dc03061fa2658ac57f75664e484e1a8e625f35/data/S_CRR.jsonl",
+      "path": "datasets/ev2/raw/S_CRR.jsonl",
+      "bundled": false,
+      "sha256": "cdb7f8c411dc30da72e4a5eb69c867281a169e55101d7df7ba5dac4a2e65ccfa",
+      "upstream_commit": "41dc03061fa2658ac57f75664e484e1a8e625f35"
+    }
+  ],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/ev2/example.json"
+}

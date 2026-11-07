@@ -1,0 +1,17 @@
+{
+  "id": "cyberbullying-local",
+  "name": "自建网络暴力事件语料（待建设）",
+  "category": "custom_corpus",
+  "description": "项目拟建设的事件、关系和模式知识库。",
+  "project_use": "目标场景的最终验证。",
+  "sources": [],
+  "paper": null,
+  "version": "拟建模板，无真实语料",
+  "cautions": "不表示已经采集或标注完成；本示例不包含真实人物与平台账号。",
+  "access_status": "planned",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/cyberbullying-local/example.json"
+}

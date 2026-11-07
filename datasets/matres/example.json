@@ -1,0 +1,21 @@
+{
+  "_说明": {
+    "dataset": "MATRES",
+    "kind": "illustrative_template",
+    "is_official_sample": false,
+    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
+    "provenance": null,
+    "字段注释": {
+      "event_pair": "事件实例编号；需关联TimeML原文。",
+      "relation": "原始标签保留大写，本示例记录自编。"
+    }
+  },
+  "record": {
+    "document_id": "demo-001",
+    "event_pair": [
+      "ei1",
+      "ei2"
+    ],
+    "relation": "BEFORE"
+  }
+}

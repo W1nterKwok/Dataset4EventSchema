@@ -1,0 +1,19 @@
+{
+  "id": "maven-ere",
+  "name": "MAVEN-ERE",
+  "category": "relation_extraction",
+  "description": "多种事件关系的文档级标注语料。",
+  "project_use": "原始文本中的事件关系抽取评测。",
+  "sources": [
+    "https://github.com/THU-KEG/MAVEN-ERE"
+  ],
+  "paper": "https://arxiv.org/abs/2211.07342",
+  "version": "原始MAVEN-ERE；固定作者划分",
+  "cautions": "与 MAVEN-CGEP 和 MAVEN-AECR 分开管理；原始关系标签和token索引需按作者格式解析。",
+  "access_status": "manual_acquisition",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/maven-ere/example.json"
+}

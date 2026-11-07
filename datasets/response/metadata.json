@@ -1,0 +1,32 @@
+{
+  "id": "response",
+  "name": "RESPONSE",
+  "category": "crisis_reasoning",
+  "description": "灾害场景下结合资源缺失、时间窗口和解释的常识问答。",
+  "project_use": "危机场景中的时限推理与解释评测。",
+  "sources": [
+    "https://doi.org/10.5522/04/26010064.v1",
+    "https://arxiv.org/abs/2503.11348",
+    "https://discovery.ucl.ac.uk/id/eprint/10213506/"
+  ],
+  "paper": "https://arxiv.org/abs/2503.11348",
+  "version": "数据 DOI v1；论文 ECAI 2025，DOI 10.3233/FAIA250904",
+  "cautions": "官方数据站及文件下载在本环境返回403；以下为项目自编接口演示，非官方原始样本。回答仅用于研究评测，不是现实应急指引。",
+  "access_status": "download_blocked_403",
+  "data_license": "CC-BY-NC-SA-4.0（DataCite DOI元数据已核实）",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/response/example.json",
+  "publication": {
+    "venue": "ECAI 2025",
+    "paper_doi": "10.3233/FAIA250904",
+    "pages": "967-974",
+    "verified_source": "https://discovery.ucl.ac.uk/id/eprint/10213506/"
+  },
+  "reported_statistics": {
+    "annotated_instances": 1789,
+    "question_sets": 6037,
+    "note": "论文摘要报告，尚未从下载数据重新统计"
+  }
+}

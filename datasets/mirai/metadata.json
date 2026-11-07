@@ -1,0 +1,20 @@
+{
+  "id": "mirai",
+  "name": "MIRAI（论文10设置）",
+  "category": "text_prediction",
+  "description": "结构化历史事件与新闻文本结合的关系集合预测。",
+  "project_use": "新闻证据驱动的事件预测。",
+  "sources": [
+    "https://github.com/yecchen/MIRAI",
+    "https://doi.org/10.1145/3774904.3792306"
+  ],
+  "paper": null,
+  "version": "Thinking Bidirectionally 使用的查询/筛选版本",
+  "cautions": "MIRAI 原始仓库是资源起点；未核实其与论文10所用705查询版本完全一致，不将原版统计直接套用到论文10。",
+  "access_status": "version_verification_required",
+  "data_license": "未核实数据许可",
+  "example_kind": "illustrative_template",
+  "assets": [],
+  "verified_on": "2026-11-07",
+  "example_path": "datasets/mirai/example.json"
+}
