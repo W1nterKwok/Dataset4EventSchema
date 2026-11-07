@@ -32,6 +32,8 @@ python scripts/datasets.py fetch ev2
 
 ## 来源
 
+- **来源论文**：[A Comprehensive Evaluation on Event Reasoning of Large Language Models](https://arxiv.org/abs/2404.17513)（Zhengwei Tao 等，AAAI 2025；预印本发布于 2024 年）。
+
 - https://github.com/TZWwww/EV2
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

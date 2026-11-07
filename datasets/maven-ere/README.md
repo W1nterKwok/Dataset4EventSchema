@@ -32,6 +32,8 @@ python scripts/datasets.py show maven-ere
 
 ## 来源
 
+- **来源论文**：[MAVEN-ERE: A Unified Large-scale Dataset for Event Coreference, Temporal, Causal, and Subevent Relation Extraction](https://arxiv.org/abs/2211.07342)（Xiaozhi Wang 等，EMNLP 2022）。
+
 - https://github.com/THU-KEG/MAVEN-ERE
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

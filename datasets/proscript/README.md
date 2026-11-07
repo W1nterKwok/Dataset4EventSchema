@@ -34,6 +34,10 @@ python scripts/datasets.py fetch proscript
 
 ## 来源
 
+- **来源论文**：[proScript: Partially Ordered Scripts Generation](https://aclanthology.org/2021.findings-emnlp.184/)（Keisuke Sakaguchi 等，Findings of EMNLP 2021）。
+- **本项目所参考的评测论文**：[Open-Domain Hierarchical Event Schema Induction by Incremental Prompting and Verification](https://aclanthology.org/2023.acl-long.312/)（Sha Li 等，ACL 2023）。
+- **版本说明**：原始 proScript 发布版与后续论文筛选的评测子集应分别核对，不能仅凭名称视为同一版本。
+
 - https://keisuke-sakaguchi.github.io/proscript/
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

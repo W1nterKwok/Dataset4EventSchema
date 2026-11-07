@@ -32,6 +32,9 @@ python scripts/datasets.py show conceptnet
 
 ## 来源
 
+- **数据资源论文**：[ConceptNet 5.5: An Open Multilingual Graph of General Knowledge](https://doi.org/10.1609/aaai.v31i1.11164)（Robyn Speer、Joshua Chin、Catherine Havasi，AAAI 2017）。
+- **版本说明**：本仓库下载的是 ConceptNet 5.7 发布版；论文介绍 5.5，是该资源的引用论文，数据版本以下载清单为准。
+
 - https://conceptnet.io/
 - https://github.com/commonsense/conceptnet5
 

@@ -32,6 +32,10 @@ python scripts/datasets.py show eeckg
 
 ## 来源
 
+- **来源论文**：[ECCKG: An Eventuality-Centric Commonsense Knowledge Graph](https://doi.org/10.1007/978-3-031-10983-6_44)（Ya Wang、Cungen Cao、Zhiwen Chen、Shi Wang，KSEM 2022）。
+- **本项目参考的使用论文**：[A Comprehensive Evaluation on Event Reasoning of Large Language Models](https://arxiv.org/abs/2404.17513)（Zhengwei Tao 等，AAAI 2025；预印本发布于 2024 年）。
+- **名称说明**：原始资源名称是 ECCKG；本仓库沿用既有目录名 `eeckg`。EV2 论文使用该资源，并非该资源的首发论文。
+
 - https://arxiv.org/abs/2404.17513
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

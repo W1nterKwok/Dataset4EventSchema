@@ -32,6 +32,10 @@ python scripts/datasets.py fetch resin-11
 
 ## 来源
 
+- **数据集论文**：[RESIN-11: Schema-guided Event Prediction for 11 Newsworthy Scenarios](https://aclanthology.org/2022.naacl-demo.7/)（Xinya Du 等，NAACL 2022 System Demonstrations）。
+- **本项目所参考的评测论文**：[Open-Domain Hierarchical Event Schema Induction by Incremental Prompting and Verification](https://aclanthology.org/2023.acl-long.312/)（Sha Li 等，ACL 2023）。
+- **版本说明**：当前保存的是官方公开模式库及旧版参考库；与上述评测论文中 RESIN-11 金标准的场景映射尚未逐项核实。
+
 - https://github.com/limanling/temporal-graph-schema
 - https://github.com/raspberryice/inc-schema
 

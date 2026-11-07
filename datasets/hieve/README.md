@@ -32,6 +32,9 @@ python scripts/datasets.py show hieve
 
 ## 来源
 
+- **来源论文**：[HiEve: A Corpus for Extracting Event Hierarchies from News Stories](https://aclanthology.org/L14-1020/)（Goran Glavaš 等，LREC 2014）。
+- **版本说明**：该论文为原始 HiEve 语料论文；当前保存的清洗版及传递闭包处理情况见下载状态与清单。
+
 - https://aclanthology.org/L14-1020/
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

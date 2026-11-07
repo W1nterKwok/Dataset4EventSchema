@@ -40,6 +40,10 @@ python scripts/datasets.py validate
 
 ## 来源
 
+- **当前派生数据集来源论文（ElizBench）**：[Benchmarking and enhancing the ability of large language models on event generalization](https://doi.org/10.1016/j.ipm.2026.104851)（Shuai Shao 等，Information Processing & Management，2026）。
+- **上游 EV2 数据集论文**：[A Comprehensive Evaluation on Event Reasoning of Large Language Models](https://arxiv.org/abs/2404.17513)（Zhengwei Tao 等，AAAI 2025；预印本发布于 2024 年）。
+- **版本说明**：当前目录保存 ElizBench 发布的 EV2 事件泛化数据，不代表上游 EV2 的完整原始发布版。
+
 - [作者仓库](https://github.com/michiru-39/ElizBench_SSR-EG)
 - [固定版本数据目录](https://github.com/michiru-39/ElizBench_SSR-EG/tree/fab7749d89a44328624e4477f8cb2cf0b81ca7c6/ElizBench-dataset)
 - [论文 DOI](https://doi.org/10.1016/j.ipm.2026.104851)

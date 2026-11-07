@@ -32,6 +32,10 @@ python scripts/datasets.py show gdelt-lamp
 
 ## 来源
 
+- **当前预处理版本来源论文**：[Language Models Can Improve Event Prediction by Few-Shot Abductive Reasoning](https://arxiv.org/abs/2305.16646)（Xiaoming Shi 等，NeurIPS 2023）。
+- **上游 GDELT 数据资源论文**：[GDELT: Global Data on Events, Location and Tone, 1979–2012](https://data.gdeltproject.org/documentation/ISA.2013.GDELT.pdf)（Kalev Leetaru、Philip A. Schrodt，International Studies Association Annual Convention，2013）。
+- **版本说明**：当前文件是 LAMP 发布的 GDELT 预处理版本，不代表 GDELT 全库。
+
 - https://github.com/iLampard/lamp
 - https://drive.google.com/file/d/1XbPiPTNVprKaQwMvk9McaY2USJrEkUj6/view
 

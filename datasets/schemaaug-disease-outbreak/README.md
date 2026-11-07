@@ -32,6 +32,11 @@ python scripts/datasets.py show schemaaug-disease-outbreak
 
 ## 来源
 
+- **SchemaAug 实验数据对应论文**：[Schema-based Data Augmentation for Event Extraction](https://aclanthology.org/2024.lrec-main.1253/)（Xiaomeng Jin、Heng Ji，LREC-COLING 2024）。
+- **本项目参考的学位论文**：[Knowledge-aware data generation](https://hdl.handle.net/2142/129847)（Xiaomeng Jin，University of Illinois Urbana-Champaign 博士学位论文，2025，第 3 章）。
+- **当前已取得辅助模式库的来源论文**：[RESIN-11: Schema-guided Event Prediction for 11 Newsworthy Scenarios](https://aclanthology.org/2022.naacl-demo.7/)（Xinya Du 等，NAACL 2022 System Demonstrations）。
+- **版本说明**：当前仅保存 RESIN 辅助模式 JSON，尚未取得该场景完整的 SchemaAug 新闻语料；辅助模式库与论文中的新闻样本应分开引用。
+
 - https://aclanthology.org/2024.lrec-main.1253/
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

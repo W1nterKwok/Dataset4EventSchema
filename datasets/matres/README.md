@@ -32,6 +32,8 @@ python scripts/datasets.py fetch matres
 
 ## 来源
 
+- **来源论文**：[A Multi-Axis Annotation Scheme for Event Temporal Relations](https://aclanthology.org/P18-1122/)（Qiang Ning、Hao Wu、Dan Roth，ACL 2018）。
+
 - https://github.com/qiangning/MATRES
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

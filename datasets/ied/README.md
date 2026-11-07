@@ -32,6 +32,10 @@ python scripts/datasets.py show ied
 
 ## 来源
 
+- **当前公开图数据的来源论文**：[The Future is not One-dimensional: Complex Event Schema Induction by Graph Modeling for Event Prediction](https://aclanthology.org/2021.emnlp-main.422/)（Manling Li 等，EMNLP 2021）。
+- **本项目参考的后续使用论文**：[ReST-Pre: Event prediction by spatial-temporal structural replay on generative implicit event pattern induction](https://doi.org/10.1016/j.eswa.2025.130461)（Kai Huang 等，Expert Systems with Applications，2026）。
+- **版本说明**：已归档的 Wiki IED 图与原始文本来自 temporal-graph-schema；后续论文的清洗、划分和预处理版本需另行核对。
+
 - https://github.com/limanling/temporal-graph-schema
 - https://github.com/snowfalling77/ReST-Pre
 

@@ -32,6 +32,10 @@ python scripts/datasets.py show mirai
 
 ## 来源
 
+- **来源论文**：[MIRAI: Evaluating LLM Agents for Event Forecasting](https://arxiv.org/abs/2407.01231)（Chenchen Ye 等，arXiv 预印本，2024）。
+- **本项目参考的后续使用论文**：[Thinking Bidirectionally: A Reasoning and Self-Correction Approach for Text-Based Event Prediction with Large Language Models](https://doi.org/10.1145/3774904.3792306)（Liwei Qian 等，The Web Conference（WWW），2026）。
+- **版本说明**：当前归档为 MIRAI 官方发布包；后续论文筛选的数据子集与官方全量发布包并非同一版本。
+
 - https://github.com/yecchen/MIRAI
 - https://doi.org/10.1145/3774904.3792306
 

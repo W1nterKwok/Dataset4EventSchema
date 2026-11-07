@@ -32,6 +32,11 @@ python scripts/datasets.py show esc-cgep
 
 ## 来源
 
+- **CGEP 数据集来源论文**：[What Would Happen Next? Predicting Consequences from An Event Causality Graph](https://aclanthology.org/2024.findings-emnlp.45/)（Chuanhong Zhan 等，Findings of EMNLP 2024）。
+- **上游 ESC 语料论文**：[The Event StoryLine Corpus: A New Benchmark for Causal and Temporal Relation Extraction](https://aclanthology.org/W17-2711/)（Tommaso Caselli、Piek Vossen，Events and Stories in the News 2017）。
+- **本项目采用的数据入口及后续使用论文**：[Abstract Event Causal Rules: Induction and Application](https://arxiv.org/abs/2608.05205)（Ziwei Zheng、Peiqiong Chen、Bang Wang，arXiv 预印本，2026）。
+- **版本说明**：当前保存 SeDGPL 的 ESC 辅助结构及映射；它们不能直接视为 AECR 论文使用的完整 ESC-CGEP 版本。
+
 - https://anonymous.4open.science/r/AECR-AFAF/
 - https://arxiv.org/abs/2608.05205
 

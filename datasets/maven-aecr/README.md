@@ -32,6 +32,8 @@ python scripts/datasets.py show maven-aecr
 
 ## 来源
 
+- **来源论文（AECR 规则数据）**：[Abstract Event Causal Rules: Induction and Application](https://arxiv.org/abs/2608.05205)（Ziwei Zheng、Peiqiong Chen、Bang Wang，arXiv 预印本，2026）。
+
 - https://anonymous.4open.science/r/AECR-AFAF/
 - https://arxiv.org/abs/2608.05205
 

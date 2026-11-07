@@ -32,6 +32,8 @@ python scripts/datasets.py show cyberbullying-local
 
 ## 来源
 
+- **来源论文**：无。本条目为本项目拟自建的网络暴力事件语料，尚无公开数据集论文；当前示例仅用于说明拟定格式。
+
 - 拟自建资源，无公开下载地址。
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

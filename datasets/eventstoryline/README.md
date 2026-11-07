@@ -32,6 +32,10 @@ python scripts/datasets.py show eventstoryline
 
 ## 来源
 
+- **原始语料来源论文**：[The Event StoryLine Corpus: A New Benchmark for Causal and Temporal Relation Extraction](https://aclanthology.org/W17-2711/)（Tommaso Caselli、Piek Vossen，Events and Stories in the News 2017）。
+- **后续众包标注论文**：[Crowdsourcing StoryLines: Harnessing the Crowd for Causal Relation Annotation](https://aclanthology.org/W18-4306/)（Tommaso Caselli、Oana Inel，Events and Stories in the News 2018）。
+- **版本说明**：当前归档含作者发布的不同版本文件；众包标注论文对应后续扩展，不应与原始专家标注混为同一版本。
+
 - https://github.com/tommasoc80/EventStoryLine
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。

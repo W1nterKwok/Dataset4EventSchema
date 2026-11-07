@@ -34,6 +34,8 @@ python scripts/datasets.py show response
 
 ## 来源
 
+- **来源论文**：[RESPONSE: Benchmarking the Ability of Language Models to Undertake Commonsense Reasoning in Crisis Situation](https://doi.org/10.3233/FAIA250904)（Aissatou Diallo 等，ECAI 2025）。
+
 - https://doi.org/10.5522/04/26010064.v1
 - https://arxiv.org/abs/2503.11348
 - https://discovery.ucl.ac.uk/id/eprint/10213506/

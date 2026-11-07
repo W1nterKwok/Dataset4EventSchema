@@ -40,6 +40,10 @@ python scripts/datasets.py validate
 
 ## 来源
 
+- **当前派生数据集来源论文（ElizBench）**：[Benchmarking and enhancing the ability of large language models on event generalization](https://doi.org/10.1016/j.ipm.2026.104851)（Shuai Shao 等，Information Processing & Management，2026）。
+- **上游 MAVEN 数据集论文**：[MAVEN: A Massive General Domain Event Detection Dataset](https://aclanthology.org/2020.emnlp-main.129/)（Xiaozhi Wang 等，EMNLP 2020）。
+- **版本说明**：当前目录保存 ElizBench 发布的 MAVEN 事件泛化数据，不代表上游 MAVEN 的完整原始发布版。
+
 - [作者仓库](https://github.com/michiru-39/ElizBench_SSR-EG)
 - [固定版本数据目录](https://github.com/michiru-39/ElizBench_SSR-EG/tree/fab7749d89a44328624e4477f8cb2cf0b81ca7c6/ElizBench-dataset)
 - [论文 DOI](https://doi.org/10.1016/j.ipm.2026.104851)

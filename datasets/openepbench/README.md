@@ -32,6 +32,8 @@ python scripts/datasets.py fetch openepbench
 
 ## 来源
 
+- **来源论文**：[OpenEP: Open-Ended Future Event Prediction](https://doi.org/10.1145/3802922)（Yong Guan 等，ACM Transactions on Information Systems，2026；预印本发布于 2024 年）。
+
 - https://github.com/ncepu-eai/OpenEP
 
 核对日期：2026-11-07。完整机器可读信息见 [`metadata.json`](metadata.json)。
