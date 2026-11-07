@@ -75,6 +75,4 @@ scripts/datasets.py            # 目录查询、下载、原始样本查看与�
 - SchemaAug仅找到辅助模式；LDC仅取得公开派生图；部分CGEP文件和论文10筛选版本仍待补齐。
 - 拟自建语料保留为项目模板，尚无现成下载包。
 
-ElizBench新增两个目录，含完整成品CSV、info统计表、真实样例和可运行的中文注释示例，详见[ElizBench说明](docs/ELIZBENCH.md)。
-
 详见[示例格式](docs/FORMAT.md)、[评测约定](docs/EVALUATION.md)、[许可说明](LICENSE-NOTICE.md)和[核验记录](docs/VERIFICATION.md)。整理日期：2026-11-07。
