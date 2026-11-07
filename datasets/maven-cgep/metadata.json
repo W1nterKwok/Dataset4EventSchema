@@ -11,10 +11,55 @@
   "paper": "https://arxiv.org/abs/2608.05205",
   "version": "MAVEN-CGEP（AECR论文采用版本）",
   "cautions": "保留官方候选集及划分；MAVEN 为512候选，ESC 为256候选，不使用本文件的两候选示例计算论文结果。",
-  "access_status": "author_artifact_available",
+  "access_status": "partial_download",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/ar-gcae-training/data/reverse_event_dict.json",
+      "path": "datasets/maven-cgep/data/ar-gcae-training/data/reverse_event_dict.json",
+      "sha256": "d5bd091ec1700f5d2a7f149764632c1683a37fda6c9d43a897144ae7bea86295",
+      "bytes": 119257,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "f53949ed"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/ar-gcae-training/data/reverse_event_dict_en.json",
+      "path": "datasets/maven-cgep/data/ar-gcae-training/data/reverse_event_dict_en.json",
+      "sha256": "16ea89d69bd62fecf1bc5f37d1cacdf8b6fd13a49da8fb6e313a568d80bbd83e",
+      "bytes": 115097,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "378ce1f8"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/ar-gcae-training/data/to_add.json",
+      "path": "datasets/maven-cgep/data/ar-gcae-training/data/to_add.json",
+      "sha256": "760a2ed37a318cc2ee222e7ab396c3454cb724303fdd6b2113235d8f6827826d",
+      "bytes": 239965,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "bf59e6d3"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/ar-gcae-training/data/to_add_en.json",
+      "path": "datasets/maven-cgep/data/ar-gcae-training/data/to_add_en.json",
+      "sha256": "91bd0de9dca6e7868e9d217844f53d822bb2169442ed87d15c1e1e0a2931e303",
+      "bytes": 176607,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "d0ec10ef"
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/maven-cgep/example.json"
+  "example_path": "datasets/maven-cgep/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "partial",
+    "scope": "已保存AECR作者项目公开的事件词典及事件映射等辅助文件。",
+    "missing": "未取得完整MAVEN-CGEP图、候选集与划分文件；SeDGPL加载器所需MAVENSubWoRe.npy不在其公开树中。",
+    "file_count": 4,
+    "bytes": 650926
+  }
 }

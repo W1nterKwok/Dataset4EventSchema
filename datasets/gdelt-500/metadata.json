@@ -10,10 +10,18 @@
   "paper": null,
   "version": "Thinking Bidirectionally: 420查询、189,743新闻、119,388历史事件（文献报告）",
   "cautions": "仅登记这一改造版本；尚未核实其独立发布地址，不以同名资源代替。",
-  "access_status": "version_verification_required",
+  "access_status": "source_unavailable",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
   "assets": [],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/gdelt-500/example.json"
+  "example_path": "datasets/gdelt-500/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "unavailable",
+    "scope": "没有取得所请求版本的真实数据文件。",
+    "missing": "未定位论文10所用420查询、189,743新闻、119,388历史事件的改造版本发布位置，不以其他同名数据替代。",
+    "file_count": 0,
+    "bytes": 0
+  }
 }

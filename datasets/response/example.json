@@ -1,43 +1,53 @@
 {
   "_说明": {
     "dataset": "RESPONSE",
-    "kind": "illustrative_template",
-    "is_official_sample": false,
-    "note": "本项目自行编写的接口示例，不是原始数据、官方字段规范或已验证的实验样本。",
-    "provenance": null,
+    "kind": "upstream_record",
+    "is_official_sample": true,
+    "note": "第一条官方完整记录，未修改问题、答案或解释；外层字段注释为本项目新增。",
+    "provenance": {
+      "file": "all_questions_v2.json",
+      "selection": "第一条完整官方记录",
+      "dataset_doi": "10.5522/04/26010064.v1",
+      "url": "https://ndownloader.figshare.com/files/46963417",
+      "official_md5": "7148f06e045bc8e4f0578f073a28c858"
+    },
     "字段注释": {
-      "scenario": "虚构灾害及地点；不是原始图片/文本。",
-      "problem/missing_resource": "问题描述及缺失资源。",
-      "qa[].timeframe": "本项目模板用immediate/week/month；论文对应立即、一周后、一月后，原始字段待下载核实。",
-      "qa[].answer/explanation": "参考答案和解释独立保存；此处均为自编文本，不是作者标签。"
+      "problem": "待解决问题。",
+      "missing_resource": "缺失的资源。",
+      "scenarios": "同一问题的灾害/地点及问句变体；question1/2/3对应三个时间范围，实际措辞以原文为准。",
+      "solution1/2/3": "三个时限的参考方案，不代表现实应急指引。",
+      "explanation1/2/3": "相应方案的解释。",
+      "id": "原始场景图像标识；不保证每个文件内唯一，也不是数据划分编号。",
+      "context": "原始数据提供的场景文本描述。"
     }
   },
   "record": {
-    "scenario": {
-      "incident": "flood",
-      "location": "fictional village"
-    },
-    "problem": "Roads are inaccessible.",
-    "missing_resource": "transport",
-    "qa": [
+    "problem": "keeping the area free of visitors that can get hurt",
+    "missing_resource": "caution tape and warning signs",
+    "scenarios": [
       {
-        "timeframe": "immediate",
-        "question": "Which immediate transport need should be assessed?",
-        "answer": "Identify who requires assistance.",
-        "explanation": "Resource needs depend on the affected people."
+        "incident": "landslide",
+        "place": "forest road",
+        "question1": "What should be done immediately if a landslide occurs on a forest road to prevent visitors from entering the hazardous area?",
+        "question2": "A few days after a landslide on a forest road, what steps should be taken to continue keeping the area secure from visitors?",
+        "question3": "Several weeks following a landslide on a forest road, what long-term measures can be implemented to maintain safety and prevent access?"
       },
       {
-        "timeframe": "week",
-        "question": "Which transport resources require review after a week?",
-        "answer": "Review the availability of transport services.",
-        "explanation": "Needs and access may have changed."
-      },
-      {
-        "timeframe": "month",
-        "question": "Which transport recovery needs remain after a month?",
-        "answer": "Review outstanding access and recovery needs.",
-        "explanation": "Long-term constraints differ from immediate needs."
+        "incident": "sinkhole",
+        "place": "forest road",
+        "question1": "What immediate actions should be taken to secure a forest road if a sinkhole appears?",
+        "question2": "What actions are essential a week after a sinkhole has formed on a forest road to ensure the area remains isolated?",
+        "question3": "What are the permanent solutions to consider a few weeks after a sinkhole event on a forest road to keep visitors safe?"
       }
-    ]
+    ],
+    "id": "landslide_in_police_station/00224.jpg",
+    "solution1": "have fire department set up a barricade",
+    "solution2": "putting up caution flags warning signs and keep out signs",
+    "solution3": "contacting contractors to build a retaining wall at the bottom",
+    "explanation1": "this keeps people out while getting the caution and warning tape",
+    "explanation2": "more of solution instead of having someone posted at the location",
+    "explanation3": "preventing further soil erosion",
+    "context": "The situation appears to show a landslide or a road collapse. The ground is severely cracked and shifted, with a gravel surface that seems to have been disrupted and slid down a slope. The surrounding area includes trees and vegetation, indicating that the collapse occurred in a forested or natural area. The situation highlights significant earth movement, likely caused by natural erosion or heavy rainfall.",
+    "ann_id": "1"
   }
 }

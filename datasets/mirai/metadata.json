@@ -11,10 +11,140 @@
   "paper": null,
   "version": "Thinking Bidirectionally 使用的查询/筛选版本",
   "cautions": "MIRAI 原始仓库是资源起点；未核实其与论文10所用705查询版本完全一致，不将原版统计直接套用到论文10。",
-  "access_status": "version_verification_required",
+  "access_status": "partial_download",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/MIRAI-original-release.zip.manifest.json",
+      "sha256": "ec0a73550d10286c917116cc70b44979080edcd85a29a74573534485ce7e65d2",
+      "bytes": 1549,
+      "bundled": true,
+      "storage": "manifest",
+      "generated": true,
+      "generated_content": "{\n  \"original_filename\": \"MIRAI-original-release.zip\",\n  \"original_bytes\": 581967516,\n  \"source_url\": \"https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t\",\n  \"chunk_bytes\": 83886080,\n  \"sha256\": \"872b4fcc68b82538dfc47918ee6f759a20463ef6aa2976e64def07a29c48ea60\",\n  \"parts\": [\n    {\n      \"file\": \"MIRAI-original-release.zip.part001\",\n      \"bytes\": 83886080,\n      \"sha256\": \"b0c2915bc6a24b77c3beaeb6a78e29a84f6d42c71e3b3b0e09ad04c57d277dbc\"\n    },\n    {\n      \"file\": \"MIRAI-original-release.zip.part002\",\n      \"bytes\": 83886080,\n      \"sha256\": \"f9ce9c87ab0dff45427f213355bf882ac262e4bdd194271aad5794c5b660970d\"\n    },\n    {\n      \"file\": \"MIRAI-original-release.zip.part003\",\n      \"bytes\": 83886080,\n      \"sha256\": \"85e18bb40cbe1802273df38c9fa399aba63eacadce14ca0988d9ca639f707e8b\"\n    },\n    {\n      \"file\": \"MIRAI-original-release.zip.part004\",\n      \"bytes\": 83886080,\n      \"sha256\": \"42bc29ace6e87142ba70132e8568ba4bcbbbc78d9861cc14136f08e9852b7490\"\n    },\n    {\n      \"file\": \"MIRAI-original-release.zip.part005\",\n      \"bytes\": 83886080,\n      \"sha256\": \"bb90fefdc8c78aacf6ee8cb34b32f6fe7c67fc5ab66f76e28f3c326fbbad8dd9\"\n    },\n    {\n      \"file\": \"MIRAI-original-release.zip.part006\",\n      \"bytes\": 83886080,\n      \"sha256\": \"f21fc2d2c7a7d3a319f975ed8771847e63c9138bdc9e60d3fea67a7d495df7db\"\n    },\n    {\n      \"file\": \"MIRAI-original-release.zip.part007\",\n      \"bytes\": 78651036,\n      \"sha256\": \"1f9627ddc12578620c55fb670037cdeb7b56c5e2d297a31764a0a09b746934fb\"\n    }\n  ]\n}"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/MIRAI-original-release.zip.part001",
+      "sha256": "b0c2915bc6a24b77c3beaeb6a78e29a84f6d42c71e3b3b0e09ad04c57d277dbc",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        0,
+        83886079
+      ],
+      "storage": "multipart",
+      "role": "original_mirai_release_version_not_verified_against_paper10"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/MIRAI-original-release.zip.part002",
+      "sha256": "f9ce9c87ab0dff45427f213355bf882ac262e4bdd194271aad5794c5b660970d",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        83886080,
+        167772159
+      ],
+      "storage": "multipart",
+      "role": "original_mirai_release_version_not_verified_against_paper10"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/MIRAI-original-release.zip.part003",
+      "sha256": "85e18bb40cbe1802273df38c9fa399aba63eacadce14ca0988d9ca639f707e8b",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        167772160,
+        251658239
+      ],
+      "storage": "multipart",
+      "role": "original_mirai_release_version_not_verified_against_paper10"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/MIRAI-original-release.zip.part004",
+      "sha256": "42bc29ace6e87142ba70132e8568ba4bcbbbc78d9861cc14136f08e9852b7490",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        251658240,
+        335544319
+      ],
+      "storage": "multipart",
+      "role": "original_mirai_release_version_not_verified_against_paper10"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/MIRAI-original-release.zip.part005",
+      "sha256": "bb90fefdc8c78aacf6ee8cb34b32f6fe7c67fc5ab66f76e28f3c326fbbad8dd9",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        335544320,
+        419430399
+      ],
+      "storage": "multipart",
+      "role": "original_mirai_release_version_not_verified_against_paper10"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/MIRAI-original-release.zip.part006",
+      "sha256": "f21fc2d2c7a7d3a319f975ed8771847e63c9138bdc9e60d3fea67a7d495df7db",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        419430400,
+        503316479
+      ],
+      "storage": "multipart",
+      "role": "original_mirai_release_version_not_verified_against_paper10"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/MIRAI-original-release.zip.part007",
+      "sha256": "1f9627ddc12578620c55fb670037cdeb7b56c5e2d297a31764a0a09b746934fb",
+      "bytes": 78651036,
+      "bundled": true,
+      "http_range": [
+        503316480,
+        581967515
+      ],
+      "storage": "multipart",
+      "role": "original_mirai_release_version_not_verified_against_paper10"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/query_tables/test/relation_query.csv",
+      "sha256": "6fdd2e8f0e8cb3ac6ffffcf08d7f92f32f9351685cdc3751e200d7c1f4a5341d",
+      "bytes": 389657,
+      "bundled": true,
+      "archive_member": "MIRAI/test/relation_query.csv",
+      "source_archive": "MIRAI-original-release.zip",
+      "role": "extracted_query_table"
+    },
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+      "path": "datasets/mirai/data/query_tables/test_subset/relation_query.csv",
+      "sha256": "e57d6192ce897504d4c562b71cc2193757b82fafa2efe6fbccc17500067b1a12",
+      "bytes": 56799,
+      "bundled": true,
+      "archive_member": "MIRAI/test_subset/relation_query.csv",
+      "source_archive": "MIRAI-original-release.zip",
+      "role": "extracted_query_table"
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/mirai/example.json"
+  "example_path": "datasets/mirai/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "partial",
+    "scope": "已保存完整MIRAI官方发布包（581,967,516字节，7片），另提取705条测试查询和100条子集查询。",
+    "missing": "原始包实测296,630条新闻、589,930条历史KG记录；不直接声称等同于论文10所列152,500历史事件的筛选版本。",
+    "file_count": 10,
+    "bytes": 582415521
+  }
 }

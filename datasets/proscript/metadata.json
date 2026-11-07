@@ -10,18 +10,28 @@
   ],
   "paper": "https://aclanthology.org/2021.findings-emnlp.184/",
   "version": "论文1使用的2,077场景子集需另行核对",
-  "cautions": "原始 proScript 全集与论文1评测子集规模不同；不提供层级关系评测。",
-  "access_status": "downloadable_license_unverified",
+  "cautions": "作者完整proscript_v1a.zip（train/dev/test）。 原始许可和数据权利以作者及原权利人要求为准。",
+  "access_status": "bundled",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
   "assets": [
     {
       "url": "https://keisuke-sakaguchi.github.io/proscript/proscript_v1a.zip",
-      "path": "datasets/proscript/raw/proscript_v1a.zip",
+      "path": "datasets/proscript/data/proscript_v1a.zip",
       "sha256": "aefe0a3f8c5e4bf70bbe5cfcfbea136b82731c29c462af016466c126a1b37cf9",
-      "bundled": false
+      "bytes": 1305768,
+      "bundled": true,
+      "upstream_commit": null
     }
   ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/proscript/example.json"
+  "example_path": "datasets/proscript/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "作者完整proscript_v1a.zip（train/dev/test）。",
+    "missing": "",
+    "file_count": 1,
+    "bytes": 1305768
+  }
 }

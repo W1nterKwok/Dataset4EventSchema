@@ -1,19 +1,74 @@
 {
   "id": "eeckg",
-  "name": "EECKG",
+  "name": "ECCKG（原清单记作EECKG）",
   "category": "commonsense_knowledge",
   "description": "EV²构建所用事件演化常识知识资源。",
   "project_use": "事件类型与关系的先验知识。",
   "sources": [
-    "https://arxiv.org/abs/2404.17513"
+    "https://zenodo.org/records/6084081",
+    "https://doi.org/10.5281/zenodo.6084081"
   ],
   "paper": null,
-  "version": "EV²所引 EECKG；独立原始资源地址待核实",
-  "cautions": "EV²是评测基准，不等于EECKG全量知识图谱；不把两者作为同一数据集。",
-  "access_status": "source_verification_required",
-  "data_license": "未核实数据许可",
+  "version": "作者Zenodo记录6084081，保留全部发布文件及官方MD5",
+  "cautions": "ECCKG作者Zenodo v1全部五个文件；逐文件MD5与Zenodo官方记录一致。 原始许可和数据权利以作者及原权利人要求为准。",
+  "access_status": "bundled",
+  "data_license": "CC-BY-4.0（作者Zenodo元数据）",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://zenodo.org/api/records/6084081/files/ECCKG.zip/content",
+      "path": "datasets/eeckg/data/ECCKG.zip",
+      "sha256": "ec44fe19a21bb6b45d652052994c61a5ac07cdb5f6fa83f7b1a7087f2fd47192",
+      "bytes": 6049797,
+      "bundled": true,
+      "upstream_checksum": "md5:8af679eacafde6941f79a37f1e06c6fb",
+      "record_doi": "10.5281/zenodo.6084081"
+    },
+    {
+      "url": "https://zenodo.org/api/records/6084081/files/acquired%20triples%20using%20rules.zip/content",
+      "path": "datasets/eeckg/data/acquired triples using rules.zip",
+      "sha256": "80221f6422a6cb6652162b93ce20807c3e4acf7c64ffc720bb8bcf5032d168a7",
+      "bytes": 5509051,
+      "bundled": true,
+      "upstream_checksum": "md5:4f2ca121aa9110d41cd046bdd6f2aebb",
+      "record_doi": "10.5281/zenodo.6084081"
+    },
+    {
+      "url": "https://zenodo.org/api/records/6084081/files/read%20me.txt/content",
+      "path": "datasets/eeckg/data/read me.txt",
+      "sha256": "3cb875c97844eea9c78cd27b3e8449330887ee83f4e9b4eddfb3bd0953ba0481",
+      "bytes": 102,
+      "bundled": true,
+      "upstream_checksum": "md5:03af8d4baad811c058e5d99cdbb42e32",
+      "record_doi": "10.5281/zenodo.6084081"
+    },
+    {
+      "url": "https://zenodo.org/api/records/6084081/files/rules.txt/content",
+      "path": "datasets/eeckg/data/rules.txt",
+      "sha256": "2892eca19e566878bebcb1e46a4ef5e347ad77dc9ac69b4e8d6fca43c3288295",
+      "bytes": 3045,
+      "bundled": true,
+      "upstream_checksum": "md5:aeb68d42bc8cf599a622938de68c22cb",
+      "record_doi": "10.5281/zenodo.6084081"
+    },
+    {
+      "url": "https://zenodo.org/api/records/6084081/files/seed%20ECCKG.csv/content",
+      "path": "datasets/eeckg/data/seed ECCKG.csv",
+      "sha256": "092712ec31bfc6471884556e0b7efcf7097450991beec3210213aab4a24158ae",
+      "bytes": 1484621,
+      "bundled": true,
+      "upstream_checksum": "md5:e78f527041f01711b0e3bfce6ef155b7",
+      "record_doi": "10.5281/zenodo.6084081"
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/eeckg/example.json"
+  "example_path": "datasets/eeckg/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "ECCKG作者Zenodo v1全部五个文件；逐文件MD5与Zenodo官方记录一致。",
+    "missing": "",
+    "file_count": 5,
+    "bytes": 13046616
+  }
 }

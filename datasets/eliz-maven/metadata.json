@@ -51,5 +51,13 @@
     "info_count_column": "instance_count",
     "class_counts_match_info": true,
     "has_official_split_column": false
+  },
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "作者已公开且此前随仓库保存的数据文件。",
+    "missing": "",
+    "file_count": 2,
+    "bytes": 629771
   }
 }

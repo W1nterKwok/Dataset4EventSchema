@@ -1,0 +1,312 @@
+{
+  "updated_on": "2026-11-07",
+  "states": {
+    "partial": 10,
+    "downloaded": 16,
+    "unavailable": 3,
+    "planned": 1
+  },
+  "stored_bytes": 2044699745,
+  "datasets": [
+    {
+      "id": "resin-11",
+      "name": "RESIN-11",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存RESIN-KAIROS官方模式库的17个JSON和11个可视化PPTX，以及旧版10模式参考库。",
+      "missing": "论文1的11场景评测映射及节点/边统计尚未逐项对齐；旧10模式库不冒充RESIN-11金标准。",
+      "file_count": 30,
+      "bytes": 19136484
+    },
+    {
+      "id": "odin",
+      "name": "ODIN",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者已公开且此前随仓库保存的数据文件。",
+      "missing": "",
+      "file_count": 18,
+      "bytes": 858710
+    },
+    {
+      "id": "proscript",
+      "name": "proScript",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者完整proscript_v1a.zip（train/dev/test）。",
+      "missing": "",
+      "file_count": 1,
+      "bytes": 1305768
+    },
+    {
+      "id": "ied",
+      "name": "IED 新闻实例图",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者完整Wiki_IED_split.tgz及六个Wikipedia原文压缩包；未声称等同于论文2的三类清洗子集。",
+      "missing": "",
+      "file_count": 7,
+      "bytes": 164970480
+    },
+    {
+      "id": "ldc2020e25",
+      "name": "LDC2020E25",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存作者公开的156个LDC来源派生事件图，保留train/dev/test目录。",
+      "missing": "这些是公开派生图，不是LDC2020E25原始授权文本；原始LDC语料未取得。",
+      "file_count": 156,
+      "bytes": 49463043
+    },
+    {
+      "id": "maven-cgep",
+      "name": "MAVEN-CGEP",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存AECR作者项目公开的事件词典及事件映射等辅助文件。",
+      "missing": "未取得完整MAVEN-CGEP图、候选集与划分文件；SeDGPL加载器所需MAVENSubWoRe.npy不在其公开树中。",
+      "file_count": 4,
+      "bytes": 650926
+    },
+    {
+      "id": "esc-cgep",
+      "name": "ESC-CGEP",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存SeDGPL作者发布的ESCSubWoRe.npy及事件词典/映射。",
+      "missing": "已验证NumPy文件头，未执行对象反序列化；尚未确认其全部样本/候选与AECR论文采用版本完全一致。",
+      "file_count": 3,
+      "bytes": 4787281
+    },
+    {
+      "id": "maven-aecr",
+      "name": "MAVEN-AECR",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者公开733条抽象规则、规则映射、聚类输出及检索训练配对文件；保留作者命名。",
+      "missing": "",
+      "file_count": 11,
+      "bytes": 4499745
+    },
+    {
+      "id": "esc-aecr",
+      "name": "ESC-AECR",
+      "checked_on": "2026-11-07",
+      "state": "unavailable",
+      "scope": "没有取得所请求版本的真实数据文件。",
+      "missing": "作者匿名项目公开的是733条MAVEN规则及关联数据，未找到ESC的180条规则发布文件。",
+      "file_count": 0,
+      "bytes": 0
+    },
+    {
+      "id": "ev2",
+      "name": "EV² / EV2",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "四个完整任务JSONL及clustering.json。",
+      "missing": "",
+      "file_count": 5,
+      "bytes": 2296652
+    },
+    {
+      "id": "gdelt-lamp",
+      "name": "GDELT（LAMP版本）",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者包中的gdelt.pkl及entity_map.pkl，并保留完整LAMP数据发布包。没有执行pickle反序列化。",
+      "missing": "",
+      "file_count": 3,
+      "bytes": 37324862
+    },
+    {
+      "id": "icews-lamp",
+      "name": "ICEWS（LAMP版本）",
+      "checked_on": "2026-11-07",
+      "state": "unavailable",
+      "scope": "没有取得所请求版本的真实数据文件。",
+      "missing": "已下载并检查作者指定Google Drive包，实际仅含GDELT与Amazon文件，没有ICEWS；未发现可核实的该论文时间范围预处理发布包。",
+      "file_count": 0,
+      "bytes": 0
+    },
+    {
+      "id": "mirai",
+      "name": "MIRAI（论文10设置）",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存完整MIRAI官方发布包（581,967,516字节，7片），另提取705条测试查询和100条子集查询。",
+      "missing": "原始包实测296,630条新闻、589,930条历史KG记录；不直接声称等同于论文10所列152,500历史事件的筛选版本。",
+      "file_count": 10,
+      "bytes": 582415521
+    },
+    {
+      "id": "gdelt-500",
+      "name": "GDELT-500（论文10改造版）",
+      "checked_on": "2026-11-07",
+      "state": "unavailable",
+      "scope": "没有取得所请求版本的真实数据文件。",
+      "missing": "未定位论文10所用420查询、189,743新闻、119,388历史事件的改造版本发布位置，不以其他同名数据替代。",
+      "file_count": 0,
+      "bytes": 0
+    },
+    {
+      "id": "openepbench",
+      "name": "OpenEPBench",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者已公开且此前随仓库保存的数据文件。",
+      "missing": "",
+      "file_count": 4,
+      "bytes": 4429968
+    },
+    {
+      "id": "schemaaug-kidnapping",
+      "name": "SchemaAug / Kidnapping",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存对应RESIN公开事件模式JSON，作为数据增强的辅助资源。",
+      "missing": "尚未找到可验证的SchemaAug场景新闻及原始抽取标注发布包；辅助模式不是新闻语料。",
+      "file_count": 1,
+      "bytes": 81649
+    },
+    {
+      "id": "schemaaug-ukraine-crisis",
+      "name": "SchemaAug / Ukraine Crisis",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存对应RESIN公开事件模式JSON，作为数据增强的辅助资源。",
+      "missing": "尚未找到可验证的SchemaAug场景新闻及原始抽取标注发布包；辅助模式不是新闻语料。",
+      "file_count": 1,
+      "bytes": 24227
+    },
+    {
+      "id": "schemaaug-mass-shooting",
+      "name": "SchemaAug / Mass Shooting",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存对应RESIN公开事件模式JSON，作为数据增强的辅助资源。",
+      "missing": "尚未找到可验证的SchemaAug场景新闻及原始抽取标注发布包；辅助模式不是新闻语料。",
+      "file_count": 1,
+      "bytes": 49708
+    },
+    {
+      "id": "schemaaug-disease-outbreak",
+      "name": "SchemaAug / Disease Outbreak",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存对应RESIN公开事件模式JSON，作为数据增强的辅助资源。",
+      "missing": "尚未找到可验证的SchemaAug场景新闻及原始抽取标注发布包；辅助模式不是新闻语料。",
+      "file_count": 1,
+      "bytes": 132048
+    },
+    {
+      "id": "schemaaug-wcep",
+      "name": "SchemaAug / WCEP",
+      "checked_on": "2026-11-07",
+      "state": "partial",
+      "scope": "已保存对应RESIN公开事件模式JSON，作为数据增强的辅助资源。",
+      "missing": "尚未找到可验证的SchemaAug场景新闻及原始抽取标注发布包；辅助模式不是新闻语料。",
+      "file_count": 1,
+      "bytes": 24227
+    },
+    {
+      "id": "conceptnet",
+      "name": "ConceptNet",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "ConceptNet 5.7.0完整多语言断言CSV.gz（497,963,447字节，6片），不是英语抽样。",
+      "missing": "",
+      "file_count": 7,
+      "bytes": 497964862
+    },
+    {
+      "id": "eeckg",
+      "name": "ECCKG（原清单记作EECKG）",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "ECCKG作者Zenodo v1全部五个文件；逐文件MD5与Zenodo官方记录一致。",
+      "missing": "",
+      "file_count": 5,
+      "bytes": 13046616
+    },
+    {
+      "id": "cyberbullying-local",
+      "name": "自建网络暴力事件语料（待建设）",
+      "checked_on": "2026-11-07",
+      "state": "planned",
+      "scope": "项目拟自建语料，没有可下载的现成数据。",
+      "missing": "尚未采集和标注，不创建伪原始数据。",
+      "file_count": 0,
+      "bytes": 0
+    },
+    {
+      "id": "maven-ere",
+      "name": "MAVEN-ERE",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "官方v1.0完整ZIP：train 2,913、valid 710、test 857篇；官方测试金标本身不公开。",
+      "missing": "",
+      "file_count": 1,
+      "bytes": 19635238
+    },
+    {
+      "id": "matres",
+      "name": "MATRES",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者发布的aquaint、platinum、timebank三份完整关系标注；不包含另行授权的配套新闻原文。",
+      "missing": "",
+      "file_count": 3,
+      "bytes": 588213
+    },
+    {
+      "id": "hieve",
+      "name": "HiEve（文本事件层级）",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "公开清洗版hievents_v2全部文件，含100篇processed文档与上游提供的特征文件；原始RAR地址404。",
+      "missing": "",
+      "file_count": 401,
+      "bytes": 564595416
+    },
+    {
+      "id": "eventstoryline",
+      "name": "EventStoryLine / ESC",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者公开annotated_data、evaluation_format、ECB+配套包及许可说明，保留多版本目录。",
+      "missing": "",
+      "file_count": 4697,
+      "bytes": 70234792
+    },
+    {
+      "id": "response",
+      "name": "RESPONSE",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "DOI v1官方发布的all_questions_v1.json、all_questions_v2.json及官方元数据；由GitHub下载任务取得并通过官方MD5。",
+      "missing": "",
+      "file_count": 3,
+      "bytes": 5321326
+    },
+    {
+      "id": "eliz-ev2",
+      "name": "Eliz-EV²",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者已公开且此前随仓库保存的数据文件。",
+      "missing": "",
+      "file_count": 2,
+      "bytes": 232212
+    },
+    {
+      "id": "eliz-maven",
+      "name": "Eliz-MAVEN",
+      "checked_on": "2026-11-07",
+      "state": "downloaded",
+      "scope": "作者已公开且此前随仓库保存的数据文件。",
+      "missing": "",
+      "file_count": 2,
+      "bytes": 629771
+    }
+  ]
+}

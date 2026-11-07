@@ -130,5 +130,13 @@
     "commit": "2dd968b94ae5cdd2a3d1e3c1decbf5b416cc2248",
     "selection": "完整模式，未删去被引用的节点"
   },
-  "example_path": "datasets/odin/example.json"
+  "example_path": "datasets/odin/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "作者已公开且此前随仓库保存的数据文件。",
+    "missing": "",
+    "file_count": 18,
+    "bytes": 858710
+  }
 }

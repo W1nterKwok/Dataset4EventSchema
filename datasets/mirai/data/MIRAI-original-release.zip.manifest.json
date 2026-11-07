@@ -1,0 +1,44 @@
+{
+  "original_filename": "MIRAI-original-release.zip",
+  "original_bytes": 581967516,
+  "source_url": "https://drive.usercontent.google.com/download?id=1xmSEHZ_wqtBu1AwLpJ8wCDYmT-jRpfrN&export=download&confirm=t",
+  "chunk_bytes": 83886080,
+  "sha256": "872b4fcc68b82538dfc47918ee6f759a20463ef6aa2976e64def07a29c48ea60",
+  "parts": [
+    {
+      "file": "MIRAI-original-release.zip.part001",
+      "bytes": 83886080,
+      "sha256": "b0c2915bc6a24b77c3beaeb6a78e29a84f6d42c71e3b3b0e09ad04c57d277dbc"
+    },
+    {
+      "file": "MIRAI-original-release.zip.part002",
+      "bytes": 83886080,
+      "sha256": "f9ce9c87ab0dff45427f213355bf882ac262e4bdd194271aad5794c5b660970d"
+    },
+    {
+      "file": "MIRAI-original-release.zip.part003",
+      "bytes": 83886080,
+      "sha256": "85e18bb40cbe1802273df38c9fa399aba63eacadce14ca0988d9ca639f707e8b"
+    },
+    {
+      "file": "MIRAI-original-release.zip.part004",
+      "bytes": 83886080,
+      "sha256": "42bc29ace6e87142ba70132e8568ba4bcbbbc78d9861cc14136f08e9852b7490"
+    },
+    {
+      "file": "MIRAI-original-release.zip.part005",
+      "bytes": 83886080,
+      "sha256": "bb90fefdc8c78aacf6ee8cb34b32f6fe7c67fc5ab66f76e28f3c326fbbad8dd9"
+    },
+    {
+      "file": "MIRAI-original-release.zip.part006",
+      "bytes": 83886080,
+      "sha256": "f21fc2d2c7a7d3a319f975ed8771847e63c9138bdc9e60d3fea67a7d495df7db"
+    },
+    {
+      "file": "MIRAI-original-release.zip.part007",
+      "bytes": 78651036,
+      "sha256": "1f9627ddc12578620c55fb670037cdeb7b56c5e2d297a31764a0a09b746934fb"
+    }
+  ]
+}

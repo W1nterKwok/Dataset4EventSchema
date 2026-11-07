@@ -1,5 +1,8 @@
 # OpenEPBench
 
+> 当前下载状态：**downloaded**。作者已公开且此前随仓库保存的数据文件。  详细文件状态见 [DOWNLOAD_STATUS.md](DOWNLOAD_STATUS.md)。
+
+
 中英文自由文本未来事件预测。
 
 ## 用途与版本
@@ -25,7 +28,7 @@ python scripts/datasets.py show openepbench
 
 python scripts/datasets.py fetch openepbench
 
-原始下载保存于 `raw/`（Git默认忽略），已随仓库提供的小规模资源放在 `data/`。下载记录和SHA-256写入 `data/download-log.json`。受限或未明确许可的数据不自动镜像到GitHub。
+原始下载保存于 `raw/`（Git默认忽略），已随仓库提供的小规模资源放在 `data/`。下载记录和SHA-256写入 `data/download-log.json`。归档范围和原始权利说明见下载状态与许可记录。
 
 ## 来源
 

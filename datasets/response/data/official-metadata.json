@@ -1,0 +1,142 @@
+{
+  "url_public_html": "https://rdr.ucl.ac.uk/articles/dataset/RESPONSE_Dataset_for_Commonsense_Reasoning_about_Disaster_Management/26010064/1",
+  "files": [
+    {
+      "id": 46963417,
+      "name": "all_questions_v2.json",
+      "size": 2628125,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/46963417",
+      "supplied_md5": "7148f06e045bc8e4f0578f073a28c858",
+      "computed_md5": "7148f06e045bc8e4f0578f073a28c858",
+      "mimetype": "text/plain"
+    },
+    {
+      "id": 46963420,
+      "name": "all_questions_v1.json",
+      "size": 2688473,
+      "is_link_only": false,
+      "download_url": "https://ndownloader.figshare.com/files/46963420",
+      "supplied_md5": "7e6d69223473bd6371ccea8fe2bf59ed",
+      "computed_md5": "7e6d69223473bd6371ccea8fe2bf59ed",
+      "mimetype": "text/plain"
+    }
+  ],
+  "folder_structure": {},
+  "authors": [
+    {
+      "id": 12198623,
+      "full_name": "Aissatou Diallo",
+      "first_name": "Aissatou",
+      "last_name": "Diallo",
+      "is_active": false,
+      "url_name": "Aissatou_Diallo",
+      "orcid_id": ""
+    }
+  ],
+  "custom_fields": [
+    {
+      "name": "I confirm that I am not uploading any: personal data as defined by data protection legislation, including information that may identify a living individual; information provided in confidence; or information that would contravene a third-party agreement",
+      "value": [],
+      "settings": {
+        "options": [
+          "Yes",
+          "No",
+          "Don't know"
+        ],
+        "placeholder": "Please select...",
+        "is_multiple": true
+      },
+      "field_type": "dropdown",
+      "order": null,
+      "is_mandatory": false
+    },
+    {
+      "name": "I have considered whether the data to be published may be licensed commercially before deciding to freely release it to the public. Further information and advice may be sought from UCL Business https://www.uclb.com/about/our-people/",
+      "value": [],
+      "settings": {
+        "options": [
+          "Yes",
+          "No",
+          "Don't know"
+        ],
+        "placeholder": "Please select...",
+        "is_multiple": true
+      },
+      "field_type": "dropdown",
+      "order": null,
+      "is_mandatory": false
+    }
+  ],
+  "figshare_url": "https://rdr.ucl.ac.uk/articles/dataset/RESPONSE_Dataset_for_Commonsense_Reasoning_about_Disaster_Management/26010064",
+  "download_disabled": false,
+  "description": "<p dir=\"ltr\">This dataset contains 1789 data instances with problem identification, missing resource, time-dependent questions and answers pairs for disaster management.</p>",
+  "funding": null,
+  "funding_list": [],
+  "version": 1,
+  "status": "public",
+  "size": 5316598,
+  "created_date": "2024-06-25T10:40:33Z",
+  "modified_date": "2024-06-25T10:40:33Z",
+  "is_public": true,
+  "is_confidential": false,
+  "is_metadata_record": false,
+  "confidential_reason": "",
+  "metadata_reason": "",
+  "license": {
+    "value": 11,
+    "name": "CC BY-NC-SA 4.0",
+    "url": "https://creativecommons.org/licenses/by-nc-sa/4.0/"
+  },
+  "tags": [
+    "commonsense reasoning",
+    "disaster management Research activity",
+    "Large Language Models (LLMs)",
+    "Question Answering (QA)"
+  ],
+  "keywords": [
+    "commonsense reasoning",
+    "disaster management Research activity",
+    "Large Language Models (LLMs)",
+    "Question Answering (QA)"
+  ],
+  "categories": [
+    {
+      "id": 28849,
+      "title": "Natural language processing",
+      "parent_id": 28825,
+      "path": "/28798/28825/28849",
+      "source_id": "460208",
+      "taxonomy_id": 100
+    }
+  ],
+  "references": [],
+  "has_linked_file": false,
+  "citation": "Diallo, Aissatou (2024). RESPONSE:  Dataset for Commonsense Reasoning about Disaster Management. University College London. Dataset. https://doi.org/10.5522/04/26010064.v1",
+  "related_materials": [],
+  "is_embargoed": false,
+  "embargo_date": null,
+  "embargo_type": null,
+  "embargo_title": "",
+  "embargo_reason": "",
+  "embargo_options": [],
+  "id": 26010064,
+  "title": "RESPONSE:  Dataset for Commonsense Reasoning about Disaster Management",
+  "doi": "10.5522/04/26010064.v1",
+  "handle": "",
+  "url": "https://api.figshare.com/v2/articles/26010064",
+  "published_date": "2024-06-25T10:40:33Z",
+  "thumb": "",
+  "defined_type": 3,
+  "defined_type_name": "dataset",
+  "group_id": 21729,
+  "url_private_api": "https://api.figshare.com/v2/account/articles/26010064",
+  "url_public_api": "https://api.figshare.com/v2/articles/26010064",
+  "url_private_html": "https://figshare.com/account/articles/26010064",
+  "timeline": {
+    "posted": "2024-06-25T10:40:33",
+    "firstOnline": "2024-06-25"
+  },
+  "resource_title": null,
+  "resource_doi": null
+}

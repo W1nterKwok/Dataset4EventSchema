@@ -1,13 +1,16 @@
 # EECKG
 
+> 当前下载状态：**downloaded**。ECCKG作者Zenodo v1全部五个文件；逐文件MD5与Zenodo官方记录一致。  详细文件状态见 [DOWNLOAD_STATUS.md](DOWNLOAD_STATUS.md)。
+
+
 EV²构建所用事件演化常识知识资源。
 
 ## 用途与版本
 
 - 研究用途：事件类型与关系的先验知识。
-- 固定版本：EV²所引 EECKG；独立原始资源地址待核实
-- 获取状态：`source_verification_required`
-- 数据许可：未核实数据许可
+- 固定版本：作者Zenodo记录6084081，保留全部发布文件及官方MD5
+- 获取状态：`bundled`
+- 数据许可：CC-BY-4.0（作者Zenodo元数据）
 
 EV²是评测基准，不等于EECKG全量知识图谱；不把两者作为同一数据集。
 
@@ -23,9 +26,9 @@ python scripts/datasets.py show eeckg
 
 ## 获取数据
 
-无已核实的自动下载资产；从下列作者入口获取并核对版本。
+文件已保存于本目录data。可运行 `python scripts/datasets.py fetch eeckg` 校验已存文件；分片归档用restore命令合并。
 
-原始下载保存于 `raw/`（Git默认忽略），已随仓库提供的小规模资源放在 `data/`。下载记录和SHA-256写入 `data/download-log.json`。受限或未明确许可的数据不自动镜像到GitHub。
+本次已取得的公开原始数据保存于 `data/` 并提交Git；大归档按清单分片，合并输出至 `raw/`。下载记录和SHA-256写入 `data/download-log.json`。归档范围和原始权利说明见下载状态与许可记录。
 
 ## 来源
 

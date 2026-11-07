@@ -6,15 +6,94 @@
   "project_use": "实例图到模式图的归纳及预测。",
   "sources": [
     "https://github.com/limanling/temporal-graph-schema",
-    "https://github.com/snowfalling77/ReST-Pre"
+    "https://github.com/snowfalling77/ReST-Pre",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/backpack_ied.tgz",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/road_ied.tgz",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/suicide_ied.tgz",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/wiki_drone_strikes.tgz",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/wiki_ied_bombings.tgz",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/wiki_mass_car_bombings.tgz",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_split.tgz"
   ],
   "paper": null,
   "version": "论文2清洗版与 ReST-Pre 派生版必须分别固定",
-  "cautions": "ReST-Pre README 的目录树列出数据，不代表其 Git 树实际包含该数据；不得混用两版图数。",
-  "access_status": "version_verification_required",
+  "cautions": "作者完整Wiki_IED_split.tgz及六个Wikipedia原文压缩包；未声称等同于论文2的三类清洗子集。 原始许可和数据权利以作者及原权利人要求为准。",
+  "access_status": "bundled",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/backpack_ied.tgz",
+      "path": "datasets/ied/data/Wiki_IED_rawdata/backpack_ied.tgz",
+      "sha256": "7b694fb844348b3315ef377d244abc4b9845d8c784ef36cb97ae469bbeceec8f",
+      "bytes": 604729,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/road_ied.tgz",
+      "path": "datasets/ied/data/Wiki_IED_rawdata/road_ied.tgz",
+      "sha256": "7c26b3789dbd5b290352327473b434d947bfe7ea6dfc5117eb3f15745a39f7ad",
+      "bytes": 109153,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/suicide_ied.tgz",
+      "path": "datasets/ied/data/Wiki_IED_rawdata/suicide_ied.tgz",
+      "sha256": "3d2dcb7b4dd6b0b25f50a009c5a69c5cd8996dffddc1e3eb0dc69b91ba088c23",
+      "bytes": 46042435,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/wiki_drone_strikes.tgz",
+      "path": "datasets/ied/data/Wiki_IED_rawdata/wiki_drone_strikes.tgz",
+      "sha256": "1509e3c20f15ef1917800854a1c0d48394090884d18f343c81424b2fd52a3a11",
+      "bytes": 5026192,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/wiki_ied_bombings.tgz",
+      "path": "datasets/ied/data/Wiki_IED_rawdata/wiki_ied_bombings.tgz",
+      "sha256": "42b046937ae701f9c0a1f5210c1251fc7b08cd8b81276c0a00318e40559087f6",
+      "bytes": 24214415,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_rawdata/wiki_mass_car_bombings.tgz",
+      "path": "datasets/ied/data/Wiki_IED_rawdata/wiki_mass_car_bombings.tgz",
+      "sha256": "bcbfe53412d6ee81a4ac1a92d76e9fd9c9f9e14f8390eb00f80993e52cc554bf",
+      "bytes": 28830443,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/Wiki_IED_split.tgz",
+      "path": "datasets/ied/data/Wiki_IED_split.tgz",
+      "sha256": "61d25b55375277ace4c07ae2c4dea3a198b779e55900a4e5cbb563b427487528",
+      "bytes": 60143113,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/ied/example.json"
+  "example_path": "datasets/ied/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "作者完整Wiki_IED_split.tgz及六个Wikipedia原文压缩包；未声称等同于论文2的三类清洗子集。",
+    "missing": "",
+    "file_count": 7,
+    "bytes": 164970480
+  }
 }

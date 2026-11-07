@@ -6,15 +6,1436 @@
   "project_use": "复杂图结构、补全及预测。",
   "sources": [
     "https://www.ldc.upenn.edu/",
-    "https://github.com/snowfalling77/ReST-Pre"
+    "https://github.com/snowfalling77/ReST-Pre",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/001.dev.json",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/002.dev.json",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/003.dev.json",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/006.dev.json",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/008.dev.json",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/009.dev.json",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/010.dev.json",
+    "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/012.dev.json"
   ],
   "paper": null,
   "version": "LDC2020E25；派生8/12节点图另列版本",
-  "cautions": "先确认 LDC 访问资格和授权；派生样本数不是原始文档数。",
-  "access_status": "restricted_access",
+  "cautions": "这些是公开派生图，不是LDC2020E25原始授权文本；原始LDC语料未取得。",
+  "access_status": "partial_download",
   "data_license": "LDC 授权条款，未获取原始数据",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/001.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/001.dev.json",
+      "sha256": "70b0946344b45487d5c728f824108410ff420a2ede176fbc7fa41b12c812fefb",
+      "bytes": 166977,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/002.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/002.dev.json",
+      "sha256": "2587eee55325c05ceb2d65186d2549f6ef74d0ca9ce470a3cfbb7b3a8a71d8f1",
+      "bytes": 94346,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/003.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/003.dev.json",
+      "sha256": "5d9ad6cbc2ab2ba14883a7bd1e323389e3c8d03570d53ca45791a4368ad65ee3",
+      "bytes": 49641,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/006.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/006.dev.json",
+      "sha256": "589322fad9e71dd21eac75f14e5b6393a9ace1d1d83b7949a826e6c6442fa78f",
+      "bytes": 97245,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/008.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/008.dev.json",
+      "sha256": "9880bef4c27ab300c7c4610c49a10a1be43cbe7879c82b431ecb4d1fd6ad9bd4",
+      "bytes": 109078,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/009.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/009.dev.json",
+      "sha256": "8571a1271eed41d34aef1d020b6cdf5d749737e095d19af2d03f73163d78a03d",
+      "bytes": 66061,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/010.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/010.dev.json",
+      "sha256": "0071aa7f68ab61407f470521c03665ee86523cbf17d7a588713be6dd1048e776",
+      "bytes": 4129,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/012.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/012.dev.json",
+      "sha256": "7d918e00e79649defb3c63a5622a0922df808be0f0f4056491ad08705d2edf71",
+      "bytes": 292564,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/014.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/014.dev.json",
+      "sha256": "22eb94218c980d94a299293a3a03573e7dccb44f5f426ad6e3b46df9d2393172",
+      "bytes": 43176,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/020.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/020.dev.json",
+      "sha256": "8cf8d4842dbc262a5541d3adc3a3b2521417622afe734688f852a421180d7e50",
+      "bytes": 221719,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/021.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/021.dev.json",
+      "sha256": "062ef0de9879f1fbd2941f5cb81195586fa3815c1eb986eb6f3c42c150b1d03a",
+      "bytes": 41750,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/023.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/023.dev.json",
+      "sha256": "63ceea7600f4324e8e33077ab298b973cc2cf1184f4c0e79681e91935673cf25",
+      "bytes": 183645,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/026.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/026.dev.json",
+      "sha256": "8510d2bf96481d5af9f5e96ed893c36f31bd411695aa6d2d051e48f4d069ebbc",
+      "bytes": 24544,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/029.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/029.dev.json",
+      "sha256": "4aa08de580761a5323c6cd1a5ead859752c78cc992be49be1dabfb4611108632",
+      "bytes": 163184,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/030.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/030.dev.json",
+      "sha256": "c3daf6580ae5603a8b9f242ac11af3465e3024a813fb4a3ac23645e3a164123d",
+      "bytes": 40281,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/038.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/038.dev.json",
+      "sha256": "8b1f73d6d209a2619b78781b92f742e385736bf89a815a351ad4b4c1bf3c1794",
+      "bytes": 77142,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/039.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/039.dev.json",
+      "sha256": "37bd1c33fe6f51ed13243b122393b21341f432b34bca4262bc078a9075073342",
+      "bytes": 496,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/041.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/041.dev.json",
+      "sha256": "150573b3b785e1e0034cad690c6c517803a179665faac94c15a147a6ca4f1467",
+      "bytes": 105564,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/043.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/043.dev.json",
+      "sha256": "c1dccb544ee3952bf960ddd4f5b70a79b1f23f81bb0a9ab6504cfd0d50057af1",
+      "bytes": 265193,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/044.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/044.dev.json",
+      "sha256": "dccdade3e45bfde4f8458bd219e414cac6f3e56fd96ecabac816f4a6eea14fb1",
+      "bytes": 136627,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/045.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/045.dev.json",
+      "sha256": "9b55775000da382e4105595f980b8fae0690bdb0aef138143c92611e1372b94f",
+      "bytes": 282551,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/048.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/048.dev.json",
+      "sha256": "bc16f2012bacf01ef38352c92ef77cf4e9d84d762c3ab99f0beb23492f58904c",
+      "bytes": 103513,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/050.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/050.dev.json",
+      "sha256": "1539d10d4f98deaf48223bc9ebb515c8462f1d78e1f34c9211b97b61030b4fb1",
+      "bytes": 13107,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/059.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/059.dev.json",
+      "sha256": "63d042de7c55b4ef9a663fc7b9dd30b047516dbcf3a4fd5ff714197820b49fd3",
+      "bytes": 41046,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/060.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/060.dev.json",
+      "sha256": "7fe065b1b5303a1650d46c7716664502052fbc3afcb07945c7f0f959f91f39fd",
+      "bytes": 465986,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/061.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/061.dev.json",
+      "sha256": "7be71aaa9a9d515ddc0b1b9569e024c0f1586707c61a058c1e1f05df3d4b9ef4",
+      "bytes": 496,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/062.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/062.dev.json",
+      "sha256": "61a6426754bf8b8cf64ced888fff44353be33419229f783cc3c74a5b47cfe976",
+      "bytes": 123322,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/065.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/065.dev.json",
+      "sha256": "82eb6b9bdf3d52996ab49a11a8435a4c0032b4ecfe21eaf2549158aeb36341ea",
+      "bytes": 60613,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/067.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/067.dev.json",
+      "sha256": "bc8b35e8882e4819e92fe0aa80f61e184159949ddc2b72ccc0cebba30459e224",
+      "bytes": 11022,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/070.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/070.dev.json",
+      "sha256": "1138b31d5bd04ce334cbacd36b02c8138e6051f164c78e8662919afb1414989f",
+      "bytes": 73211,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/071.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/071.dev.json",
+      "sha256": "ce05313abb34742a55418655cd4a5f32c2b26dcf153a5604179e2ca7b7036aa7",
+      "bytes": 123489,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/072.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/072.dev.json",
+      "sha256": "90bba2b4fc5dd50c0fd91ced9d0cfb26580c488f0182688bb400a2c625b56e02",
+      "bytes": 84344,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/073.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/073.dev.json",
+      "sha256": "acfd79ff2ef6121d7718d52316811b36f49179d31fdb8d9140691f1fd2cbccb7",
+      "bytes": 137824,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/074.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/074.dev.json",
+      "sha256": "add7c0b305760d2f6ac273427f63d1c1bf9f6ecb5cc53fc7df754b9e10abe743",
+      "bytes": 5831,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/075.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/075.dev.json",
+      "sha256": "e384dcfddf3d56e73f4888f8bda5ee2ec38995411f6f02479605973eaed4fb2d",
+      "bytes": 74219,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/077.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/077.dev.json",
+      "sha256": "52faf8f17dc36f3e69af4ad101976235571fd14a8ed8281bd99d65668e0e2b4c",
+      "bytes": 122865,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/078.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/078.dev.json",
+      "sha256": "66950ba073e9abc7ca04783272dc659f3b7d3334bdf2e556c2ae5726a40745f1",
+      "bytes": 498,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/081.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/081.dev.json",
+      "sha256": "bc17cd18c9938cbc0bdce971214dba1e770a18b396369c7e4d2f8fa9ca4b12bf",
+      "bytes": 146034,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/082.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/082.dev.json",
+      "sha256": "1691ccd598e73115016bfadf72bb7d2a826f47d5b1684675deab45b4555e07a2",
+      "bytes": 81159,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/083.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/083.dev.json",
+      "sha256": "a25b540321b3ff41472be0f689b93af424e609cd4815a68fe28d614a4fa7ba3a",
+      "bytes": 259802,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/084.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/084.dev.json",
+      "sha256": "865ae248156bf12d304e5a824a5f782467ca9a6192c9b9e7687e066cb060cc52",
+      "bytes": 81734,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/085.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/085.dev.json",
+      "sha256": "19c364816ec913dfc75f382ba3c1fbdeecbaf021e0f8e3fa1d712058116fdf83",
+      "bytes": 654064,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/086.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/086.dev.json",
+      "sha256": "23412b8190e45e9c15ce11f97104b18ac9a9283d85d8db6c522a4257003da2b4",
+      "bytes": 217511,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/087.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/087.dev.json",
+      "sha256": "a85566863f37088739eb366fa42bb2d7bd5b4202a5ade9167edbe9b8e159ddd1",
+      "bytes": 16610,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/088.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/088.dev.json",
+      "sha256": "c671f48ddbba921e5336d6f1c8b82daf0a4b903f4fff37aa634067a02d5d340f",
+      "bytes": 44164,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/089.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/089.dev.json",
+      "sha256": "47959dfb820509c2321ab48befc4d83d9b5bb1c7d38c3d14714883e9fdf27148",
+      "bytes": 196841,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/090.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/090.dev.json",
+      "sha256": "dd0e6a66229426109dff5bc45e7b8bef2f42575c2b76ab46ee3fba9b1654e014",
+      "bytes": 141256,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/092.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/092.dev.json",
+      "sha256": "5014ce2c2bdd9ef8c7052eba9b472d2fee13d2e17b9106aa67dea042c1f3db35",
+      "bytes": 25855,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/094.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/094.dev.json",
+      "sha256": "d3e38b3de7dcc1fc5048ac53421be1045347723c7155fe055bce64f82e118034",
+      "bytes": 190392,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/098.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/098.dev.json",
+      "sha256": "63a9701c3b8f81d27e7812e129d61bf3fd6645fe7a07b5367ae21fefdb022f0d",
+      "bytes": 102025,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/099.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/099.dev.json",
+      "sha256": "4991a5c84e28f6491c0fa3ad2bb9bf51bf8172e962497aaa3d7f76bcf4be9ecb",
+      "bytes": 37689,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/dev/100.dev.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/dev/100.dev.json",
+      "sha256": "e853f476af8344a7ba839d75cb7adf52dece8a8225e827a4e15e0a9114fe1087",
+      "bytes": 7059,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/001.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/001.test.json",
+      "sha256": "7db30998b0467b0978ee7998241650350cb27e29599aa8b082c91095e1b5b07f",
+      "bytes": 142514,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/002.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/002.test.json",
+      "sha256": "1e76ee27d720f240078e207d89d4e8af0ea88788aedf27b233009ec669817acf",
+      "bytes": 261450,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/003.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/003.test.json",
+      "sha256": "30fd6e91451e27d9cd544abdfb5ae0650643f6a7202f479945fdad52919056b5",
+      "bytes": 111788,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/006.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/006.test.json",
+      "sha256": "f867e11ad419e5ab0a4e14099136d8f659ea7e548e4281d70da49c0000bc858d",
+      "bytes": 66454,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/008.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/008.test.json",
+      "sha256": "068d4dec5472214257c93cc45a44aee31c8a565255fa711427657bc3cdb49009",
+      "bytes": 239503,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/009.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/009.test.json",
+      "sha256": "e7b704b4a5c4e02b6374422aab47981b426c59cf04b703643d15b7555f4624fd",
+      "bytes": 51157,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/010.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/010.test.json",
+      "sha256": "03ed28831524742bc0ff558220c41aa37f97d241f3443a95686ad1376d502abf",
+      "bytes": 12109,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/012.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/012.test.json",
+      "sha256": "ea87e45e3745c2d2c39b31a4401de099ab0506261343e707bad6076facacff27",
+      "bytes": 73445,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/014.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/014.test.json",
+      "sha256": "250d7f4e8b4e1f5dac1d80370683d11fa8af33fc6de17edd6631d04c78244caa",
+      "bytes": 75079,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/020.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/020.test.json",
+      "sha256": "a1e7dd532a9741ff307dc1294c7b27168c9b18186a55f6786c889f1ad632f3fc",
+      "bytes": 329346,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/021.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/021.test.json",
+      "sha256": "062f00f368841b8dacac8be6d4096f90cac7cbc4f0ca899cb25c8c0a3a0f759d",
+      "bytes": 38235,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/023.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/023.test.json",
+      "sha256": "634c9f93b53dd82a9699b4ae1f713b9d94f7dcf3ceb0b091267cb91ea0f37a2c",
+      "bytes": 86129,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/026.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/026.test.json",
+      "sha256": "c841e66138a85bc7b30c3a8d770738e57199b471c18a9f0051b3c2de458b0cb4",
+      "bytes": 147861,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/029.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/029.test.json",
+      "sha256": "de7d2a9308bedd5143bba572d87e0c2238a2f87c3196ad9f53160569b5dc9340",
+      "bytes": 79549,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/030.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/030.test.json",
+      "sha256": "5b67c62c01092eba5343143fbf44e60ec4ad1ea342da35bbf1939c17b2f4a5b4",
+      "bytes": 258557,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/038.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/038.test.json",
+      "sha256": "dec1b61529f3119971383ce37f1b26c4c635a878a55609555675cc8f81addf2b",
+      "bytes": 112359,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/039.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/039.test.json",
+      "sha256": "9fad8b5d478538eb740619efedb5d97b5dd1f345015f47ca30ee9f37749edd31",
+      "bytes": 28412,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/041.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/041.test.json",
+      "sha256": "3f672df91c91767c5bea0a7d7f3a0b7f8d637c83d7d89ee2d64478bd23c99d5e",
+      "bytes": 104963,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/043.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/043.test.json",
+      "sha256": "c8ed288b163f435bb3f1e90cb1d81e51f0c06a0efc73b1b05688843d1f911198",
+      "bytes": 370342,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/044.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/044.test.json",
+      "sha256": "7f4eb0a36d08a7b5764f69c991678a6dee3b7aa0cbea4e2e454ba31ec290536c",
+      "bytes": 56691,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/045.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/045.test.json",
+      "sha256": "f348d5822d1d93fd0155c6470271420a924195f861a477cbb1043a19890f7a3b",
+      "bytes": 66978,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/048.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/048.test.json",
+      "sha256": "039a0bc39cb9e2015dd643541792403070a548f6c3140d64b8ae52e0165dc153",
+      "bytes": 46357,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/050.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/050.test.json",
+      "sha256": "1e0691b585e359a8bd97b470a21ae9b7a50dde6afbdac795691ec289364eb34d",
+      "bytes": 9388,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/059.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/059.test.json",
+      "sha256": "358e18ec2ffa62d25cce39c810d03b8d4c26a365e0fcf4e64eaac280318430b0",
+      "bytes": 5246,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/060.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/060.test.json",
+      "sha256": "65bcef87c96ea2c16304723b7ca1934531e69a7d08e36ee4a6a2a65330943227",
+      "bytes": 207677,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/061.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/061.test.json",
+      "sha256": "9dd94ab18ad1ad5339113542d0f7e62064e8f59db07538e694bf40ac7534f4d5",
+      "bytes": 98027,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/062.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/062.test.json",
+      "sha256": "b303ed43d5e2314e3089432d804bfd1d1b29384dcba31087d9afebd0c55af700",
+      "bytes": 89850,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/065.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/065.test.json",
+      "sha256": "121b70fc1c7379a32037dce710e90c8eb5540a03941517ffaa5d7e859fe5cd16",
+      "bytes": 23852,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/067.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/067.test.json",
+      "sha256": "173c4542b80a256f8ade0d41c78b1697b9d2e527c11354d38947aab089694126",
+      "bytes": 11811,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/070.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/070.test.json",
+      "sha256": "90f663618e6a45802fa610a7de9ba6653f25b4f612ad3081db2dc9e65ea00fec",
+      "bytes": 67902,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/071.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/071.test.json",
+      "sha256": "17f010b63c6d8b785a67effe282a0f8669157921076941b7e4a51e2ce4d5f178",
+      "bytes": 66172,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/072.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/072.test.json",
+      "sha256": "4c31e8b155e13127d2660482163cf791521206b545b23d92ef05de89d78b1234",
+      "bytes": 22351,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/073.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/073.test.json",
+      "sha256": "9868b11504b0f953365ced4378e681f5476d5025df652b217951792d067ec73c",
+      "bytes": 292158,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/074.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/074.test.json",
+      "sha256": "10f79fcc404deba068dbe84d6cf729186ed058961f208bc7bb41d878d1e0fabe",
+      "bytes": 162628,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/075.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/075.test.json",
+      "sha256": "63df2219cfab056fbda4ec3bce1e1d9b382d1e9ef0c33e560200c37aea81f6eb",
+      "bytes": 151799,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/077.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/077.test.json",
+      "sha256": "caa038c75515e8245339d935845e94ea49bf93c5e0635401a05fd63cf1330951",
+      "bytes": 196145,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/078.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/078.test.json",
+      "sha256": "f3564a7c173ee5068e3dfddd5971d31af98fa0cd94a11e1a18f109bfcac95a51",
+      "bytes": 57234,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/081.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/081.test.json",
+      "sha256": "d9e531d8dc3b4c31bf971649134ebf5524e6d79860789a1431c2f24bddcd4ba7",
+      "bytes": 143214,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/082.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/082.test.json",
+      "sha256": "339aeb813ee25190325a0bfd9aa680346b84a6c5133443ff38c0e6845e8be7be",
+      "bytes": 151781,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/083.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/083.test.json",
+      "sha256": "48abc21f2c82578d8210a4df91e4106764f9f7239e9b37381bd864cc21bf883e",
+      "bytes": 1440936,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/084.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/084.test.json",
+      "sha256": "961e0928decf0adb5d154196b70fee49b81af351019bb0d20d485b84526d13e6",
+      "bytes": 170684,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/085.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/085.test.json",
+      "sha256": "ac5e25c36f680b0bf8e3a5b32087bf7d8448aa6208959901d72d44fbdea9ac9d",
+      "bytes": 136868,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/086.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/086.test.json",
+      "sha256": "70575bdc6dc3000f9051b422d64dcd506ae860adab1c32bbe5c0b87f773dc7d2",
+      "bytes": 120434,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/087.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/087.test.json",
+      "sha256": "f65998d703aff8cbb966609dc6ee017a34bee4b235245e3cb66c4b440b31f639",
+      "bytes": 4336,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/088.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/088.test.json",
+      "sha256": "b964acabb658f537894412558eeb66493e30f6b48963111c4d0a274863f76ddc",
+      "bytes": 33641,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/089.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/089.test.json",
+      "sha256": "acb388cdae31b12dffc5dc78607e13c29aa859e471a3b399995b8ae08158ad36",
+      "bytes": 114324,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/090.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/090.test.json",
+      "sha256": "5b17c108b689f7d4f64bd97bee70728880cc3eaf388bcfc432e747d6321acd02",
+      "bytes": 59856,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/092.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/092.test.json",
+      "sha256": "6dd1a4435fe3b79c9010dc7c23f1a506e0b8501fad2a631b02ae0186fff508b9",
+      "bytes": 17721,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/094.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/094.test.json",
+      "sha256": "f39a4478aba247181d76b4b460de89a02e494f0b7270808acddf679b857e35d7",
+      "bytes": 176709,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/098.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/098.test.json",
+      "sha256": "08421835ba0cee78ff74accf663efeb2ee762756c9b9ebdde74934736190248c",
+      "bytes": 234137,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/099.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/099.test.json",
+      "sha256": "2b0eb0984b75c46f0f4cb93884621916a5ccd0b21e85214561826855d5b89b19",
+      "bytes": 32400,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/test/100.test.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/test/100.test.json",
+      "sha256": "285b6420732487012c34290fb8b7e8ff0cd1e10147be3d8776a8ec1dc2a5e4dd",
+      "bytes": 42584,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/001.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/001.train.json",
+      "sha256": "ac789fc0a292ecf3e7424aa27da20a08db5515560badf71eb71189b6780fc949",
+      "bytes": 1205874,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/002.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/002.train.json",
+      "sha256": "afabd62dc405feb157b248238b9212a226ddc5c706a983de2eb8fb5009e1eee0",
+      "bytes": 1138497,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/003.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/003.train.json",
+      "sha256": "fa6f3551c956057fb2e19e5f744be628f1209de15b9498dfe602da5f7e9fc49f",
+      "bytes": 382340,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/006.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/006.train.json",
+      "sha256": "a1f915a8c40b1ac1bf89e2987ed3fb39b1cafe098c2aacf2ad2708af1cafcae7",
+      "bytes": 230615,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/008.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/008.train.json",
+      "sha256": "003d5a88a161d90453143e03d82381e4c577750675f5d05d9fc22e69c7b4321c",
+      "bytes": 1218211,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/009.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/009.train.json",
+      "sha256": "42dc89e9a623990899c237e89051124325917cd64bf65b92ab85d482feec59c7",
+      "bytes": 703057,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/010.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/010.train.json",
+      "sha256": "3f2dfed13a61b747baca1348d4e3b5f372be59f85f32df35b1f663b768dbf794",
+      "bytes": 536942,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/012.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/012.train.json",
+      "sha256": "cf473b5c6cbbefe2d21b3c5bffd788bd10c742294372a771fd469cdecfef5e8d",
+      "bytes": 1256155,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/014.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/014.train.json",
+      "sha256": "0d134c465eee2ffe3b6844f00429db09049df15149d815f988add3ed25bed0b3",
+      "bytes": 456450,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/020.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/020.train.json",
+      "sha256": "b72153e2339948c9c2377b8f865786b4b736fcb307984b6409b1a433abc34c36",
+      "bytes": 933067,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/021.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/021.train.json",
+      "sha256": "f8adad4acd294fbf40299ec3a676232dc45918f96208d3e43759c2d11908507d",
+      "bytes": 607447,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/023.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/023.train.json",
+      "sha256": "e9db26ce59f4c1234ce01aca48ec3bf27dd3c4c71634b8cbf88f3d5bac4a6ecf",
+      "bytes": 623268,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/026.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/026.train.json",
+      "sha256": "5faf305efb0f9855cf31a86ff31999f02050be2fa01d00da6d6766a7c4d041d0",
+      "bytes": 182149,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/029.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/029.train.json",
+      "sha256": "2ad85e89217754705a2a73574cfa8e93500d6a91574af3716dec6d6822bd982e",
+      "bytes": 1424833,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/030.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/030.train.json",
+      "sha256": "b2f6b33d3547fd23c99bae99598b5b9b9c25f5c8434d6fe42b166653c4a48669",
+      "bytes": 689645,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/038.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/038.train.json",
+      "sha256": "0be274f7728ba0aabea8812e1b5fc5a2c0fe0f352823ac21ef5fca2c895f1c66",
+      "bytes": 747017,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/039.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/039.train.json",
+      "sha256": "e41b942ac8a33795b58d793c75d2e1d02c14f45f347e9844e20faa282b532c12",
+      "bytes": 220507,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/041.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/041.train.json",
+      "sha256": "3bac206d833dd32289a1ebea080ee69be7d78c7e15db60219a59e613042d822e",
+      "bytes": 1799997,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/043.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/043.train.json",
+      "sha256": "ebf4acccb610c0dbe96a9f05644cbe3381e557523cb7ac81041e2da71821b739",
+      "bytes": 563230,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/044.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/044.train.json",
+      "sha256": "2098957b8b7f8a5acafefa29256c96cd6afcf39af3b200b79f5f989c447a5bae",
+      "bytes": 557301,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/045.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/045.train.json",
+      "sha256": "c418ea2c05393991f6ccb452acc35b6726bfdd7afa0705cad847ed7dc9128eba",
+      "bytes": 1002694,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/048.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/048.train.json",
+      "sha256": "745ded3cb2d13c28255ed801e0b42ce249da304d1559ca77ef3d2bc28bd17b0b",
+      "bytes": 200273,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/050.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/050.train.json",
+      "sha256": "f19bc1590e8f3ada2a5c4aaab669df7d5396fdc227139186b4e27d7693b80e03",
+      "bytes": 120574,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/059.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/059.train.json",
+      "sha256": "a0e3539d77ff6773befc0236d9a41b8b96a57d8f2d83b21430a9442c805de49a",
+      "bytes": 93705,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/060.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/060.train.json",
+      "sha256": "a6ccf667dcf01c73f295326b506d09f36239d755e17be2be2421b4d03a6343a2",
+      "bytes": 179569,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/061.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/061.train.json",
+      "sha256": "4feefee3fce0c876b94b00a058a92731edf4751c4e3a1c538fe95d909865dca6",
+      "bytes": 136620,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/062.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/062.train.json",
+      "sha256": "9c4bcc95af05780d85ba6d0d1c8f17314d5c6867808f58f7c0cc9fda89565e0c",
+      "bytes": 660965,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/065.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/065.train.json",
+      "sha256": "1bf5c7f52e8d8f74e82b740cb6e611889e7a1dfe64056b60f79ce1901ca40f65",
+      "bytes": 391372,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/067.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/067.train.json",
+      "sha256": "3703eadfc865fd368e9c6d639758512c316409939d8bfd80356b23a55c9e74fc",
+      "bytes": 29220,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/070.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/070.train.json",
+      "sha256": "0ebbecb2cbc97e8bfb6be8286e1dbcb502a1675b429367b3f40cfd06217e3cb8",
+      "bytes": 841034,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/071.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/071.train.json",
+      "sha256": "f5ef86897316d25aca729f39a3bace62c44d75c93b5ee4b1b3c088f3c526913d",
+      "bytes": 444170,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/072.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/072.train.json",
+      "sha256": "ef5e0d24d9666eb5fd866b22342e7469582fe136bf1139b2419f648391c5646b",
+      "bytes": 805215,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/073.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/073.train.json",
+      "sha256": "529b742ed747d0d364ec5ef57df69b220d06ed1b95d092e44126623cd166630d",
+      "bytes": 1396406,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/074.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/074.train.json",
+      "sha256": "095ed15039b3fdf6e233189820d66d22d48266a52f91e5d44bd263713fbc1303",
+      "bytes": 118434,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/075.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/075.train.json",
+      "sha256": "46b532c5276e1f07caa6038f5a88892a962efd21a0bd201d429f2fa8ecafc5ad",
+      "bytes": 787159,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/077.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/077.train.json",
+      "sha256": "85b1d56f7f874d29d7b956f0fa0f46aaebf25fd210fa1c44f570aa20c2103daa",
+      "bytes": 625855,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/078.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/078.train.json",
+      "sha256": "090e25d537888bf7576ddf9f83d0e7ccd4864dc65beba3dc7ca77a06feba695a",
+      "bytes": 55253,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/081.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/081.train.json",
+      "sha256": "c61f82529f8d9cbc12802431589672a9f881d43d8130a8f1a217e4ef238918af",
+      "bytes": 1887049,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/082.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/082.train.json",
+      "sha256": "133b7e7889eaab51e8616c6798e9d097467dde27fad1f1d69d6a2202626caaf2",
+      "bytes": 437961,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/083.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/083.train.json",
+      "sha256": "04d97ca7bd4d2f3ee5b8a0130d2e7c6276614d868719e1c8f0e20b5e6181d83e",
+      "bytes": 1371854,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/084.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/084.train.json",
+      "sha256": "a210c416d6df38451629d09d2d3fc062a1f81f4940b24ee5702de7fe4f9bbf86",
+      "bytes": 293302,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/085.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/085.train.json",
+      "sha256": "d00c3dc48e46687d509d598a4ec5e7af4c2d7e8ae034254644e541a29ce94aae",
+      "bytes": 968477,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/086.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/086.train.json",
+      "sha256": "6e52167ea8b2f420c111b5b4400b09d9fe037850006073893ba7349c9b534502",
+      "bytes": 940798,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/087.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/087.train.json",
+      "sha256": "9b0a96fbe833ac2a06d9e54ad3729a69363c2ee2d245555a8d49321c8149a17a",
+      "bytes": 197091,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/088.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/088.train.json",
+      "sha256": "8975ea82b1014571056c7efe35f40c737d8f35fa23b3b780b34b7ebffdb7ac61",
+      "bytes": 546456,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/089.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/089.train.json",
+      "sha256": "125911f8b8e3e817c487acd7237c63bc62c0adc0c1a47372e6254d6d0b74725a",
+      "bytes": 828931,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/090.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/090.train.json",
+      "sha256": "f8f745dffe40f40824ba2a854fb4d936836a5d1df5d655eeddd4a5b7a5110e71",
+      "bytes": 939418,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/092.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/092.train.json",
+      "sha256": "bef8ec934eb15fd83ddfe59f16a56325dde0858e714aac07f05de972345c6a2f",
+      "bytes": 245674,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/094.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/094.train.json",
+      "sha256": "1f8576c091c168ff6dd12cce259a12fdb9eaffbc2766b9bc4a8f6c48319d5c2a",
+      "bytes": 1065886,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/098.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/098.train.json",
+      "sha256": "e1111bb403b5997f1b6108d9e7e901010d7faeffb16941cef9ddc85224588639",
+      "bytes": 2733060,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/099.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/099.train.json",
+      "sha256": "15298a4f4d0014dded2624632c28e8d80906e8731f0fe6310a30f88209a23d09",
+      "bytes": 183442,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/LDC_schema_corpus_ce_split/train/100.train.json",
+      "path": "datasets/ldc2020e25/data/derived_event_graphs/train/100.train.json",
+      "sha256": "59d81679f83c2b86cc404b7e42e0e5e9202fd9547a0d0cf1bda732193203c7ef",
+      "bytes": 247887,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_released_derived_graphs"
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/ldc2020e25/example.json"
+  "example_path": "datasets/ldc2020e25/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "partial",
+    "scope": "已保存作者公开的156个LDC来源派生事件图，保留train/dev/test目录。",
+    "missing": "这些是公开派生图，不是LDC2020E25原始授权文本；原始LDC语料未取得。",
+    "file_count": 156,
+    "bytes": 49463043
+  }
 }

@@ -2,7 +2,7 @@
 
 事件模式归纳、事件关系抽取、事件预测与危机场景推理的数据集索引、带中文注释的示例及获取工具。共整理 **30 个独立资源目录**，包含 RESPONSE 和 ElizBench 的两个子集。
 
-这个仓库整合数据入口、版本说明及示例；ODIN、OpenEP和ElizBench的两个公开子集已随仓库提供；其余数据依获取状态下载、申请或核实。每个示例都显式区分作者真实记录与自编格式示例。
+已将可取得的原始数据保存到各目录的`data/`并上传GitHub：16项公开发布文件已取得，10项为部分/派生/辅助数据，3项指定版本未取得，另1项拟自建。逐项范围见[下载清单](docs/DOWNLOADS.md)；不把辅助文件或示例计作完整原始语料。
 
 ## 快速使用
 
@@ -15,44 +15,46 @@ python scripts/datasets.py validate
 python scripts/datasets.py fetch ev2
 python scripts/datasets.py inspect ev2
 python datasets/eliz-maven/example.py
+python scripts/datasets.py restore conceptnet
+python scripts/datasets.py restore mirai
 ```
 
 `fetch`只下载已登记的文件，固定作者提交，保存哈希及时间。`inspect`读取本地原始JSON/JSONL/CSV并展示首条记录。没有已核实自动下载地址的资源会返回明确状态，不会生成假数据。Windows可用 `py -3` 代替 `python`。
 
 ## 数据集目录
 
-| 数据集 | 任务类别 | 获取状态 | 示例来源 |
+| 数据集 | 任务类别 | 下载状态 | 示例来源 |
 | --- | --- | --- | --- |
-| [RESIN-11](datasets/resin-11/) | schema_induction | `version_verification_required` | 自编格式示例 |
-| [ODIN](datasets/odin/) | schema_induction | `bundled` | 作者真实记录 |
-| [proScript](datasets/proscript/) | schema_induction | `downloadable_license_unverified` | 自编格式示例 |
-| [IED 新闻实例图](datasets/ied/) | instance_graph | `version_verification_required` | 自编格式示例 |
-| [LDC2020E25](datasets/ldc2020e25/) | instance_graph | `restricted_access` | 自编格式示例 |
-| [MAVEN-CGEP](datasets/maven-cgep/) | causal_prediction | `author_artifact_available` | 自编格式示例 |
-| [ESC-CGEP](datasets/esc-cgep/) | causal_prediction | `author_artifact_available` | 自编格式示例 |
-| [MAVEN-AECR](datasets/maven-aecr/) | abstract_rules | `author_artifact_available` | 自编格式示例 |
-| [ESC-AECR](datasets/esc-aecr/) | abstract_rules | `author_artifact_available` | 自编格式示例 |
-| [EV² / EV2](datasets/ev2/) | event_reasoning | `downloadable_license_unverified` | 自编格式示例 |
-| [GDELT（LAMP版本）](datasets/gdelt-lamp/) | structured_prediction | `manual_acquisition` | 自编格式示例 |
-| [ICEWS（LAMP版本）](datasets/icews-lamp/) | structured_prediction | `manual_acquisition` | 自编格式示例 |
-| [MIRAI（论文10设置）](datasets/mirai/) | text_prediction | `version_verification_required` | 自编格式示例 |
-| [GDELT-500（论文10改造版）](datasets/gdelt-500/) | text_prediction | `version_verification_required` | 自编格式示例 |
-| [OpenEPBench](datasets/openepbench/) | open_ended_prediction | `bundled` | 作者真实记录 |
-| [SchemaAug / Kidnapping](datasets/schemaaug-kidnapping/) | extraction_augmentation | `manual_acquisition` | 自编格式示例 |
-| [SchemaAug / Ukraine Crisis](datasets/schemaaug-ukraine-crisis/) | extraction_augmentation | `manual_acquisition` | 自编格式示例 |
-| [SchemaAug / Mass Shooting](datasets/schemaaug-mass-shooting/) | extraction_augmentation | `manual_acquisition` | 自编格式示例 |
-| [SchemaAug / Disease Outbreak](datasets/schemaaug-disease-outbreak/) | extraction_augmentation | `manual_acquisition` | 自编格式示例 |
-| [SchemaAug / WCEP](datasets/schemaaug-wcep/) | extraction_augmentation | `manual_acquisition` | 自编格式示例 |
-| [ConceptNet](datasets/conceptnet/) | commonsense_knowledge | `manual_acquisition` | 自编格式示例 |
-| [EECKG](datasets/eeckg/) | commonsense_knowledge | `source_verification_required` | 自编格式示例 |
+| [RESIN-11](datasets/resin-11/) | schema_induction | `partial` | 自编格式示例 |
+| [ODIN](datasets/odin/) | schema_induction | `downloaded` | 作者真实记录 |
+| [proScript](datasets/proscript/) | schema_induction | `downloaded` | 自编格式示例 |
+| [IED 新闻实例图](datasets/ied/) | instance_graph | `downloaded` | 自编格式示例 |
+| [LDC2020E25](datasets/ldc2020e25/) | instance_graph | `partial` | 自编格式示例 |
+| [MAVEN-CGEP](datasets/maven-cgep/) | causal_prediction | `partial` | 自编格式示例 |
+| [ESC-CGEP](datasets/esc-cgep/) | causal_prediction | `partial` | 自编格式示例 |
+| [MAVEN-AECR](datasets/maven-aecr/) | abstract_rules | `downloaded` | 自编格式示例 |
+| [ESC-AECR](datasets/esc-aecr/) | abstract_rules | `unavailable` | 自编格式示例 |
+| [EV² / EV2](datasets/ev2/) | event_reasoning | `downloaded` | 自编格式示例 |
+| [GDELT（LAMP版本）](datasets/gdelt-lamp/) | structured_prediction | `downloaded` | 自编格式示例 |
+| [ICEWS（LAMP版本）](datasets/icews-lamp/) | structured_prediction | `unavailable` | 自编格式示例 |
+| [MIRAI（论文10设置）](datasets/mirai/) | text_prediction | `partial` | 自编格式示例 |
+| [GDELT-500（论文10改造版）](datasets/gdelt-500/) | text_prediction | `unavailable` | 自编格式示例 |
+| [OpenEPBench](datasets/openepbench/) | open_ended_prediction | `downloaded` | 作者真实记录 |
+| [SchemaAug / Kidnapping](datasets/schemaaug-kidnapping/) | extraction_augmentation | `partial` | 自编格式示例 |
+| [SchemaAug / Ukraine Crisis](datasets/schemaaug-ukraine-crisis/) | extraction_augmentation | `partial` | 自编格式示例 |
+| [SchemaAug / Mass Shooting](datasets/schemaaug-mass-shooting/) | extraction_augmentation | `partial` | 自编格式示例 |
+| [SchemaAug / Disease Outbreak](datasets/schemaaug-disease-outbreak/) | extraction_augmentation | `partial` | 自编格式示例 |
+| [SchemaAug / WCEP](datasets/schemaaug-wcep/) | extraction_augmentation | `partial` | 自编格式示例 |
+| [ConceptNet](datasets/conceptnet/) | commonsense_knowledge | `downloaded` | 自编格式示例 |
+| [ECCKG（原清单记作EECKG）](datasets/eeckg/) | commonsense_knowledge | `downloaded` | 自编格式示例 |
 | [自建网络暴力事件语料（待建设）](datasets/cyberbullying-local/) | custom_corpus | `planned` | 自编格式示例 |
-| [MAVEN-ERE](datasets/maven-ere/) | relation_extraction | `manual_acquisition` | 自编格式示例 |
-| [MATRES](datasets/matres/) | relation_extraction | `downloadable_license_unverified` | 自编格式示例 |
-| [HiEve（文本事件层级）](datasets/hieve/) | relation_extraction | `source_verification_required` | 自编格式示例 |
-| [EventStoryLine / ESC](datasets/eventstoryline/) | relation_extraction | `downloadable_license_unverified` | 自编格式示例 |
-| [RESPONSE](datasets/response/) | crisis_reasoning | `download_blocked_403` | 自编格式示例 |
-| [Eliz-EV²](datasets/eliz-ev2/) | event_generalization | `bundled` | 作者真实记录 |
-| [Eliz-MAVEN](datasets/eliz-maven/) | event_generalization | `bundled` | 作者真实记录 |
+| [MAVEN-ERE](datasets/maven-ere/) | relation_extraction | `downloaded` | 自编格式示例 |
+| [MATRES](datasets/matres/) | relation_extraction | `downloaded` | 自编格式示例 |
+| [HiEve（文本事件层级）](datasets/hieve/) | relation_extraction | `downloaded` | 自编格式示例 |
+| [EventStoryLine / ESC](datasets/eventstoryline/) | relation_extraction | `downloaded` | 自编格式示例 |
+| [RESPONSE](datasets/response/) | crisis_reasoning | `downloaded` | 作者真实记录 |
+| [Eliz-EV²](datasets/eliz-ev2/) | event_generalization | `downloaded` | 作者真实记录 |
+| [Eliz-MAVEN](datasets/eliz-maven/) | event_generalization | `downloaded` | 作者真实记录 |
 
 ## 目录约定
 
@@ -61,21 +63,20 @@ catalog.json                  # 全部资源、来源、版本和获取状态
 datasets/<id>/README.md        # 数据简介、项目用途、获取方式
 datasets/<id>/metadata.json    # 单项机器可读元数据
 datasets/<id>/example.json     # 示例及中文字段注释
-datasets/<id>/data/            # 已核对许可的小规模随附资源
-datasets/<id>/raw/             # 本地下载，默认不提交Git
+datasets/<id>/data/            # 已归档的数据、原始压缩包或分片
+datasets/<id>/raw/             # 大归档合并输出和临时文件，不提交Git
 scripts/datasets.py            # 目录查询、下载、原始样本查看与验证
 ```
 
 合并条目已拆开：MAVEN/ESC-AECR、ConceptNet/EECKG和五种SchemaAug新闻子集分别建目录。正文提到的MAVEN-ERE、MATRES、HiEve、EventStoryLine也单列；拟自建网络暴力语料标记 `planned`。
 
-## 版本和已知缺口
+## 实际文件与仍有的缺口
 
-- RESIN章节提示不等于RESIN-11金标准，候选库下载后仍需核对评测子集。
-- MAVEN/ESC-CGEP及AECR保留作者匿名发布入口；尚未确认该入口的可下载数据覆盖及许可。
-- LAMP预处理的GDELT/ICEWS必须通过作者指定链接获取，不能替换为常见其他年份版本。
-- 论文10的MIRAI及GDELT-500设置需额外核对；原始MIRAI入口不代表同一查询版本。
-- RESPONSE固定 DOI v1，数据站在整理环境返回HTTP 403，当前保留入口和自编示例，未声称已下载。
-- HiEve指文本事件层级资源，不是同名视频资源；原始来源尚待进一步核实。
+- RESPONSE官方两个JSON已下载并校验，取代此前403状态；保留论文统计与发布文件统计的区别。
+- ConceptNet和MIRAI完整发布归档采用分片保存，运行`restore conceptnet`或`restore mirai`合并并校验。
+- IED、MAVEN-ERE、EV²、MATRES、proScript、ECCKG、GDELT、HiEve等已保存本次取得的公开文件；具体范围以每项DOWNLOAD_STATUS为准。
+- SchemaAug仅找到辅助模式；LDC仅取得公开派生图；部分CGEP文件和论文10筛选版本仍待补齐。
+- ICEWS的LAMP版本、ESC-AECR以及论文10改造版GDELT-500尚未取得，不使用其他版本替代。拟自建语料没有现成下载包。
 
 ElizBench新增两个目录，含完整成品CSV、info统计表、真实样例和可运行的中文注释示例，详见[ElizBench说明](docs/ELIZBENCH.md)。
 

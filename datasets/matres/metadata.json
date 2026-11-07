@@ -5,37 +5,51 @@
   "description": "面向事件时间关系的人工标注。",
   "project_use": "时序关系抽取。",
   "sources": [
-    "https://github.com/qiangning/MATRES"
+    "https://github.com/qiangning/MATRES",
+    "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/aquaint.txt",
+    "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/platinum.txt",
+    "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/timebank.txt"
   ],
   "paper": null,
   "version": "作者发布的关系标注；需配套原文",
-  "cautions": "标注文件中的 BEFORE/AFTER/EQUAL/VAGUE 不能直接当因果；原文的获取条件独立确认。",
-  "access_status": "downloadable_license_unverified",
+  "cautions": "作者发布的aquaint、platinum、timebank三份完整关系标注；不包含另行授权的配套新闻原文。 原始许可和数据权利以作者及原权利人要求为准。",
+  "access_status": "bundled",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
   "assets": [
     {
       "url": "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/aquaint.txt",
-      "path": "datasets/matres/raw/aquaint.txt",
+      "path": "datasets/matres/data/aquaint.txt",
       "sha256": "eb42b25d873809dfa0494ee0564da30f153942a2af663f5a74660928210a340b",
-      "bundled": false,
+      "bytes": 279226,
+      "bundled": true,
       "upstream_commit": "ccac302b546401a1e55f2bd6097913083b5cd8d6"
     },
     {
       "url": "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/platinum.txt",
-      "path": "datasets/matres/raw/platinum.txt",
+      "path": "datasets/matres/data/platinum.txt",
       "sha256": "346be061630c01e8ac2624e16ed46b24506bf152334b0dee275ada7943d70daa",
-      "bundled": false,
+      "bytes": 38604,
+      "bundled": true,
       "upstream_commit": "ccac302b546401a1e55f2bd6097913083b5cd8d6"
     },
     {
       "url": "https://raw.githubusercontent.com/qiangning/MATRES/ccac302b546401a1e55f2bd6097913083b5cd8d6/timebank.txt",
-      "path": "datasets/matres/raw/timebank.txt",
+      "path": "datasets/matres/data/timebank.txt",
       "sha256": "217c7a5b51c7fa5fe5feed36dd10c6feed5e3dfa4dd736d45ccb37bea21bcb09",
-      "bundled": false,
+      "bytes": 270383,
+      "bundled": true,
       "upstream_commit": "ccac302b546401a1e55f2bd6097913083b5cd8d6"
     }
   ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/matres/example.json"
+  "example_path": "datasets/matres/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "作者发布的aquaint、platinum、timebank三份完整关系标注；不包含另行授权的配套新闻原文。",
+    "missing": "",
+    "file_count": 3,
+    "bytes": 588213
+  }
 }

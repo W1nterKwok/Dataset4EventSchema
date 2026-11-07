@@ -9,11 +9,27 @@
   ],
   "paper": "https://arxiv.org/abs/2211.07342",
   "version": "原始MAVEN-ERE；固定作者划分",
-  "cautions": "与 MAVEN-CGEP 和 MAVEN-AECR 分开管理；原始关系标签和token索引需按作者格式解析。",
-  "access_status": "manual_acquisition",
+  "cautions": "官方v1.0完整ZIP：train 2,913、valid 710、test 857篇；官方测试金标本身不公开。 原始许可和数据权利以作者及原权利人要求为准。",
+  "access_status": "bundled",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://drive.usercontent.google.com/download?id=1fxomYO6zPl5DDrDr_HeWFK14s8BpW1z-&export=download&confirm=t",
+      "path": "datasets/maven-ere/data/MAVEN_ERE-v1.0.zip",
+      "sha256": "e7053ef322bcfcc7b89c02d86677a0e182bca472b881b91741d9db1cd13792b9",
+      "bytes": 19635238,
+      "bundled": true
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/maven-ere/example.json"
+  "example_path": "datasets/maven-ere/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "官方v1.0完整ZIP：train 2,913、valid 710、test 857篇；官方测试金标本身不公开。",
+    "missing": "",
+    "file_count": 1,
+    "bytes": 19635238
+  }
 }

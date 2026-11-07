@@ -6,15 +6,51 @@
   "project_use": "检验抽象规则是否改善因果图预测。",
   "sources": [
     "https://anonymous.4open.science/r/AECR-AFAF/",
-    "https://arxiv.org/abs/2608.05205"
+    "https://arxiv.org/abs/2608.05205",
+    "https://raw.githubusercontent.com/zhanchuanhong/SeDGPL/265b19b69856428a63819c809572865b5faebf3f/ESCSubWoRe.npy",
+    "https://raw.githubusercontent.com/zhanchuanhong/SeDGPL/265b19b69856428a63819c809572865b5faebf3f/data/reverse_event_dict.json",
+    "https://raw.githubusercontent.com/zhanchuanhong/SeDGPL/265b19b69856428a63819c809572865b5faebf3f/data/to_add.json"
   ],
   "paper": "https://arxiv.org/abs/2608.05205",
   "version": "ESC-CGEP（AECR论文采用版本）",
   "cautions": "保留官方候选集及划分；MAVEN 为512候选，ESC 为256候选，不使用本文件的两候选示例计算论文结果。",
-  "access_status": "author_artifact_available",
+  "access_status": "partial_download",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://raw.githubusercontent.com/zhanchuanhong/SeDGPL/265b19b69856428a63819c809572865b5faebf3f/ESCSubWoRe.npy",
+      "path": "datasets/esc-cgep/data/SeDGPL/ESCSubWoRe.npy",
+      "sha256": "8ec791fb609cadf2ba1c8589d3f18ce1fac95b50c57203f1b25472d8438e5026",
+      "bytes": 4568738,
+      "bundled": true,
+      "upstream_commit": "265b19b69856428a63819c809572865b5faebf3f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zhanchuanhong/SeDGPL/265b19b69856428a63819c809572865b5faebf3f/data/reverse_event_dict.json",
+      "path": "datasets/esc-cgep/data/SeDGPL/data/reverse_event_dict.json",
+      "sha256": "a89db47f4fd8d34c236c86795137790d30f4016d962aae7f2003f47663aa6325",
+      "bytes": 102497,
+      "bundled": true,
+      "upstream_commit": "265b19b69856428a63819c809572865b5faebf3f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/zhanchuanhong/SeDGPL/265b19b69856428a63819c809572865b5faebf3f/data/to_add.json",
+      "path": "datasets/esc-cgep/data/SeDGPL/data/to_add.json",
+      "sha256": "33bc6bfc1cf8cdca6e019277af6e432dfa3a7716e5d24c63c55f736a7ad14d4b",
+      "bytes": 116046,
+      "bundled": true,
+      "upstream_commit": "265b19b69856428a63819c809572865b5faebf3f"
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/esc-cgep/example.json"
+  "example_path": "datasets/esc-cgep/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "partial",
+    "scope": "已保存SeDGPL作者发布的ESCSubWoRe.npy及事件词典/映射。",
+    "missing": "已验证NumPy文件头，未执行对象反序列化；尚未确认其全部样本/候选与AECR论文采用版本完全一致。",
+    "file_count": 3,
+    "bytes": 4787281
+  }
 }

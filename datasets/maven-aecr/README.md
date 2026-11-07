@@ -1,12 +1,15 @@
 # MAVEN-AECR
 
+> 当前下载状态：**downloaded**。作者公开733条抽象规则、规则映射、聚类输出及检索训练配对文件；保留作者命名。  详细文件状态见 [DOWNLOAD_STATUS.md](DOWNLOAD_STATUS.md)。
+
+
 具体因果事件对和抽象因果规则的配对资源。
 
 ## 用途与版本
 
 - 研究用途：规则归纳、质量评估与规则检索。
 - 固定版本：MAVEN-AECR（分别733/180条规则，文献报告）
-- 获取状态：`author_artifact_available`
+- 获取状态：`bundled`
 - 数据许可：未核实数据许可
 
 规则库构建文档和下游测试文档的重叠需核查；规则检索划分不等于 CGEP 划分。
@@ -23,9 +26,9 @@ python scripts/datasets.py show maven-aecr
 
 ## 获取数据
 
-无已核实的自动下载资产；从下列作者入口获取并核对版本。
+文件已保存于本目录data。可运行 `python scripts/datasets.py fetch maven-aecr` 校验已存文件；分片归档用restore命令合并。
 
-原始下载保存于 `raw/`（Git默认忽略），已随仓库提供的小规模资源放在 `data/`。下载记录和SHA-256写入 `data/download-log.json`。受限或未明确许可的数据不自动镜像到GitHub。
+本次已取得的公开原始数据保存于 `data/` 并提交Git；大归档按清单分片，合并输出至 `raw/`。下载记录和SHA-256写入 `data/download-log.json`。归档范围和原始权利说明见下载状态与许可记录。
 
 ## 来源
 

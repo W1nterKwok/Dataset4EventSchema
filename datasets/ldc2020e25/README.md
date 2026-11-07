@@ -1,12 +1,15 @@
 # LDC2020E25
 
+> 当前下载状态：**partial**。已保存作者公开的156个LDC来源派生事件图，保留train/dev/test目录。 这些是公开派生图，不是LDC2020E25原始授权文本；原始LDC语料未取得。 详细文件状态见 [DOWNLOAD_STATUS.md](DOWNLOAD_STATUS.md)。
+
+
 LDC模式学习语料及论文派生复杂事件图。
 
 ## 用途与版本
 
 - 研究用途：复杂图结构、补全及预测。
 - 固定版本：LDC2020E25；派生8/12节点图另列版本
-- 获取状态：`restricted_access`
+- 获取状态：`partial_download`
 - 数据许可：LDC 授权条款，未获取原始数据
 
 先确认 LDC 访问资格和授权；派生样本数不是原始文档数。
@@ -23,9 +26,9 @@ python scripts/datasets.py show ldc2020e25
 
 ## 获取数据
 
-无已核实的自动下载资产；从下列作者入口获取并核对版本。
+文件已保存于本目录data。可运行 `python scripts/datasets.py fetch ldc2020e25` 校验已存文件；分片归档用restore命令合并。
 
-原始下载保存于 `raw/`（Git默认忽略），已随仓库提供的小规模资源放在 `data/`。下载记录和SHA-256写入 `data/download-log.json`。受限或未明确许可的数据不自动镜像到GitHub。
+本次已取得的公开原始数据保存于 `data/` 并提交Git；大归档按清单分片，合并输出至 `raw/`。下载记录和SHA-256写入 `data/download-log.json`。归档范围和原始权利说明见下载状态与许可记录。
 
 ## 来源
 

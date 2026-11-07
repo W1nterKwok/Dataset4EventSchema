@@ -1,12 +1,15 @@
 # GDELT（LAMP版本）
 
+> 当前下载状态：**downloaded**。作者包中的gdelt.pkl及entity_map.pkl，并保留完整LAMP数据发布包。没有执行pickle反序列化。  详细文件状态见 [DOWNLOAD_STATUS.md](DOWNLOAD_STATUS.md)。
+
+
 LAMP论文预处理的结构化政治事件序列。
 
 ## 用途与版本
 
 - 研究用途：事件属性排序；ICEWS还用于发生时间预测。
 - 固定版本：GDELT: 2022-01至07；ICEWS: 2022-10-11至2023-02-28
-- 获取状态：`manual_acquisition`
+- 获取状态：`bundled`
 - 数据许可：未核实数据许可
 
 不得用 ICEWS14/ICEWS18 或其他 GDELT 版本替换；本示例的国家和事件均为虚构。
@@ -23,9 +26,9 @@ python scripts/datasets.py show gdelt-lamp
 
 ## 获取数据
 
-无已核实的自动下载资产；从下列作者入口获取并核对版本。
+文件已保存于本目录data。可运行 `python scripts/datasets.py fetch gdelt-lamp` 校验已存文件；分片归档用restore命令合并。
 
-原始下载保存于 `raw/`（Git默认忽略），已随仓库提供的小规模资源放在 `data/`。下载记录和SHA-256写入 `data/download-log.json`。受限或未明确许可的数据不自动镜像到GitHub。
+本次已取得的公开原始数据保存于 `data/` 并提交Git；大归档按清单分片，合并输出至 `raw/`。下载记录和SHA-256写入 `data/download-log.json`。归档范围和原始权利说明见下载状态与许可记录。
 
 ## 来源
 

@@ -5,10 +5,12 @@ from collections import Counter
 import csv
 import datetime as dt
 import hashlib
+import gzip
 import io
 import json
 from pathlib import Path
 import sys
+import tarfile
 import urllib.request
 import zipfile
 
@@ -39,11 +41,28 @@ def safe_path(relative):
 
 def records(path):
     """兼容作者把JSONL文件命名为.json的情况，不执行pickle等格式。"""
+    if '.part' in path.suffix:
+        raise ValueError('该文件为归档分片；请先运行 restore <数据集ID>。')
+    if path.name.endswith(('.tgz','.tar.gz')):
+        with tarfile.open(path,'r:gz') as archive:
+            yield {'archive':path.name,'members':[m.name for _,m in zip(range(25),archive)]}
+        return
+    if path.suffix.lower()=='.gz':
+        with gzip.open(path,'rt',encoding='utf-8') as stream:
+            for line in stream:
+                if line.strip():
+                    yield {'raw_line':line.rstrip('\r\n'),'columns':line.rstrip('\r\n').split('\t')}
+        return
+    if path.suffix.lower() in {'.pkl','.pickle','.npy','.npz'}:
+        # 不自动反序列化pickle或含object的NumPy数据，以免执行上游对象代码。
+        yield {'file':path.name,'bytes':path.stat().st_size,'note':'已保存原始二进制数据；查看样本请在可信研究环境使用作者的数据加载器。'}
+        return
     if path.suffix.lower() == '.zip':
         with zipfile.ZipFile(path) as archive:
             names=[n for n in archive.namelist() if n.endswith(('.jsonl','.json')) and not n.startswith('__MACOSX/')]
             if not names:
-                raise ValueError('ZIP中没有可查看的JSON/JSONL文件。')
+                yield {'archive':path.name,'members':[n for n in archive.namelist() if not n.endswith('/')][:25]}
+                return
             name=next((n for n in names if n.endswith('/train.jsonl')),names[0])
             with archive.open(name) as stream:
                 for line in io.TextIOWrapper(stream,encoding='utf-8-sig'):
@@ -59,7 +78,8 @@ def records(path):
         return
     if path.suffix.lower() == '.csv':
         with path.open(encoding='utf-8-sig', newline='') as stream:
-            yield from csv.DictReader(stream)
+            first_line=stream.readline();stream.seek(0)
+            yield from csv.DictReader(stream,delimiter='\t' if '\t' in first_line else ',')
         return
     text = path.read_text(encoding='utf-8-sig')
     try:
@@ -106,7 +126,7 @@ def fetch(row):
     log_path = ROOT / 'data' / 'download-log.json'
     log = read_json(log_path) if log_path.exists() else []
     failed = 0
-    for asset in row['assets']:
+    for asset in sorted(row['assets'],key=lambda item:bool(item.get('archive_member'))):
         path = safe_path(asset['path'])
         try:
             # bundled文件有固定SHA-256，存在时直接校验，不反复下载。
@@ -114,11 +134,31 @@ def fetch(row):
             if path.exists() and expected and hashlib.sha256(path.read_bytes()).hexdigest() == expected:
                 print(f'已校验 {asset["path"]}')
                 continue
-            req = urllib.request.Request(asset['url'], headers={'User-Agent':'Dataset4EventSchema/1.0'})
-            with urllib.request.urlopen(req, timeout=45) as response:
-                body = response.read(50 * 1024 * 1024 + 1)
-            if len(body) > 50 * 1024 * 1024:
-                raise ValueError('单文件超过50MiB，请通过作者入口手动获取。')
+            if asset.get('generated_content') is not None:
+                body=asset['generated_content'].encode('utf-8')
+            elif asset.get('archive_member'):
+                archive_name=asset['source_archive']
+                local=next((safe_path(a['path']) for a in row['assets'] if Path(a['path']).name==archive_name),None)
+                if local is None or not local.exists():
+                    restore_archives(row)
+                    local=ROOT/'datasets'/row['id']/'raw'/archive_name
+                if not local.exists():
+                    raise ValueError('缺少完整源归档；先恢复对应归档，再提取成员。')
+                with zipfile.ZipFile(local) as archive:
+                    body=archive.read(asset['archive_member'])
+            else:
+                headers={'User-Agent':'Dataset4EventSchema/1.0'}
+                if asset.get('http_range'):
+                    start,end=asset['http_range'];headers['Range']=f'bytes={start}-{end}'
+                req=urllib.request.Request(asset['url'],headers=headers)
+                with urllib.request.urlopen(req,timeout=60) as response:
+                    if asset.get('http_range'):
+                        expected_range=f'bytes {start}-{end}/'
+                        if response.status!=206 or not response.headers.get('Content-Range','').startswith(expected_range):
+                            raise ValueError('下载服务器未返回所请求的字节范围；未保存伪分片。')
+                    body=response.read(100*1024*1024+1)
+                if len(body)>100*1024*1024:
+                    raise ValueError('文件超过GitHub单文件限制；请使用分片归档。')
             check_download(body, path.name)
             digest = hashlib.sha256(body).hexdigest()
             if expected and digest != expected:
@@ -135,6 +175,36 @@ def fetch(row):
     log_path.parent.mkdir(exist_ok=True)
     log_path.write_text(json.dumps(log, ensure_ascii=False, indent=2)+'\n',encoding='utf-8')
     return 1 if failed else 0
+
+
+def restore_archives(row):
+    """按已提交的分片和校验清单合并原始归档，输出到不提交Git的raw目录。"""
+    folder=ROOT/'datasets'/row['id']
+    manifests=sorted((folder/'data').rglob('*.manifest.json'))
+    if not manifests:
+        raise ValueError('该数据集不需要合并分片；完整文件已位于data目录。')
+    for path in manifests:
+        manifest=read_json(path)
+        name=Path(manifest['original_filename']).name
+        target=folder/'raw'/name;target.parent.mkdir(parents=True,exist_ok=True)
+        temporary=target.with_suffix(target.suffix+'.part')
+        total=0;whole=hashlib.sha256()
+        with temporary.open('wb') as output:
+            for part in manifest['parts']:
+                source=(path.parent/part['file']).resolve()
+                if not source.is_relative_to(path.parent.resolve()):
+                    raise ValueError('分片路径越过数据目录。')
+                digest=hashlib.sha256();size=0
+                with source.open('rb') as stream:
+                    while block:=stream.read(1024*1024):
+                        output.write(block);digest.update(block);whole.update(block);size+=len(block)
+                if size!=part['bytes'] or digest.hexdigest()!=part['sha256']:
+                    raise ValueError(f'分片校验失败：{part["file"]}')
+                total+=size
+        if total!=manifest['original_bytes'] or whole.hexdigest()!=manifest['sha256']:
+            raise ValueError('合并文件整体校验失败。')
+        temporary.replace(target)
+        print(f'已恢复 {target.relative_to(ROOT).as_posix()} ({total} bytes)，整体SHA-256校验通过。')
 
 
 def validate():
@@ -223,7 +293,7 @@ def main():
     parser=argparse.ArgumentParser(description=__doc__)
     commands=parser.add_subparsers(dest='command',required=True)
     commands.add_parser('list');commands.add_parser('validate')
-    for name in ['show','fetch','inspect']:
+    for name in ['show','fetch','inspect','restore']:
         p=commands.add_parser(name);p.add_argument('dataset_id')
     args=parser.parse_args()
     try:
@@ -238,17 +308,28 @@ def main():
                 print(json.dumps(read_json(safe_path(row['example_path'])),ensure_ascii=False,indent=2))
             elif args.command=='fetch':
                 return fetch(row)
+            elif args.command=='restore':
+                restore_archives(row)
             else:
                 found=False
                 for asset in row['assets']:
+                    if asset.get('storage') in {'multipart','manifest'}:
+                        continue
                     path=safe_path(asset['path'])
+                    if path.name.lower().startswith(('readme','license')) or path.suffix.lower() in {'.md','.pptx'}:
+                        continue
                     if path.exists():
                         found=True
                         print(f'文件：{asset["path"]}')
                         print(json.dumps(next(records(path)),ensure_ascii=False,indent=2))
                         break
                 if not found:
-                    raise ValueError('没有本地原始文件；先运行 fetch 或从作者入口取得数据。')
+                    candidates=list((ROOT/'datasets'/row['id']/'raw').glob('*'))
+                    usable=[p for p in candidates if p.is_file() and p.suffix in {'.gz','.zip'}]
+                    if usable:
+                        print(json.dumps(next(records(usable[0])),ensure_ascii=False,indent=2))
+                    else:
+                        raise ValueError('没有可直接查看的完整文件；分片数据先运行 restore，其他数据运行 fetch。')
     except (OSError, ValueError, StopIteration, KeyError) as exc:
         print(f'错误：{exc}',file=sys.stderr)
         return 1

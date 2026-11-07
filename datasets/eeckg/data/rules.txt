@@ -1,0 +1,36 @@
+1.Causes(x, z) ∧ IsA(y, x) → Causes(y, z): 
+   Causes(buy, have less money) ∧ IsA(buy hamburger, buy) → Causes(buy hamburger, have less money)
+2.IsA(y, x) ∧ IsA(z, y) → IsA(z, x):
+   IsA(eat fruit, eat) ∧ IsA(eat apple, eat fruit) → IsA(eat apple, eat)
+3.IsA(y, x) ∧ HasSubevent(x, z) → HasSubevent(y, z):
+   IsA(eat apple, eat) ∧ HasSubevent(eat, swallow) → HasSubevent(eat apple, swallow)
+4.HasSubevent(x, y) ∧ HasSubevent(y, z) → HasSubevent(x, z):
+   HasSubevent(eat, chew) ∧ HasSubevent(chew, move jaw) → HasSubev-ent(eat, move jaw)
+5.HasSubevent(x, y) ∧ Before(x, z) → Before(y, z):
+   HasSubevent(eat apple, swallow) ∧ Before(eat apple, digest apple) → Be-fore(swallow, digest apple)
+6.Before(x, y) ∧ Before(y, z) → Before(x, z):
+   Before(buy apple, eat apple) ∧ Before(eat apple, digest apple) → Before(buy apple, digest apple)
+7.Before(x, y) ∧ IsA(z, y) → Before(x, z):
+   Before(buy fruit, eat fruit) ∧ IsA(eat apple, eat fruit) → Before(buy fruit, eat apple)
+8.HasPrerequisite(x, y) → Before(y, x):
+   HasPrerequisite (eat hamburger, make hamburger) → Before(make hamburger, eat hamburger)
+9.HasPrerequisite(x, y) ∧ IsA(z, x) → HasPrerequisite(z, y):
+   HasPrerequisite (eat fruit, get fruit) ∧ IsA(eat apple, eat fruit) → HasPrereq-uisite (eat apple, get fruit)
+10.HasPrerequisite(x, y) ∧ HasPrerequisite(y, z) → HasPrerequisite(x, z):
+     HasPrerequisite (eat hamburger, get hamburger) ∧ HasPrerequisite(get ham-burger, make hamburger) → HasPrerequisite (eat hamburger, make hamburger)
+11.OppositeTo(x, y) → OppositeTo(y, x):
+     OppositeTo(buy hamburger, sell hamburger) → OppositeTo(sell hamburger, buy hamburger)
+12.CausesDesire(x, y) → Causes(x, y):
+     CausesDesire(be hungry, buy hamburger) → Causes(be hungry, buy hamburg-er)
+13.CausesDesire(x, y) ∧ OppositeTo(y, z) → ObstructedBy(z, x):
+     CausesDesire(be hungry, buy hamburger) ∧ OppositeTo(buy hamburger, sell hamburger) → ObstructedBy(sell hamburger, be hungry)
+14.CausesDesire(x, y) ∧ CausesDesire(y, z) → CausesDesire(x, z):
+     CausesDesire(be hungry, buy hamburger) ∧ CausesDesire(buy hamburger, eat hamburger) → CausesDesire (be hungry, eat hamburger)
+15.CausesDesire(x, y) ∧ IsA(z, x) → CausesDesire(z, y):
+     CausesDesire(buy fruit, eat fruit) ∧ IsA(buy apple, buy fruit) → CausesDe-sire (buy apple, eat fruit)
+16.ObstructedBy(y, x) ∧ IsA(z, x) → ObstructedBy(y, z):
+     ObstructedBy(lose weight, eat cake) ∧ IsA(eat cupcake, eat cake) → Ob-structedBy(lose weight, eat cupcake)
+17.ObstructedBy(y, x) ∧ OppositeTo(x, z) → Causes(z, y):
+     ObstructedBy(happy, fail university exams) ∧ OppositeTo(fail university ex-ams, pass university exams) → Causes(pass university exams, happy)
+18.Causes(x, y) ∧ OppositeTo(x, z) → ObstructedBy(y, z):
+     Causes(pass university exams, happy) ∧ OppositeTo(pass university exams, fail university exams) → ObstructedBy(happy, fail university exams)

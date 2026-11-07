@@ -5,15 +5,34 @@
   "description": "SchemaAug低资源新闻抽取场景子集。",
   "project_use": "模式引导的数据增强和上游事件抽取。",
   "sources": [
-    "https://aclanthology.org/2024.lrec-main.1253/"
+    "https://aclanthology.org/2024.lrec-main.1253/",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/kidnapping.json"
   ],
   "paper": "https://aclanthology.org/2024.lrec-main.1253/",
   "version": "论文2/SchemaAug中的kidnapping子集",
   "cautions": "原始新闻及标注的发布和权限待核实；增强样本仅进入训练集，不能当作未来事件预测金标准。",
-  "access_status": "manual_acquisition",
+  "access_status": "partial_download",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/kidnapping.json",
+      "path": "datasets/schemaaug-kidnapping/data/auxiliary_schema/kidnapping.json",
+      "sha256": "cf59da45d8b28f7ce929c5e5be7f25310315cb272236a252cf1d3279ab83c440",
+      "bytes": 81649,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "auxiliary_schema_not_news_corpus"
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/schemaaug-kidnapping/example.json"
+  "example_path": "datasets/schemaaug-kidnapping/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "partial",
+    "scope": "已保存对应RESIN公开事件模式JSON，作为数据增强的辅助资源。",
+    "missing": "尚未找到可验证的SchemaAug场景新闻及原始抽取标注发布包；辅助模式不是新闻语料。",
+    "file_count": 1,
+    "bytes": 81649
+  }
 }

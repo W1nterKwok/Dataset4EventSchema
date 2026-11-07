@@ -1,12 +1,15 @@
 # IED 新闻实例图
 
+> 当前下载状态：**downloaded**。作者完整Wiki_IED_split.tgz及六个Wikipedia原文压缩包；未声称等同于论文2的三类清洗子集。  详细文件状态见 [DOWNLOAD_STATUS.md](DOWNLOAD_STATUS.md)。
+
+
 IED主题的事件与实体实例图。
 
 ## 用途与版本
 
 - 研究用途：实例图到模式图的归纳及预测。
 - 固定版本：论文2清洗版与 ReST-Pre 派生版必须分别固定
-- 获取状态：`version_verification_required`
+- 获取状态：`bundled`
 - 数据许可：未核实数据许可
 
 ReST-Pre README 的目录树列出数据，不代表其 Git 树实际包含该数据；不得混用两版图数。
@@ -23,9 +26,9 @@ python scripts/datasets.py show ied
 
 ## 获取数据
 
-无已核实的自动下载资产；从下列作者入口获取并核对版本。
+文件已保存于本目录data。可运行 `python scripts/datasets.py fetch ied` 校验已存文件；分片归档用restore命令合并。
 
-原始下载保存于 `raw/`（Git默认忽略），已随仓库提供的小规模资源放在 `data/`。下载记录和SHA-256写入 `data/download-log.json`。受限或未明确许可的数据不自动镜像到GitHub。
+本次已取得的公开原始数据保存于 `data/` 并提交Git；大归档按清单分片，合并输出至 `raw/`。下载记录和SHA-256写入 `data/download-log.json`。归档范围和原始权利说明见下载状态与许可记录。
 
 ## 来源
 

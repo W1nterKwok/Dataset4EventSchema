@@ -10,11 +10,108 @@
   ],
   "paper": null,
   "version": "ConceptNet 5；采用具体发布版本时需固定",
-  "cautions": "代码许可与数据许可不同；知识边不是特定新闻事件的真值。",
-  "access_status": "manual_acquisition",
+  "cautions": "ConceptNet 5.7.0完整多语言断言CSV.gz（497,963,447字节，6片），不是英语抽样。 原始许可和数据权利以作者及原权利人要求为准。",
+  "access_status": "bundled",
   "data_license": "数据通常为 CC-BY-SA-4.0，须以所下载发布说明为准",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz",
+      "path": "datasets/conceptnet/data/conceptnet-assertions-5.7.0.csv.gz.manifest.json",
+      "sha256": "383ed9d08a5c5da37c9bc14de45560233b7ba9ae6b7d8a2345bd87a472653c97",
+      "bytes": 1415,
+      "bundled": true,
+      "storage": "manifest",
+      "generated": true,
+      "generated_content": "{\n  \"original_filename\": \"conceptnet-assertions-5.7.0.csv.gz\",\n  \"original_bytes\": 497963447,\n  \"source_url\": \"https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz\",\n  \"chunk_bytes\": 83886080,\n  \"sha256\": \"accd65fe94038584295574ddc26e1500c1919c8c4532bf771811cafd0948af7e\",\n  \"parts\": [\n    {\n      \"file\": \"conceptnet-assertions-5.7.0.csv.gz.part001\",\n      \"bytes\": 83886080,\n      \"sha256\": \"873a16dd82e8f3ed8d0c1b7b9309cfb54f69092c4db9ae267e6a730a94064064\"\n    },\n    {\n      \"file\": \"conceptnet-assertions-5.7.0.csv.gz.part002\",\n      \"bytes\": 83886080,\n      \"sha256\": \"35b07e60ea60bfa454d3703e332cdfa8db78a1a76d7f5391ad884c14f4d5b08c\"\n    },\n    {\n      \"file\": \"conceptnet-assertions-5.7.0.csv.gz.part003\",\n      \"bytes\": 83886080,\n      \"sha256\": \"c2ee532eaca3f97cf8c919b7a7f03a12637acdeb3d19fb908d9415e97cf83917\"\n    },\n    {\n      \"file\": \"conceptnet-assertions-5.7.0.csv.gz.part004\",\n      \"bytes\": 83886080,\n      \"sha256\": \"6789cf78571cf0996acef253b92252781976d76194dcbe711503969dd113be09\"\n    },\n    {\n      \"file\": \"conceptnet-assertions-5.7.0.csv.gz.part005\",\n      \"bytes\": 83886080,\n      \"sha256\": \"568ec0bbcbd893730a9ca60afc2c552a3cbb61ea67426ec9dbd3ac737fa75f87\"\n    },\n    {\n      \"file\": \"conceptnet-assertions-5.7.0.csv.gz.part006\",\n      \"bytes\": 78533047,\n      \"sha256\": \"f9ab5a6e192478508b4de63595acd60645d954e529a40c1ca35077923024587b\"\n    }\n  ]\n}"
+    },
+    {
+      "url": "https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz",
+      "path": "datasets/conceptnet/data/conceptnet-assertions-5.7.0.csv.gz.part001",
+      "sha256": "873a16dd82e8f3ed8d0c1b7b9309cfb54f69092c4db9ae267e6a730a94064064",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        0,
+        83886079
+      ],
+      "storage": "multipart",
+      "version": "5.7.0"
+    },
+    {
+      "url": "https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz",
+      "path": "datasets/conceptnet/data/conceptnet-assertions-5.7.0.csv.gz.part002",
+      "sha256": "35b07e60ea60bfa454d3703e332cdfa8db78a1a76d7f5391ad884c14f4d5b08c",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        83886080,
+        167772159
+      ],
+      "storage": "multipart",
+      "version": "5.7.0"
+    },
+    {
+      "url": "https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz",
+      "path": "datasets/conceptnet/data/conceptnet-assertions-5.7.0.csv.gz.part003",
+      "sha256": "c2ee532eaca3f97cf8c919b7a7f03a12637acdeb3d19fb908d9415e97cf83917",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        167772160,
+        251658239
+      ],
+      "storage": "multipart",
+      "version": "5.7.0"
+    },
+    {
+      "url": "https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz",
+      "path": "datasets/conceptnet/data/conceptnet-assertions-5.7.0.csv.gz.part004",
+      "sha256": "6789cf78571cf0996acef253b92252781976d76194dcbe711503969dd113be09",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        251658240,
+        335544319
+      ],
+      "storage": "multipart",
+      "version": "5.7.0"
+    },
+    {
+      "url": "https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz",
+      "path": "datasets/conceptnet/data/conceptnet-assertions-5.7.0.csv.gz.part005",
+      "sha256": "568ec0bbcbd893730a9ca60afc2c552a3cbb61ea67426ec9dbd3ac737fa75f87",
+      "bytes": 83886080,
+      "bundled": true,
+      "http_range": [
+        335544320,
+        419430399
+      ],
+      "storage": "multipart",
+      "version": "5.7.0"
+    },
+    {
+      "url": "https://s3.amazonaws.com/conceptnet/downloads/2019/edges/conceptnet-assertions-5.7.0.csv.gz",
+      "path": "datasets/conceptnet/data/conceptnet-assertions-5.7.0.csv.gz.part006",
+      "sha256": "f9ab5a6e192478508b4de63595acd60645d954e529a40c1ca35077923024587b",
+      "bytes": 78533047,
+      "bundled": true,
+      "http_range": [
+        419430400,
+        497963446
+      ],
+      "storage": "multipart",
+      "version": "5.7.0"
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/conceptnet/example.json"
+  "example_path": "datasets/conceptnet/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "ConceptNet 5.7.0完整多语言断言CSV.gz（497,963,447字节，6片），不是英语抽样。",
+    "missing": "",
+    "file_count": 7,
+    "bytes": 497964862
+  }
 }

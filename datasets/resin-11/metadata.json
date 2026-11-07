@@ -5,25 +5,304 @@
   "description": "11类新闻场景的时序及层级模式参考库。",
   "project_use": "模式节点与时序、层级边归纳评测。",
   "sources": [
+    "https://github.com/RESIN-KAIROS/RESIN-11",
     "https://github.com/limanling/temporal-graph-schema",
-    "https://github.com/raspberryice/inc-schema"
+    "https://github.com/raspberryice/inc-schema",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/business_change.pptx",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/civil_unrest.pptx",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/disaster_and_rescue.pptx",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/disease_outbreak.pptx",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/election.pptx",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/ied.pptx",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/international_conflict.pptx",
+    "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/kidnapping.pptx"
   ],
   "paper": "https://aclanthology.org/2023.acl-long.312/",
-  "version": "文献中的 RESIN-11 评测版本",
+  "version": "RESIN-KAIROS官方公开模式库（17个JSON对应细分场景），附旧版10模式参考库",
   "cautions": "inc-schema 的 phase2a 是章节提示，不是 RESIN-11 金标准；ReST-Pre 的 resin-schemalib.json 也不可直接认定为同一评测版本。",
-  "access_status": "version_verification_required",
+  "access_status": "partial_download",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
   "assets": [
     {
-      "url": "https://raw.githubusercontent.com/snowfalling77/ReST-Pre/a2275da410243a052addffa3d5898fa0c7ce6ac8/data/origin/RESIN_schema/resin-schemalib.json",
-      "path": "datasets/resin-11/raw/resin-schemalib.json",
-      "bundled": false,
-      "sha256": null,
-      "upstream_commit": "a2275da410243a052addffa3d5898fa0c7ce6ac8",
-      "role": "reference_candidate_not_verified_resin11_gold"
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/business_change.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/business_change.pptx",
+      "sha256": "d9b5dd420fe08cc31bd019e8722ed096abd5bc0bc7ec1bb650e0bb699601d1f8",
+      "bytes": 1177958,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/civil_unrest.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/civil_unrest.pptx",
+      "sha256": "4f6b1e991770b146235f79890fb48706ff1b90db481258543587f103439a864e",
+      "bytes": 1385742,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/disaster_and_rescue.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/disaster_and_rescue.pptx",
+      "sha256": "5f667d4e0cf58e57a98dfa2a8e1f19e8d2aa84c6d810579de5320792f056dd28",
+      "bytes": 1016444,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/disease_outbreak.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/disease_outbreak.pptx",
+      "sha256": "af7c726cbb52e0d4cdc2859736fea926b0091deea33d60fe8db8cbb01beef5d3",
+      "bytes": 975984,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/election.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/election.pptx",
+      "sha256": "0c5ef90a16a9481b632adb13d04d15638f2cc2a4e9118949b3b4436d227e0795",
+      "bytes": 1543451,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/ied.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/ied.pptx",
+      "sha256": "440d49b5897ec54d22e4eb25aa7f4e7829fbe34bccdfc64c51f902c7ce66dfb9",
+      "bytes": 2588834,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/international_conflict.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/international_conflict.pptx",
+      "sha256": "4de0c96ea50affd0b4bd79cb245bc2bf0602c3d3c1edc24a833281cf001864f9",
+      "bytes": 840479,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/kidnapping.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/kidnapping.pptx",
+      "sha256": "b9da9925f02023add299148e73bf5408700dc930782b1dd11f925ecc95ea2168",
+      "bytes": 2099822,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/mass_shooting.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/mass_shooting.pptx",
+      "sha256": "cb4c5b78e85bdf3736aa0aaa30e53699962e0bbf008d759774bdc931b13f731f",
+      "bytes": 2631594,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/sports.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/sports.pptx",
+      "sha256": "625315b0d89afd297a56a419d446f53da86b3bcbe77d0a7da3201710f1e17720",
+      "bytes": 680762,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/hrf/terrorist_attack.pptx",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/hrf/terrorist_attack.pptx",
+      "sha256": "9c31e9ebe5cd585a24d324ab4af6ce590611cd2c8a41cfc122936add05651948",
+      "bytes": 681336,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/backpack_ied.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/backpack_ied.json",
+      "sha256": "2986f2303c95b27c0ccb1d4ee662601889d006f5acaafb64dc49733cc1fa7ee9",
+      "bytes": 67533,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/business_change.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/business_change.json",
+      "sha256": "2e0e8337820959ba288b13ff1c38e8c86bd98573a72745eaa054097fddebcf06",
+      "bytes": 67142,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/car_ied.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/car_ied.json",
+      "sha256": "d3c701a31e934f441a5573fd3a3233d90f7fb63f29a57543c76b7d2c0b2e129d",
+      "bytes": 71629,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/civil_unrest.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/civil_unrest.json",
+      "sha256": "3572adcb4b46c1860644ad45b1b7e53ce5d9a83ab9fc8b959b39c7086327ac78",
+      "bytes": 35081,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/disease_outbreak.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/disease_outbreak.json",
+      "sha256": "ad91cee2e59bce624c78d00b0e6d677329d1cf4afe78148183ca774ef730ff9d",
+      "bytes": 132048,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/drone_strikes.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/drone_strikes.json",
+      "sha256": "82d9d4ca9058a86cd071b30dd07df7a7b255dd7f98daa43586da7abb203e6bb1",
+      "bytes": 66785,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/election.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/election.json",
+      "sha256": "ec54ff80dcf98df890bcca0b99d296ed75b237473536ba04b80ef0de8879661d",
+      "bytes": 29491,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/general_attack.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/general_attack.json",
+      "sha256": "f84f2d6e3140aad53e6d90fedd99fd3f6ac0cbeeb631a148a401abd159131f4f",
+      "bytes": 40012,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/general_ied.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/general_ied.json",
+      "sha256": "d3617c8ed54ba8b0bad8d39de548cf46dacb48d2aa366cfe4d05a79c4aa5572b",
+      "bytes": 69437,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/international_conflict.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/international_conflict.json",
+      "sha256": "1656f208fc34f697acf1e565f5d85785ec07eb80e7acaadae23c1570e27222d1",
+      "bytes": 24227,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/kidnapping.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/kidnapping.json",
+      "sha256": "cf59da45d8b28f7ce929c5e5be7f25310315cb272236a252cf1d3279ab83c440",
+      "bytes": 81649,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/manmade_disaster_and_rescue.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/manmade_disaster_and_rescue.json",
+      "sha256": "552ad3b0c6d17e1e484883f7357d940c2534773b7be901e95620a636c4c0ba0b",
+      "bytes": 46113,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/mass_shooting.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/mass_shooting.json",
+      "sha256": "067d126dee7cb6eb9d2a849975f60de44872d4e7319d70c17647c957d9f0e83c",
+      "bytes": 49708,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/natural_disaster_and_rescue.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/natural_disaster_and_rescue.json",
+      "sha256": "c6d84b7308732e4b8744f60ba17e33432772711c48b36ecb333fecbcaf3e96b1",
+      "bytes": 30243,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/roadside_ied.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/roadside_ied.json",
+      "sha256": "6d0138ba46945d8855eac078c9d0e2af8963500c9b7d68ebe9720c0b03554654",
+      "bytes": 56426,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/sports.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/sports.json",
+      "sha256": "ecd3b60d615297ec2b43b5c3bfbce3d8bdaed3beb4c83c9c3744356838c47eac",
+      "bytes": 16113,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/RESIN-KAIROS/RESIN-11/7f92001688ff9767f16887f8f21508571df15671/schemas/scenario-schemas/terrorist_attack.json",
+      "path": "datasets/resin-11/data/official_RESIN-11/schemas/scenario-schemas/terrorist_attack.json",
+      "sha256": "d4a2724666430b8712f31cdf24a82be77fd3df347a3456e53b5ea889b75d5adf",
+      "bytes": 42928,
+      "bundled": true,
+      "upstream_commit": "7f92001688ff9767f16887f8f21508571df15671",
+      "role": "official_schema_library"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/RESIN_schema/resin-schemalib-readme.md",
+      "path": "datasets/resin-11/data/reference_library/resin-schemalib-readme.md",
+      "sha256": "119b8d15948dccc3e4f0863073c03bf7b049e180153df6451fdc15a52a93437f",
+      "bytes": 1824,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/limanling/temporal-graph-schema/f56809ffbdd84c560f8e6312080f7426cb1bf754/data/RESIN_schema/resin-schemalib.json",
+      "path": "datasets/resin-11/data/reference_library/resin-schemalib.json",
+      "sha256": "47993a61cc83c273d18986e36d36d00010ed9b6ba67e783934f8edb1abbc20e2",
+      "bytes": 2585689,
+      "bundled": true,
+      "upstream_commit": "f56809ffbdd84c560f8e6312080f7426cb1bf754",
+      "role": "author_public_data"
     }
   ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/resin-11/example.json"
+  "example_path": "datasets/resin-11/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "partial",
+    "scope": "已保存RESIN-KAIROS官方模式库的17个JSON和11个可视化PPTX，以及旧版10模式参考库。",
+    "missing": "论文1的11场景评测映射及节点/边统计尚未逐项对齐；旧10模式库不冒充RESIN-11金标准。",
+    "file_count": 30,
+    "bytes": 19136484
+  }
 }

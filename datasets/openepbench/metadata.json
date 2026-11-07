@@ -45,5 +45,13 @@
     "commit": "6357dc55dd28881f0877b8fd7fc55a5374cc2abf",
     "selection": "question_samples.json与answer_samples.json中id=0的配对样本"
   },
-  "example_path": "datasets/openepbench/example.json"
+  "example_path": "datasets/openepbench/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "作者已公开且此前随仓库保存的数据文件。",
+    "missing": "",
+    "file_count": 4,
+    "bytes": 4429968
+  }
 }

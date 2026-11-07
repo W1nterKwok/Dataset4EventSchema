@@ -10,11 +10,119 @@
   ],
   "paper": "https://arxiv.org/abs/2608.05205",
   "version": "MAVEN-AECR（分别733/180条规则，文献报告）",
-  "cautions": "规则库构建文档和下游测试文档的重叠需核查；规则检索划分不等于 CGEP 划分。",
-  "access_status": "author_artifact_available",
+  "cautions": "作者公开733条抽象规则、规则映射、聚类输出及检索训练配对文件；保留作者命名。 原始许可和数据权利以作者及原权利人要求为准。",
+  "access_status": "bundled",
   "data_license": "未核实数据许可",
   "example_kind": "illustrative_template",
-  "assets": [],
+  "assets": [
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/abstract-rule-generation/outputs/cluster_abstract_rules_filtered_corrected.json",
+      "path": "datasets/maven-aecr/data/abstract-rule-generation/outputs/cluster_abstract_rules_filtered_corrected.json",
+      "sha256": "578462bb9fd32e0b55d7c6474072ff42f97b286abcba97c3d319bafd9f759e4e",
+      "bytes": 407464,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "e3efab2d"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/aecr-retriever-training/data/cluster_abstract_rules_filtered.json",
+      "path": "datasets/maven-aecr/data/aecr-retriever-training/data/cluster_abstract_rules_filtered.json",
+      "sha256": "623757ff6a1ae8c1e1042f5a7e48c9be07a4bc956334400c686835c6211529e6",
+      "bytes": 407096,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "86c9409d"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/aecr-retriever-training/data/reverse_event_dict.json",
+      "path": "datasets/maven-aecr/data/aecr-retriever-training/data/reverse_event_dict.json",
+      "sha256": "d5bd091ec1700f5d2a7f149764632c1683a37fda6c9d43a897144ae7bea86295",
+      "bytes": 119257,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "f53949ed"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/aecr-retriever-training/data/reverse_event_dict_en.json",
+      "path": "datasets/maven-aecr/data/aecr-retriever-training/data/reverse_event_dict_en.json",
+      "sha256": "16ea89d69bd62fecf1bc5f37d1cacdf8b6fd13a49da8fb6e313a568d80bbd83e",
+      "bytes": 115097,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "378ce1f8"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/aecr-retriever-training/data/rule_cluster_assignments.csv",
+      "path": "datasets/maven-aecr/data/aecr-retriever-training/data/rule_cluster_assignments.csv",
+      "sha256": "193557f0828a811b04efe1cc7d4cbbd2c46a2bdbfb8dac8983a0038dda1dec40",
+      "bytes": 2436319,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "02b6d16a"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/aecr-retriever-training/data/to_add.json",
+      "path": "datasets/maven-aecr/data/aecr-retriever-training/data/to_add.json",
+      "sha256": "760a2ed37a318cc2ee222e7ab396c3454cb724303fdd6b2113235d8f6827826d",
+      "bytes": 239965,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "bf59e6d3"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/aecr-retriever-training/data/to_add_en.json",
+      "path": "datasets/maven-aecr/data/aecr-retriever-training/data/to_add_en.json",
+      "sha256": "91bd0de9dca6e7868e9d217844f53d822bb2169442ed87d15c1e1e0a2931e303",
+      "bytes": 176607,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "d0ec10ef"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/aecr-retriever-training/rule_texts_ids_mapping_MAVEN.json",
+      "path": "datasets/maven-aecr/data/aecr-retriever-training/rule_texts_ids_mapping_MAVEN.json",
+      "sha256": "23c965aad1abdc29926ea618761b15ff7392e5d106c73e7799e0c3e35044dc9a",
+      "bytes": 65124,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": null
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/ar-gcae-training/data/cluster_abstract_rules_filtered.json",
+      "path": "datasets/maven-aecr/data/ar-gcae-training/data/cluster_abstract_rules_filtered.json",
+      "sha256": "623757ff6a1ae8c1e1042f5a7e48c9be07a4bc956334400c686835c6211529e6",
+      "bytes": 407096,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "86c9409d"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/ar-gcae-training/data/rule_texts.json",
+      "path": "datasets/maven-aecr/data/ar-gcae-training/data/rule_texts.json",
+      "sha256": "23c965aad1abdc29926ea618761b15ff7392e5d106c73e7799e0c3e35044dc9a",
+      "bytes": 65124,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": "ef98449d"
+    },
+    {
+      "url": "https://anonymous.4open.science/api/repo/AECR-AFAF/file/ar-gcae-training/rules_list.json",
+      "path": "datasets/maven-aecr/data/ar-gcae-training/rules_list.json",
+      "sha256": "61b5a0cf9cef4312567f769a0fb1697bb102251a1e84143ffe5b4d06186dbca2",
+      "bytes": 60596,
+      "bundled": true,
+      "upstream_service": "anonymous.4open.science",
+      "upstream_file_hash": null
+    }
+  ],
   "verified_on": "2026-11-07",
-  "example_path": "datasets/maven-aecr/example.json"
+  "example_path": "datasets/maven-aecr/example.json",
+  "download_status": {
+    "checked_on": "2026-11-07",
+    "state": "downloaded",
+    "scope": "作者公开733条抽象规则、规则映射、聚类输出及检索训练配对文件；保留作者命名。",
+    "missing": "",
+    "file_count": 11,
+    "bytes": 4499745
+  }
 }

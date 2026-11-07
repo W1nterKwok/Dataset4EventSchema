@@ -1,5 +1,8 @@
 # Eliz-MAVEN
 
+> 当前下载状态：**downloaded**。作者已公开且此前随仓库保存的数据文件。  详细文件状态见 [DOWNLOAD_STATUS.md](DOWNLOAD_STATUS.md)。
+
+
 ElizBench的事件泛化子集：根据具体事件描述，选择其对应的抽象事件类别。SSR-EG是作者提出的方法，本目录整理的是数据，未运行模型推理。
 
 ## 已随附的作者数据
