@@ -1,7 +1,7 @@
 {
   "catalog_version": 1,
   "curated_on": "2026-11-07",
-  "source_note": "按本地《本项目可用的数据集与评价指标.md》逐项拆分，加入正文四种关系抽取数据及用户补充的RESPONSE；保留拟自建资源为planned。；另加入用户指定ElizBench的Eliz-EV²和Eliz-MAVEN两个公开子集。",
+  "source_note": "按本地数据集清单及用户补充资源整理，保留已取得的公开文件、部分/派生资源和拟自建模板；已移除没有取得指定版本文件的条目。",
   "datasets": [
     {
       "id": "resin-11",
@@ -2280,34 +2280,6 @@
       }
     },
     {
-      "id": "esc-aecr",
-      "name": "ESC-AECR",
-      "category": "abstract_rules",
-      "description": "具体因果事件对和抽象因果规则的配对资源。",
-      "project_use": "规则归纳、质量评估与规则检索。",
-      "sources": [
-        "https://anonymous.4open.science/r/AECR-AFAF/",
-        "https://arxiv.org/abs/2608.05205"
-      ],
-      "paper": "https://arxiv.org/abs/2608.05205",
-      "version": "ESC-AECR（分别733/180条规则，文献报告）",
-      "cautions": "规则库构建文档和下游测试文档的重叠需核查；规则检索划分不等于 CGEP 划分。",
-      "access_status": "source_unavailable",
-      "data_license": "未核实数据许可",
-      "example_kind": "illustrative_template",
-      "assets": [],
-      "verified_on": "2026-11-07",
-      "example_path": "datasets/esc-aecr/example.json",
-      "download_status": {
-        "checked_on": "2026-11-07",
-        "state": "unavailable",
-        "scope": "没有取得所请求版本的真实数据文件。",
-        "missing": "作者匿名项目公开的是733条MAVEN规则及关联数据，未找到ESC的180条规则发布文件。",
-        "file_count": 0,
-        "bytes": 0
-      }
-    },
-    {
       "id": "ev2",
       "name": "EV² / EV2",
       "category": "event_reasoning",
@@ -2434,34 +2406,6 @@
         "missing": "",
         "file_count": 3,
         "bytes": 37324862
-      }
-    },
-    {
-      "id": "icews-lamp",
-      "name": "ICEWS（LAMP版本）",
-      "category": "structured_prediction",
-      "description": "LAMP论文预处理的结构化政治事件序列。",
-      "project_use": "事件属性排序；ICEWS还用于发生时间预测。",
-      "sources": [
-        "https://github.com/iLampard/lamp",
-        "https://drive.google.com/file/d/1XbPiPTNVprKaQwMvk9McaY2USJrEkUj6/view"
-      ],
-      "paper": "https://arxiv.org/abs/2305.16646",
-      "version": "GDELT: 2022-01至07；ICEWS: 2022-10-11至2023-02-28",
-      "cautions": "不得用 ICEWS14/ICEWS18 或其他 GDELT 版本替换；本示例的国家和事件均为虚构。",
-      "access_status": "source_unavailable",
-      "data_license": "未核实数据许可",
-      "example_kind": "illustrative_template",
-      "assets": [],
-      "verified_on": "2026-11-07",
-      "example_path": "datasets/icews-lamp/example.json",
-      "download_status": {
-        "checked_on": "2026-11-07",
-        "state": "unavailable",
-        "scope": "没有取得所请求版本的真实数据文件。",
-        "missing": "已下载并检查作者指定Google Drive包，实际仅含GDELT与Amazon文件，没有ICEWS；未发现可核实的该论文时间范围预处理发布包。",
-        "file_count": 0,
-        "bytes": 0
       }
     },
     {
@@ -2612,33 +2556,6 @@
         "missing": "原始包实测296,630条新闻、589,930条历史KG记录；不直接声称等同于论文10所列152,500历史事件的筛选版本。",
         "file_count": 10,
         "bytes": 582415521
-      }
-    },
-    {
-      "id": "gdelt-500",
-      "name": "GDELT-500（论文10改造版）",
-      "category": "text_prediction",
-      "description": "补充历史新闻并筛选查询的GDELT派生资源。",
-      "project_use": "历史时期与文本条件变化的稳健性。",
-      "sources": [
-        "https://doi.org/10.1145/3774904.3792306"
-      ],
-      "paper": null,
-      "version": "Thinking Bidirectionally: 420查询、189,743新闻、119,388历史事件（文献报告）",
-      "cautions": "仅登记这一改造版本；尚未核实其独立发布地址，不以同名资源代替。",
-      "access_status": "source_unavailable",
-      "data_license": "未核实数据许可",
-      "example_kind": "illustrative_template",
-      "assets": [],
-      "verified_on": "2026-11-07",
-      "example_path": "datasets/gdelt-500/example.json",
-      "download_status": {
-        "checked_on": "2026-11-07",
-        "state": "unavailable",
-        "scope": "没有取得所请求版本的真实数据文件。",
-        "missing": "未定位论文10所用420查询、189,743新闻、119,388历史事件的改造版本发布位置，不以其他同名数据替代。",
-        "file_count": 0,
-        "bytes": 0
       }
     },
     {

@@ -3,7 +3,6 @@
   "states": {
     "partial": 10,
     "downloaded": 16,
-    "unavailable": 3,
     "planned": 1
   },
   "stored_bytes": 2044699745,
@@ -89,16 +88,6 @@
       "bytes": 4499745
     },
     {
-      "id": "esc-aecr",
-      "name": "ESC-AECR",
-      "checked_on": "2026-11-07",
-      "state": "unavailable",
-      "scope": "没有取得所请求版本的真实数据文件。",
-      "missing": "作者匿名项目公开的是733条MAVEN规则及关联数据，未找到ESC的180条规则发布文件。",
-      "file_count": 0,
-      "bytes": 0
-    },
-    {
       "id": "ev2",
       "name": "EV² / EV2",
       "checked_on": "2026-11-07",
@@ -119,16 +108,6 @@
       "bytes": 37324862
     },
     {
-      "id": "icews-lamp",
-      "name": "ICEWS（LAMP版本）",
-      "checked_on": "2026-11-07",
-      "state": "unavailable",
-      "scope": "没有取得所请求版本的真实数据文件。",
-      "missing": "已下载并检查作者指定Google Drive包，实际仅含GDELT与Amazon文件，没有ICEWS；未发现可核实的该论文时间范围预处理发布包。",
-      "file_count": 0,
-      "bytes": 0
-    },
-    {
       "id": "mirai",
       "name": "MIRAI（论文10设置）",
       "checked_on": "2026-11-07",
@@ -137,16 +116,6 @@
       "missing": "原始包实测296,630条新闻、589,930条历史KG记录；不直接声称等同于论文10所列152,500历史事件的筛选版本。",
       "file_count": 10,
       "bytes": 582415521
-    },
-    {
-      "id": "gdelt-500",
-      "name": "GDELT-500（论文10改造版）",
-      "checked_on": "2026-11-07",
-      "state": "unavailable",
-      "scope": "没有取得所请求版本的真实数据文件。",
-      "missing": "未定位论文10所用420查询、189,743新闻、119,388历史事件的改造版本发布位置，不以其他同名数据替代。",
-      "file_count": 0,
-      "bytes": 0
     },
     {
       "id": "openepbench",

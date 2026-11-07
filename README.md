@@ -1,8 +1,8 @@
 # Dataset4EventSchema
 
-事件模式归纳、事件关系抽取、事件预测与危机场景推理的数据集索引、带中文注释的示例及获取工具。共整理 **30 个独立资源目录**，包含 RESPONSE 和 ElizBench 的两个子集。
+事件模式归纳、事件关系抽取、事件预测与危机场景推理的数据集索引、带中文注释的示例及获取工具。共整理 **27 个独立资源目录**，包含 RESPONSE 和 ElizBench 的两个子集。
 
-已将可取得的原始数据保存到各目录的`data/`并上传GitHub：16项公开发布文件已取得，10项为部分/派生/辅助数据，3项指定版本未取得，另1项拟自建。逐项范围见[下载清单](docs/DOWNLOADS.md)；不把辅助文件或示例计作完整原始语料。
+已将可取得的原始数据保存到各目录的`data/`并上传GitHub：16项公开发布文件已取得，10项为部分/派生/辅助数据，另1项拟自建。逐项范围见[下载清单](docs/DOWNLOADS.md)；不把辅助文件或示例计作完整原始语料。
 
 ## 快速使用
 
@@ -33,12 +33,9 @@ python scripts/datasets.py restore mirai
 | [MAVEN-CGEP](datasets/maven-cgep/) | causal_prediction | `partial` | 自编格式示例 |
 | [ESC-CGEP](datasets/esc-cgep/) | causal_prediction | `partial` | 自编格式示例 |
 | [MAVEN-AECR](datasets/maven-aecr/) | abstract_rules | `downloaded` | 自编格式示例 |
-| [ESC-AECR](datasets/esc-aecr/) | abstract_rules | `unavailable` | 自编格式示例 |
 | [EV² / EV2](datasets/ev2/) | event_reasoning | `downloaded` | 自编格式示例 |
 | [GDELT（LAMP版本）](datasets/gdelt-lamp/) | structured_prediction | `downloaded` | 自编格式示例 |
-| [ICEWS（LAMP版本）](datasets/icews-lamp/) | structured_prediction | `unavailable` | 自编格式示例 |
 | [MIRAI（论文10设置）](datasets/mirai/) | text_prediction | `partial` | 自编格式示例 |
-| [GDELT-500（论文10改造版）](datasets/gdelt-500/) | text_prediction | `unavailable` | 自编格式示例 |
 | [OpenEPBench](datasets/openepbench/) | open_ended_prediction | `downloaded` | 作者真实记录 |
 | [SchemaAug / Kidnapping](datasets/schemaaug-kidnapping/) | extraction_augmentation | `partial` | 自编格式示例 |
 | [SchemaAug / Ukraine Crisis](datasets/schemaaug-ukraine-crisis/) | extraction_augmentation | `partial` | 自编格式示例 |
@@ -68,7 +65,7 @@ datasets/<id>/raw/             # 大归档合并输出和临时文件，不提�
 scripts/datasets.py            # 目录查询、下载、原始样本查看与验证
 ```
 
-合并条目已拆开：MAVEN/ESC-AECR、ConceptNet/EECKG和五种SchemaAug新闻子集分别建目录。正文提到的MAVEN-ERE、MATRES、HiEve、EventStoryLine也单列；拟自建网络暴力语料标记 `planned`。
+合并条目已拆开：MAVEN-AECR、ConceptNet/ECCKG和五种SchemaAug新闻子集分别建目录。正文提到的MAVEN-ERE、MATRES、HiEve、EventStoryLine也单列；拟自建网络暴力语料标记 `planned`。
 
 ## 实际文件与仍有的缺口
 
@@ -76,7 +73,7 @@ scripts/datasets.py            # 目录查询、下载、原始样本查看与�
 - ConceptNet和MIRAI完整发布归档采用分片保存，运行`restore conceptnet`或`restore mirai`合并并校验。
 - IED、MAVEN-ERE、EV²、MATRES、proScript、ECCKG、GDELT、HiEve等已保存本次取得的公开文件；具体范围以每项DOWNLOAD_STATUS为准。
 - SchemaAug仅找到辅助模式；LDC仅取得公开派生图；部分CGEP文件和论文10筛选版本仍待补齐。
-- ICEWS的LAMP版本、ESC-AECR以及论文10改造版GDELT-500尚未取得，不使用其他版本替代。拟自建语料没有现成下载包。
+- 拟自建语料保留为项目模板，尚无现成下载包。
 
 ElizBench新增两个目录，含完整成品CSV、info统计表、真实样例和可运行的中文注释示例，详见[ElizBench说明](docs/ELIZBENCH.md)。
 
